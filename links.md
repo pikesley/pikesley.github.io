@@ -14,3 +14,4 @@ title: Some places you can find me on the web
 * My (mostly garden-related) [Pinterest](http://www.pinterest.com/pikesley/) boards
 * My [Keybase](https://keybase.io/pikesley) profile
 * My lovely employers, the [Open Data Institute](http://theodi.org/team/sam-pikesley)
+* My [CV](http://cv.pikesley.org)
