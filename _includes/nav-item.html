@@ -1,0 +1,7 @@
+{% if include.current == include.path %}
+  <li class='active'>
+{% else %}
+  <li>
+{% endif %}
+  <a href='{{ include.path }}'>{{ include.title }}</a>
+</li>

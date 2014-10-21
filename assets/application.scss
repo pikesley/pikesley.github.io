@@ -1,4 +1,10 @@
 ---
 ---
 
+@import 'fonts';
+@import 'bootstrap-custom';
 @import 'bootstrap';
+
+body {
+  color: $gray-lighter;
+}
