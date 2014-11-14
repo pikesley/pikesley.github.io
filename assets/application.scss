@@ -8,3 +8,49 @@
 body {
   color: $gray-lighter;
 }
+
+/* Footer styles
+-------------------------------------------------- */
+
+$footer-height: 40px;
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: $footer-height;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  margin-top: $padding-large-vertical;
+  background: $brand-primary;
+  opacity: 0.7;
+  color: white;
+  height: $footer-height;
+
+  padding: $padding-large-vertical $padding-large-horizontal;
+
+  a {
+    color: white;
+  }
+}
+
+/* End footer
+-------------------------------------------------- */
+
+.picture {
+  padding: $padding-small-vertical $padding-small-horizontal;
+  margin: $padding-small-vertical $padding-small-horizontal;
+
+  .caption {
+    color: $brand-primary;
+    font-size: 0.9em;
+  }
+}
