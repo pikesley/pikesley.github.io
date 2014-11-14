@@ -2,10 +2,23 @@
 title: Blog
 ---
 
-<dl>
+{% for year in site.data.years %}
+<h2>
+  {{ year }}
+</h2>
+
+<dl class='dl-horizontal'>
   {% for post in site.posts %}
-    <dt>
-      <a href='{{ post.url }}'>{{ post.title }}</a>
-    </dt>
+    {% capture post_year %}{{ post.date | date: '%Y' }}{% endcapture %}
+    {% if year == post_year %}
+      <dt>
+        {{ post.date | date_to_long_string }}
+      </dt>
+      <dd>
+        <a href='{{ post.url }}'>{{ post.title }}</a>
+      </dd>
+    {% endif %}
   {% endfor %}
 </dl>
+
+{% endfor %}
