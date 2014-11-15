@@ -31,7 +31,6 @@ body {
 
   margin-top: $padding-large-vertical;
   background: $brand-primary;
-  opacity: 0.7;
   color: white;
   height: $footer-height;
 
@@ -45,6 +44,16 @@ body {
 /* End footer
 -------------------------------------------------- */
 
+.header {
+  text-align: right;
+  top: 0;
+  .logo {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+  }
+}
+
 .picture {
   padding: $padding-small-vertical $padding-small-horizontal;
   margin: $padding-small-vertical $padding-small-horizontal;
@@ -53,4 +62,13 @@ body {
     color: $brand-primary;
     font-size: 0.9em;
   }
+}
+
+.navbar {
+  background: $brand-primary;
+  text-align: right;
+}
+
+h1 {
+  text-align: center;
 }
