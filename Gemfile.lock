@@ -18,10 +18,12 @@ GEM
       execjs
     coffee-script-source (1.8.0)
     colorator (0.1)
+    dotenv (1.0.2)
     execjs (2.2.2)
     fast-stemmer (1.0.2)
     fastercsv (1.5.5)
     ffi (1.9.6)
+    flickraw (0.9.8)
     gemoji (2.1.0)
     github-pages (28)
       RedCloth (= 4.2.9)
@@ -121,6 +123,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  dotenv
+  flickraw
   github-pages
   jekyll-import
   sequel

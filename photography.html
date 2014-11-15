@@ -2,12 +2,13 @@
 title: Photography
 ---
 
-<div class='embed-responsive embed-responsive-4by3'>
-  <iframe src="https://www.flickr.com/photos/pikesley/2853019611/in/set-72157602380914832/player/"
-          allowfullscreen
-          webkitallowfullscreen
-          mozallowfullscreen
-          oallowfullscreen
-          msallowfullscreen>
-  </iframe>
+<div class='row'>
+  {% for picture in site.data.pictures %}
+    <div class='col-md-3 thumbnail flickr'>
+      <a href='{{ picture["photo_page"] }}' title='View full-size on Flickr'>
+        <img src='{{ picture["photo_url"] }}' alt='{{ picture['title'] }}'/>
+      </a>
+    </div>
+    {% cycle '', '', '', "</div><div class='row'>" %}
+  {% endfor %}
 </div>

@@ -63,6 +63,37 @@ body {
   }
 }
 
+/* Gallery styles
+-------------------------------------------------- */
+
+$flickr-height: 200px;
+
+.flickr {
+  h1 {
+    font-size: 1em;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  .caption h1, h2 {
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+
+  .caption h2 {
+    font-size: 0.6em;
+    text-align: center;
+  }
+
+  img {
+    max-height: $flickr-height;
+  }
+}
+
+/* End gallery */
+
 .navbar {
   background: transparent;
   border: none;
