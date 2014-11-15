@@ -1,5 +1,7 @@
 {% if include.current == include.path %}
   <li class='active'>
+{% elsif include.path contains include.parent %}
+  <li class='active'>
 {% else %}
   <li>
 {% endif %}
