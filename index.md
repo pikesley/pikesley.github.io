@@ -1,5 +1,6 @@
 ---
 title: I am Sam Pikesley
+layout: narrow
 ---
 
 I write code for the [ODI](http://theodi.org/team/sam-pikesley) and play music with [The Raw Funk Maharishi](http://rawfunkmaharishi.uk).

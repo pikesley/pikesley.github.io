@@ -46,6 +46,7 @@ body {
 .header {
   text-align: right;
   top: 0;
+
   .logo {
     width: 100%;
     height: auto;
@@ -66,7 +67,7 @@ body {
 /* Gallery styles
 -------------------------------------------------- */
 
-$flickr-height: 200px;
+$flickr-height: 160px;
 
 .flickr {
   h1 {
@@ -90,6 +91,10 @@ $flickr-height: 200px;
   img {
     max-height: $flickr-height;
   }
+}
+
+.thumbnail {
+  border: none;
 }
 
 /* End gallery */
