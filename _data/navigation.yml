@@ -1,14 +1,15 @@
-- title: Home
-  path: /
+- title:       Home
+  path:        /
+  fontawesome: fa-home
 
-- title: Links
-  path: /links/
+- title:       Projects
+  path:        /projects/
+  fontawesome: fa-code
 
-- title: Projects
-  path: /projects/
+- title:       Photography
+  path:        /photography/
+  fontawesome: fa-camera-retro
 
-- title: Photography
-  path: /photography/
-
-- title: Blog
-  path: /blog/
+- title:       Blog
+  path:        /blog/
+  fontawesome: fa-comment

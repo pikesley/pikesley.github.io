@@ -6,7 +6,6 @@
 @import 'bootstrap';
 
 body {
-  color: $gray-lighter;
 }
 
 /* Footer styles
@@ -65,8 +64,8 @@ body {
 }
 
 .navbar {
-  background: $brand-primary;
-  text-align: right;
+  background: transparent;
+  border: none;
 }
 
 h1 {

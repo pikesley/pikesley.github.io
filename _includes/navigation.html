@@ -12,9 +12,9 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class='collapse navbar-collapse' id='navbar-collapse'>
-      <ul class='nav navbar-nav' role='tablist'>
+      <ul class='nav nav-pills' role='tablist'>
         {% for item in site.data.navigation %}
-          {% include nav-item.html title = item.title path = item.path current = page.url %}
+          {% include nav-item.html title = item.title path = item.path fontawesome = item.fontawesome current = page.url %}
         {% endfor %}
       </ul>
     </div><!-- /.navbar-collapse -->
