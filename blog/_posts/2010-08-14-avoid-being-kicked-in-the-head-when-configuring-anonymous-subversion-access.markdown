@@ -105,5 +105,4 @@ sam = rw
 </pre>
 <p>so I'm granting anonymous access <em>only</em> to the <code>montecarlo</code> tree, and nothing else.</p>
 <p>EDIT: Actually, I'm not sure about the fine-grained control stuff: when I had this set for more than one subtree, I was getting 403s again. Bears further investigation...</p>
-<p>And all this so I can share <a href="https://svn.param3.com/code/montecarlo/MonteCarlo.py">this pointless bit of code</a>.</p>
 <p>Hope somebody finds this useful.</p>

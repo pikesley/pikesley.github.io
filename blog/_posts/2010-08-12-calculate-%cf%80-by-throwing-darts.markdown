@@ -44,14 +44,13 @@ comments: []
         area_of_square           r^2            4
 </pre>
 <p>Or:</p>
-<pre>     
+<pre>
                 area_of_quadrant        hits
        pi = 4 * ---------------- = 4 * ------
                  area_of_square        throws
 </pre>
 <p><!--break--><br />
 I first solved this problem as an undergraduate sometime in 1994 as part of a Computational Physics module. Using FORTRAN.</p>
-<p>The full explanation can be found <a href="http://icanhaz.com/calculatepi">here</a>.</p>
 <pre>
 #!/usr/bin/env python
 
@@ -68,7 +67,7 @@ class Throw:
 		self.distance = self.distance()
 
 	def distance(self):
-		# the distance from the origin is the hypotenuse of a right-angled 
+		# the distance from the origin is the hypotenuse of a right-angled
 		# triangle with sides of length and x and y. Pythagoras told us that:
 		#    distance = sqrt((x^2) + (y^2))
 		# which looks like this in python
@@ -124,5 +123,4 @@ if __name__ == '__main__':
 		# only print on every nth iteration
 		if m.divides_by(step): print m
 </pre>
-<p>You can grab the code <a href="http://svn.cruft.co/code/montecarlo/MonteCarlo.py">here</a>. </p>
-<p>And there's now a <a href="http://org.orgraphone.org/2010/10/calculate-%CF%80-by-throwing-ruby-tipped-darts/">ruby version</a>, too.</p>
+<p>There's now a <a href="http://sam.pikesley.org/blog/2010/10/14/calculate-%25cf%2580-by-throwing-ruby-tipped-darts/">ruby version</a>, too.</p>
