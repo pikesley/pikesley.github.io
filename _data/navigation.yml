@@ -10,6 +10,6 @@
   path:        /photography/
   fontawesome: fa-camera-retro
 
-- title:       Blog
-  path:        /blog/
-  fontawesome: fa-comment
+#- title:       Blog
+#  path:        /blog/
+#  fontawesome: fa-comment
