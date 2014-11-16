@@ -1,27 +1,25 @@
 ---
+title: Mv CV
+layout: narrow
 ---
-
-Sam Pikesley
-============
 
 14 years a SysAdmin, now Head Of Robots. If I can't do it with Ruby, it probably isn't worth doing. If you can extract my phone number from the details below, then maybe I'll speak to you.
 
-Skills
-======
+##Skills
 
-Configuration management
-------------------------
+###Configuration management
+
 + Chef
     - contributor to [cucumber-chef](https://github.com/Atalanta/cucumber-chef)
     - creator of [catering-college](https://github.com/pikesley/catering-college)
 
-Scripting
----------
+###Scripting
+
 + Ruby
 + bash
 
-Development tools
------------------
+###Development tools
+
 + Git
 + Subversion
 + Vagrant
@@ -29,8 +27,8 @@ Development tools
 + Bamboo
 + Hudson / Jenkins / Travis
 
-WWW
----
+###WWW
+
 + nginx
 + Apache
     - including mod_rewrite
@@ -38,52 +36,49 @@ WWW
 + PHP scripting
 + haproxy administration
 
-OS
---
+###OS
+
 + Linux (Ubuntu, Debian)
 + FreeBSD (4, 5, 6, 7)
 
-Cloudy stuff
-------------
+###Cloudy stuff
+
 + EC2
 + RDS
 + S3 / CloudFront
 + Rackspace Cloud
 
-Databases
----------
+###Databases
+
 + MySQL (including MMM)
 + Cassandra
 + MongoDB
 
-Network administration
-----------------------
+###Network administration
+
 + Network topology planning
 + DNS (BIND 8, 9)
 + Samba
 
-Monitoring and measurement
---------------------------
+###Monitoring and measurement
+
 + Splunk
 + ServerDensity
 + Nagios
 + Zabbix
 
-Backup and recovery
--------------------
+###Backup and recovery
+
 + Duplicity
 + Amanda
 
-Profile
-=======
+##Profile
 
-January 2013 - present: Head Of Robots at the [Open Data Institute](http://theodi.org), London
-----------------------------------------------------------------------------------------------
+###January 2013 - present: Head Of Robots at the [Open Data Institute](http://theodi.org), London
 
 Automating the shit out of everything I can get my hands on.
 
-June 2011 - January 2013: DevOps Engineer for [AMEE UK Ltd](http://www.amee.com), London
------------------------------------------------------------------------------------
+###June 2011 - January 2013: DevOps Engineer for [AMEE UK Ltd](http://www.amee.com), London
 
 AMEE is a start-up whose mission is to measure the carbon footprint of everything on the planet.
 
@@ -95,8 +90,7 @@ Working closely with AMEE's relatively small team of Java and Ruby devs, I was r
 
 alongside the usual SysAdmin work of backup-and-restore, capacity planning, etc.
 
-August 2009 – June 2011: Systems Administrator for [Imagini Ltd](http://www.visualdna.com), London
---------------------------------------------------------------------------------------------------
+###August 2009 – June 2011: Systems Administrator for [Imagini Ltd](http://www.visualdna.com), London
 
 Imagini is a dynamic startup based in Soho. The company generates profiles for users through the use of visual quizzes, working with clients including the LA Times, match.com and the Daily Mirror.
 
@@ -121,8 +115,7 @@ During my time at Imagini I also:
 + Substantially rewrote the ‘event-tracking and processing’ system
 + Managed a migration from hosted Exchange email to Google Mail
 
-August 2003 – August 2009: Systems Administrator for [Rex Features Ltd](http://www.rexfeatures.com), London
------------------------------------------------------------------------------------------------------------
+###August 2003 – August 2009: Systems Administrator for [Rex Features Ltd](http://www.rexfeatures.com), London
 
 Rex Features is Britain’s leading independent photographic press agency and picture library. Rex supplies a daily service of news, celebrity, features, and stock photos to all national newspapers, magazines, TV, web and other media in the UK and in more than 30 countries worldwide.
 
@@ -147,8 +140,7 @@ Subsequently, I was directly involved in:
 
 Rex went on to acquire another picture agency in Los Angeles, which brought about a project to integrate their image archive into Rex’s, modifying the server software to enable them to use the Rex client application, and deploying a new set of servers to support of all of this. The final setup consisted of a redundant pair of Microsoft SQL servers, a set of NetApp filers and shelves, and a group of FreeBSD servers (running apache and mod_perl) serving up three websites and a range of internal webservices, all sitting behind a pair of Alteon load-balancers.
 
-April 2000 – July 2003: Systems Administrator for Empower Interactive Ltd, London
----------------------------------------------------------------------------------
+###April 2000 – July 2003: Systems Administrator for Empower Interactive Ltd, London
 
 Empower Interactive was a telecoms software startup, founded in 2000 in the City of London. The company grew from an initial team of eight to a team of approximately 60 people based all over the globe.
 
@@ -158,21 +150,19 @@ I was solely responsible for supporting this infrastructure for the first year, 
 
 Empower unfortunately ceased trading in November 2006.
 
-Personal
-========
+##Personal
 
-Interests
----------
+###Interests
 
 + [Music](https://soundcloud.com/rawfunkmaharishi)
 + [Photography](http://www.flickr.com/photos/pikesley/)
 + [Gardening](https://www.flickr.com/photos/pikesley/sets/72157644197110144/)
 
-Contact details
----------------
+###Contact details
 
-+ email: [s@m.pikesley.org](mailto:s@m.pikesley.org)
-+ twitter: [@pikesley](http://twitter.com/pikesley)
-+ [linkedin](http://uk.linkedin.com/in/sampikesley)
++ [web](http://sam.pikesley.org)
 + [github](https://github.com/pikesley/)
++ [twitter](http://twitter.com/pikesley)
++ [email](mailto:s@m.pikesley.org)
++ [linkedin](http://uk.linkedin.com/in/sampikesley)
 + telephone: `'+%d' % [ '684dace0e7'.to_i(16) ]`
