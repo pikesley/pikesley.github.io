@@ -1,9 +1,11 @@
-{% if include.current == include.path %}
-  <li class='active'>
-{% elsif include.path contains include.parent %}
-  <li class='active'>
-{% else %}
-  <li>
-{% endif %}
-  <a href='{{ include.path }}'>{{ include.title }}</a>
+<li>
+  <a href='{{ include.path }}'>
+
+    {% if include.current == include.path %}
+      <i class='fa fa-arrow-circle-right'></i>
+    {% elsif include.path contains include.parent %}
+      <i class='fa fa-arrow-circle-right'></i>
+    {% endif %}
+
+    {{ include.title }}</a>
 </li>
