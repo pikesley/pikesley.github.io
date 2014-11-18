@@ -1,6 +1,5 @@
 ---
 title: Ultron
-layout: narrow
 ---
 
 Ruby bindings for the [Marvel Comics API](http://developer.marvel.com/)

@@ -14,4 +14,11 @@ defaults:
     values:
       layout: post
 
+  -
+    scope:
+      path: projects
+
+    values:
+      layout: narrow
+
 permalink: pretty
