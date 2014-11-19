@@ -13,6 +13,7 @@ defaults:
 
     values:
       layout: post
+      parent: blog
 
   -
     scope:
@@ -20,5 +21,6 @@ defaults:
 
     values:
       layout: project
+      parent: projects
 
 permalink: pretty
