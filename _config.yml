@@ -19,6 +19,6 @@ defaults:
       path: projects
 
     values:
-      layout: narrow
+      layout: project
 
 permalink: pretty
