@@ -8,7 +8,7 @@ I write code for the [ODI](http://theodi.org/team/sam-pikesley) and play music w
 Some other places you can find me on the internets:
 
 * My [Github](https://github.com/pikesley) account
-* My [Twitter](https://twitter.com/pikesley) stream
+* My [Twitter](https://twitter.com/pikesley) stream (and the [horse_ebooks](https://twitter.com/pikesley_ebooks) Markov chain version)
 * My [SoundCloud](https://soundcloud.com/pikesley)
 * Some [talks](https://www.youtube.com/playlist?list=PLuPLM2FI60-M0-aWejF9WgB-Dkt1TuQXv) I have given
 * My [Flickr](http://www.flickr.com/photos/pikesley/) page
