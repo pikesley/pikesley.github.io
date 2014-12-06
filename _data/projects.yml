@@ -7,7 +7,7 @@
   description: Ruby bindings for the <a href='http://developer.marvel.com/docs'>Marvel Comics API</a>
 
 - title: Marvel Explorer
-  url: http://marvelexplorer.github.io/
+  url: /projects/marvel-explorer
   description: Using the <a href='/projects/ultron'>Ultron gem</a> to wander aimlessly from character to character through the Marvel Comics data
 
 - title: Badger
