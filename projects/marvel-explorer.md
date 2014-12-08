@@ -5,16 +5,18 @@ github: marvelexplorer/marvel_explorer
 
 Uses my [Ultron](http://pikesley.org/projects/ultron) gem to wander from character to character through the [Marvel Comics Data](http://developer.marvel.com/) and drive the [Twitter stream](https://twitter.com/marvel_explorer) and the [Website](http://marvelexplorer.github.io/). You need to set some things up in `~/.marvel_explorer/config.yml`:
 
-    TWITTER_CONSUMER_KEY:    a_key
-    TWITTER_CONSUMER_SECRET: a_secret
-    TWITTER_OAUTH_TOKEN:     a_token
-    TWITTER_OAUTH_SECRET:    a_nuvver_secret
+    twitter:
+      consumer:
+        key:    a_key
+        secret: a_secret
+      oauth:
+        token:  a_token
+        secret: a_nuvver_secret
 
-    DEFAULT_ID:   1009351 # Hulk
-    MARSHAL_FILE: /Users/sam/.marvel_explorer/last.character
-    TWEET_LENGTH: 140
-
-    JEKYLL_DIR: /Users/sam/Github/Marvel_Explorer/marvelexplorer.github.io/
+    default_id:   1009351 # Hulk
+    marshal_file: /Users/sam/.marvel_explorer/last.character
+    tweet_length: 140
+    jekyll_dir:   /Users/sam/Github/Marvel_Explorer/marvelexplorer.github.io/
 
 You also need some [Ultron configuration](https://github.com/pikesley/ultron/blob/master/README.md) in `~/.ultronrc`:
 
