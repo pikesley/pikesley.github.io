@@ -30,6 +30,10 @@
   url: http://pokrovsky.herokuapp.com/
   description: Github History Vandalism as a Service
 
+- title: Mutilator
+  url: https://mutilator.herokuapp.com/
+  description: Astonishingly Pointless Bullshit as a Service
+
 - title: Snake Dashboard
   url: http://heyre.be/snake
   description: The Quantified Corn Snake Project
