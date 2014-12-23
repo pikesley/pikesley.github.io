@@ -2,6 +2,10 @@
   url: http://rawfunkmaharishi.uk/blog/
   description: Blog about building a Jekyll site for my band
 
+- title: Red 5
+  url: /projects/red5
+  description: Ruby bindings for the <a href='http://swapi.co'>Star Wars API</a>
+
 - title: Ultron
   url: /projects/ultron
   description: Ruby bindings for the <a href='http://developer.marvel.com/docs'>Marvel Comics API</a>
