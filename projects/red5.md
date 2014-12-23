@@ -26,6 +26,14 @@ I've followed the [Star Wars API](http://swapi.co/documentation#intro) as closel
       expect(film['episode_id']).to eq 4
     end
 
+###Get everything
+
+    it 'finds ALL THE PEOPLE', :vcr do
+      everybody = People.all
+      expect(everybody.count).to eq 82
+      expect(everybody[0].class).to eq People
+    end
+
 ###Fetch the thing linked to by an attribute
 
     it 'fetches the species for a person', :vcr do
