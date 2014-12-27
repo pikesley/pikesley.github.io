@@ -29,7 +29,7 @@ Gets the next iteration of '_Character A_ appeared in _Comic_ with _Character B_
 
     marvel_explorer tweet
 
-Generates and publishes a [Tweet](https://twitter.com/marvel_explorer)
+Generates and publishes a [Tweet](https://twitter.com/marvel_explorer) (and see [this](http://dghubble.com/blog/posts/twitter-app-write-access-and-bots/) for help with making Twitter bots)
 
     marvel_explorer publish
 
