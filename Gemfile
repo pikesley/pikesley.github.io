@@ -9,3 +9,5 @@ gem 'unidecode'
 
 gem 'flickraw'
 gem 'dotenv'
+gem 'html-proofer'
+gem 'rake'
