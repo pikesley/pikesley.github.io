@@ -34,10 +34,10 @@ comments: []
 <strong>Take a walk around <a href="http://www.cityofvalletta.org/cityofvalletta/home.aspx">Valletta</strong>, the stunningly beautiful walled city.
 </li>
 <li>
-<strong>Visit the <a href="http://www.visitmalta.com/national-war-museum-map">National War Museum</a></strong> for the incredible story of Malta, Churchill's "unsinkable aircraft carrier", during the Second World War, and to see the actual George Cross presented "to the Island Fortress of Malta to bear witness to a heroism and devotion that will long be famous in history". [Disclaimer: I have a consuming interest in the Second World War, especially the North Africa Campaign]
+<strong>Visit the National War Museum</strong> for the incredible story of Malta, Churchill's "unsinkable aircraft carrier", during the Second World War, and to see the actual George Cross presented "to the Island Fortress of Malta to bear witness to a heroism and devotion that will long be famous in history". [Disclaimer: I have a consuming interest in the Second World War, especially the North Africa Campaign]
 </li>
 <li>
-On a similar note, <strong>go to the recently-restored <a href="http://www.locationmalta.com/attractions/lascaris.html">Lascaris War Rooms</a></strong>, headquarters for the air defence of Malta, and the place from which Eisenhower and Alexander <a href="http://www.flickr.com/photos/bomba08/5009529842/">planned the invasion of Sicily</a>.
+On a similar note, <strong>go to the recently-restored Lascaris War Rooms</strong>, headquarters for the air defence of Malta, and the place from which Eisenhower and Alexander <a href="http://www.flickr.com/photos/bomba08/5009529842/">planned the invasion of Sicily</a>.
 </li>
 <li>
 <strong>The <a href="http://www.visitmalta.com/museum-of-archaeology">National Museum of Archaeology</a></strong> has some <a href="http://www.maltavoyager.com/moa/areas/sleepinglady.htm">intriguing items of prehistoric art</a> amongst other things.
@@ -61,7 +61,7 @@ On a similar note, <strong>go to the recently-restored <a href="http://www.locat
 <strong>Don't have the evening buffet at the Excelsior</strong>. A meal and a bottle of wine from room-service, <em>and</em> a movie, were cheaper and tastier. And it didn't cost <em>too</em> much more for the splendid three courses at the Cordial. The Excelsior breakfast is great, though.
 </li>
 <li>
-<strong>The <a href="http://www.almaremalta.com/mainmenu.html">Al Mare</a></strong> restaurant was also thoroughly disappointing. Fantastic location, but the food was crap. The friendly ginger cats enjoyed our prawn heads, though.
+<strong>The Al Mare</strong> restaurant was also thoroughly disappointing. Fantastic location, but the food was crap. The friendly ginger cats enjoyed our prawn heads, though.
 </li>
 </ul>
 <p>In conclusion, then, a holiday in Malta is thoroughly recommended. The rest of my photos are <a href="http://www.flickr.com/photos/pikesley/sets/72157624963667011/">here</a>.</p>

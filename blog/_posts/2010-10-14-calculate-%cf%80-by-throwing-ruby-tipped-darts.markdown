@@ -120,4 +120,4 @@ while 1 do
 # Output every 1000th iteration
    puts mc if mc.count % 1000 == 0
 end</pre>
-<p>The source is over <a href="http://svn.cruft.co/code/montecarlo/MonteCarlo.rb">here</a>.</p>
+<p>The source was on my Subversion server, but lol.</p>

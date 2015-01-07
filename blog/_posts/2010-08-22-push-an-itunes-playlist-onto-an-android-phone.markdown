@@ -37,8 +37,7 @@ comments: []
 <p><sub>* The duplicate-detection will fail if you've previously transferred music to your player from somewhere other than your iTunes media tree (I'm not a magician).</sub></p>
 <p>The code:</p>
 <ul>
-<li>Stable(ish) release: <a title="Tag" href="http://svn.cruft.co/code/itunestoandroid/tags/alpha-0.1/">http://svn.cruft.co/code/itunestoandroid/tags/alpha-0.1/</a></li>
-<li>(Probably broken) trunk: <a title="Trunk" href="http://svn.cruft.co/code/itunestoandroid/trunk/">http://svn.cruft.co/code/itunestoandroid/trunk/</a></li>
+<li>Used to be on my Subversion server but lol</li>
 </ul>
 <p>Check it out, then run it as <code>./iTunes-to-Android.py -h</code> to see the available options, or <code>./iTunes-to-Android.py &lt;playlist_file.txt&gt;</code> to actually transfer some music.</p>
 <p>Todo (if I can be arsed):</p>
