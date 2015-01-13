@@ -84,7 +84,7 @@ AMEE is a start-up whose mission is to measure the carbon footprint of everythin
 
 Working closely with AMEE's relatively small team of Java and Ruby devs, I was responsible for:
 
-+ Putting in a huge amount of Chef plumbing (running off of [our own Chef server](http://www.amee.com/blog/2012/02/22/building-a-chef-server-from-scratch/)) - AMEE's config management previously consisted of a handful of bash scripts. Any new stuff rolled out since late 2011 has been configuration-managed by Chef, and I expect to have all existing infrastructure in the hands of Chef before the end of 2012
++ Putting in a huge amount of Chef plumbing (running off of our own Chef server) - AMEE's config management previously consisted of a handful of bash scripts. Any new stuff rolled out since late 2011 has been configuration-managed by Chef, and I expect to have all existing infrastructure in the hands of Chef before the end of 2012
 + Deploying and configuring Splunk
 + Migrating several of AMEE's legacy apps from leased iron in a DC to AWS
 
