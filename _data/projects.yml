@@ -14,6 +14,10 @@
   url: /projects/marvel-explorer
   description: Using the <a href='/projects/ultron'>Ultron gem</a> to wander aimlessly from character to character through the Marvel Comics data
 
+- title: Skellington
+  url: /projects/skellington
+  description: Generate tedious Cucumber and Sinatra boilerplate like a boss
+
 - title: Badger
   url: /projects/badger
   description: Generate Github project badges like a boss
