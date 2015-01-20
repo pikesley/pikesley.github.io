@@ -3,7 +3,7 @@ title: I am Sam Pikesley
 layout: narrow
 ---
 
-I write code for the [ODI](http://theodi.org/team/sam-pikesley) and play music with [The Raw Funk Maharishi](http://rawfunkmaharishi.uk), and I have a non-working pancreas.
+I write code for the [ODI](http://theodi.org/team/sam-pikesley) and play music with [The Raw Funk Maharishi](http://rawfunkmaharishi.uk), and I have a [non-working pancreas](http://www.diabetes.org.uk/Guide-to-diabetes/What-is-diabetes/What-is-Type-1-diabetes/).
 
 Some other places you can find me on the internets:
 
