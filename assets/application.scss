@@ -117,3 +117,16 @@ h1 {
   }
   padding-bottom: $padding-large-vertical;
 }
+
+/* mobile version */
+.navbar-default .navbar-toggle {
+  border-color: $brand-primary;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus, {
+  background-color: $gray-lighter;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: $brand-primary;
+}
