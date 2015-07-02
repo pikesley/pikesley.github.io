@@ -50,8 +50,9 @@
 - title: What is DevOps?
   url: http://whatisdevops.com/
 
-- title: WTF is my Open Data Strategy?
-  url: http://wtfismyopendatastrategy.pikesley.org/
+# Further Oauth bullshit
+#- title: WTF is my Open Data Strategy?
+#  url: http://wtfismyopendatastrategy.pikesley.org/
 
 - title: Cruft & Company
   url: http://cruft.co/
