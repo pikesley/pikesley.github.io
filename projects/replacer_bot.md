@@ -22,7 +22,7 @@ or
 
 ## Configuration
 
-The default config is [here](https://github.com/pikesley/replacer_bot/blob/master/config/defaults.yml), you'll want to create your own config at `~/.replacer_bot/config.yml` to override come of these, something like:
+The default config is [here](https://github.com/pikesley/replacer_bot/blob/master/config/defaults.yml), you'll want to create your own config at `~/.replacer_bot/config.yml` to override some of these, something like:
 
     search_term: David Cameron
     replacements:
