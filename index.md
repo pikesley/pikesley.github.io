@@ -15,4 +15,4 @@ Some other places you can find me on the internets:
 * My very patchy [YouTube](https://www.youtube.com/user/pikesley/videos) and [Vimeo](https://vimeo.com/pikesley) channels
 * My occasional [Instructables](http://www.instructables.com/member/pikesley?show=INSTRUCTABLES)
 * My [Keybase](https://keybase.io/pikesley) profile (and my [public key](https://keybase.io/pikesley/key.asc))
-* My [CV](http://cv.pikesley.org)
+* My [CV](cv)
