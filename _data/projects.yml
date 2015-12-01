@@ -1,7 +1,11 @@
+- title: Purdie
+  url: /projects/purdie
+  description: Dealing with horrid APIs so you don't have to
+
 - title: Replacer Bot
   url: /projects/replacer_bot
   description: Make your own annoying Twitter bot
-  
+
 - title: Raw Funk Maharishi
   url: http://rawfunkmaharishi.uk/blog/
   description: Blog about building a Jekyll site for my band
