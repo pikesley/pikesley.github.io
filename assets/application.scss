@@ -118,11 +118,14 @@ h1 {
   padding-bottom: $padding-large-vertical;
 }
 
-.employer {
+.skill {
+  font-size: 1.1em;
+}
+
+.employer, .skills {
   h3, h4 {
     margin-top: 5px;
   }
-
   padding-left: $padding-small-horizontal;
 }
 
