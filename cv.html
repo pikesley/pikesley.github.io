@@ -1,0 +1,56 @@
+---
+title: Mv CV
+layout: narrow
+---
+
+<p>15 years a SysAdmin, now Head Of Robots. If I can’t do it with Ruby, it probably isn’t worth doing. I quite like Clouds. If you can extract my phone number from the details below, then maybe I’ll speak to you.</p>
+
+<hr />
+
+<h2>Stuff I’m good at</h2>
+<div class='row'>
+  {% for skill in site.data.cv.skills %}
+    <div class='col-md-4'>
+      <i class='fa fa-arrow-circle-right'></i>
+      {{ skill }}
+    </div>
+  {% endfor %}
+</div>
+
+<hr />
+
+<h2>Places I’ve worked</h2>
+{% for employer in site.data.cv.employers %}
+<hr />
+<div class='employer'>
+<h4 class='employment-dates'>{{ employer.dates.start }} - {{ employer.dates.end }}:</h4>
+<h3>
+  {{ employer.role }} at
+  {% if employer.url %}
+    <a href='{{ employer.url }}'>
+  {% endif %}
+  {{ employer.name }}{% if employer.url %}</a>{% endif %},
+  {{ employer.location }}</h3>
+
+  {{ employer.blurb | markdownify }}
+</div>
+{% endfor %}
+
+<hr />
+
+<h2>Other things I do</h2>
+<ul>
+{% for interest in site.data.cv.interests %}
+  <li><a href='{{ interest.url }}'>{{ interest.thing }}</a></li>
+{% endfor %}
+</ul>
+
+<hr />
+
+<h2 id="contact-me">Contact me</h2>
+<ul>
+{% for contact in site.data.cv.contact %}
+  <li><a href='{{ contact.link }}'>{{ contact.method }}</a></li>
+{% endfor %}
+<li>telephone: <code>'+%d' % [ '684dace0e7'.to_i(16) ]</code></li>
+</ul>

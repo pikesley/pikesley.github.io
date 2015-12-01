@@ -118,6 +118,14 @@ h1 {
   padding-bottom: $padding-large-vertical;
 }
 
+.employer {
+  h3, h4 {
+    margin-top: 5px;
+  }
+
+  padding-left: $padding-small-horizontal;
+}
+
 /* mobile version */
 .navbar-default .navbar-toggle {
   border-color: $brand-primary;

@@ -13,3 +13,6 @@
 - title:       Blog
   path:        /blog/
   fontawesome: fa-comment
+
+- title:       CV
+  path:        /cv/

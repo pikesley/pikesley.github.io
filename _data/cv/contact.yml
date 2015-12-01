@@ -1,0 +1,11 @@
+- method: web
+  link:  http://sam.pikesley.org
+
+- method: github
+  link:  https://github.com/pikesley/
+
+- method: twitter
+  link:   http://twitter.com/pikesley
+
+- method: email
+  link:   "&#109;&#097;&#105;&#108;&#116;&#111;:&#115;&#064;&#109;&#046;&#112;&#105;&#107;&#101;&#115;&#108;&#101;&#121;&#046;&#111;&#114;&#103;"
