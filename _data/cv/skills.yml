@@ -1,4 +1,5 @@
-- Test-driven Infrastructure with Test-kitchen and Chef
+- Chef
+- Test-kitchen
 - Ruby
 - bash
 - HTTP
