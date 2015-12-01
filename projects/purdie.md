@@ -3,7 +3,7 @@ title: Purdie
 github: rawfunkmaharishi/purdie
 ---
 
-[My band](http://rawfunkmaharishi.uk) has music on SoundCloud, photos on Flickr, and videos on Vimeo, and we want to feature them on [http://rawfunkmaharishi.uk/](http://rawfunkmaharishi.uk/). Up until now, this has been managed by curating, by hand (or [very shonky scripts](https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io/blob/master/flickriser.rb)), [bits](https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io/blob/master/_data/sounds.yml) [of](https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io/blob/master/_data/pictures.yml) [YAML](https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io/blob/master/_data/videos.yml) to feed into Jekyll, but this gets old quickly, especially when you run into things like SoundCloud's decision to only expose the track ID deep inside the embeddable iframe code.
+My band has music on SoundCloud, photos on Flickr, and videos on Vimeo, and we want to feature them on [http://rawfunkmaharishi.uk/](http://rawfunkmaharishi.uk/). Up until now, this has been managed by curating, by hand (or [very shonky scripts](https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io/blob/master/flickriser.rb)), [bits](https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io/blob/master/_data/soundcloud.yml) [of](https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io/blob/master/_data/flickr.yml) [YAML](https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io/blob/master/_data/vimeo.yml) to feed into Jekyll, but this gets old quickly, especially when you run into things like SoundCloud's decision to only expose the track ID deep inside the embeddable iframe code.
 
 But this is dumb. It's 2015 and everything has an API, so let's build a robot to do this stuff properly!
 
@@ -70,7 +70,7 @@ And then you can run
 
     purdie fetch
 
-(`fetch` is the default task (in fact currently the only task), so just `purdie` will work) and it will dump out YAML files into *_data*:
+(`fetch` is the default task (in fact currently the only task), so just `purdie` will work) and it will dump out YAML files into *\_data*:
 
     flickr.yaml
     pictures.yaml
@@ -81,7 +81,7 @@ ready for Jekyll to consume.
 
 ###Customisation
 
-You can supply your own *_config/purdie.yaml* file to specify a few things:
+You can supply your own *\_config/purdie.yaml* file to specify a few things:
 
     # Flickr photos are happy to have a null title
     default_title: Raw Funk Maharishi
