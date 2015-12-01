@@ -33,7 +33,7 @@ or
 
 ###Configuration
 
-You need to create a *_sources* directory in your Jekyll project, containing files with one-URL-per-line, like this:
+You need to create a `_sources` directory in your Jekyll project, containing files with one-URL-per-line, like this:
 
     https://soundcloud.com/rawfunkmaharishi/hexaflexagon-1
     https://soundcloud.com/rawfunkmaharishi/junalbandi-3
@@ -42,13 +42,13 @@ It also resolves sets/albums on all of the supported services, so this kind of t
 
     https://www.flickr.com/photos/pikesley/sets/72157648589429938/
 
-####Notes about *_sources*:
+####Notes about `_sources`:
 
 * Purdie maps each input file onto an output file, replacing any extension with _.yaml_, something like:
-  * \_sources/flickr.csv -> \_data/flickr.yaml
-  * \_sources/pictures.source -> \_data/pictures.yaml
-  * \_sources/soundcloud.sounds -> \_data/soundcloud.yaml
-  * \_sources/vimeo -> \_data/vimeo.yaml
+  * `_sources/flickr.csv` -> `_data/flickr.yaml`
+  * `_sources/pictures.source` -> `_data/pictures.yaml`
+  * `_sources/soundcloud.sounds` -> `_data/soundcloud.yaml`
+  * `_sources/vimeo` -> `_data/vimeo.yaml`
 
 * Mixing up different services in the same input file makes no sense to Purdie. Don't do this
 * If a URL appears multiple times in a resolved list, only the first appearance will be propagated to the output file
@@ -70,7 +70,7 @@ And then you can run
 
     purdie fetch
 
-(`fetch` is the default task (in fact currently the only task), so just `purdie` will work) and it will dump out YAML files into *\_data*:
+(`fetch` is the default task (in fact currently the only task), so just `purdie` will work) and it will dump out YAML files into `_data`:
 
     flickr.yaml
     pictures.yaml
@@ -81,7 +81,7 @@ ready for Jekyll to consume.
 
 ###Customisation
 
-You can supply your own *\_config/purdie.yaml* file to specify a few things:
+You can supply your own `_config/purdie.yaml` file to specify a few things:
 
     # Flickr photos are happy to have a null title
     default_title: Raw Funk Maharishi
