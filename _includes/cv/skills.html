@@ -1,8 +1,15 @@
 <h2 id='skills'>Stuff I’m good at</h2>
 <ul class='list-inline'>
   {% for skill in site.data.cv.skills %}
+    {% assign bits = skill | split: '|' %}
     <li class='skill'>
-      {{ skill }}
-    </li>
+    {% if bits[1] %}
+      <a href='{{ bits[1]}}'>
+    {% endif %}
+      {{ bits[0] }}
+    {% if bits[1] %}
+      </a>
+    {% endif %}
+  </li>
   {% endfor %}
 </ul>

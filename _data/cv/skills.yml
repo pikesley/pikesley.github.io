@@ -1,17 +1,18 @@
-- Chef
-- Test-kitchen
+- Chef|http://chef.io
+- Test-kitchen|http://kitchen.ci/
 - Ruby
 - bash
 - HTTP
 - REST
-- Jekyll
+- Jekyll|http://jekyllrb.com/
 - Git / Github
 - Heroku
 - Vagrant
-- Jenkins / Travis
+- Jenkins
+- Travis|https://travis-ci.org/
 - nginx
 - Apache
-- Linux (Ubuntu, Debian)
+- Linux
 - FreeBSD
 - EC2
 - RDS
@@ -19,4 +20,3 @@
 - Rackspace Cloud
 - MySQL
 - MongoDB
-- ServerDensity

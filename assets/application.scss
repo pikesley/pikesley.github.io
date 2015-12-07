@@ -122,6 +122,10 @@ h1 {
   font-size: 1.1em;
 }
 
+#sections {
+  font-size: 1.5em;
+}
+
 a {
     .show-ctrl{
         display: none;
@@ -144,6 +148,10 @@ a {
     margin-top: 5px;
   }
   padding-left: $padding-small-horizontal;
+}
+
+.back-to-top {
+  text-align: right;
 }
 
 /* mobile version */

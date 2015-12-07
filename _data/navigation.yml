@@ -6,13 +6,5 @@
   path:        /projects/
   fontawesome: fa-code
 
-- title:       Photography
-  path:        /photography/
-  fontawesome: fa-camera-retro
-
-- title:       Blog
-  path:        /blog/
-  fontawesome: fa-comment
-
 - title:       CV
   path:        /cv/
