@@ -1,6 +1,5 @@
 <h2 id='employment'>Places I’ve worked</h2>
 {% for employer in site.data.cv.employers %}
-  <hr />
   <div class='employer'>
     <h4 class='employment-dates'>{{ employer.dates.start }} - {{ employer.dates.end }}:</h4>
     <h3>
@@ -32,5 +31,6 @@
           </span>
       </a>
     {% endif %}
+    {% include conditional-separator.html %}
   </div>
 {% endfor %}

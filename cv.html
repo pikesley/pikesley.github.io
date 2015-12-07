@@ -14,9 +14,7 @@ sections:
   <div class='col-md-12 text-center'>
     {% for section in page.sections %}
       <a href='#{{ section }}'>{{ section | capitalize }}</a>
-      {% if forloop.rindex0 > 0 %}
-        |
-      {% endif %}
+      {% include conditional-separator.html sep = '|' %}
     {% endfor %}
   </div>
 </div>
@@ -24,7 +22,5 @@ sections:
 {% for section in page.sections %}
   {% include cv/{{ section }}.html %}
   {% include back-to-top.html %}
-  {% if forloop.rindex0 > 0 %}
-    <hr />
-  {% endif %}
+  {% include conditional-separator.html %}
 {% endfor %}
