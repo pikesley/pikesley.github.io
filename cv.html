@@ -12,15 +12,14 @@ sections:
 
 <hr />
 
-<div class='row'>
+<ul class='list-inline text-center'>
   {% for section in page.sections %}
-  <div class='col-md-3'>
-    <h4><a href='#{{ section }}'>{{ section | capitalize }}</a></h4>
-  </div>
+    <li><a href='#{{ section }}'>{{ section | capitalize }}</a></li>
   {% endfor %}
-</div>
+</ul>
 
 {% for section in page.sections %}
   <hr />
   {% include cv/{{ section }}.html %}
+  {% include back-to-top.html %}
 {% endfor %}

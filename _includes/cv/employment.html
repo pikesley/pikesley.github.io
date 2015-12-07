@@ -11,6 +11,13 @@
     {{ employer.name }}{% if employer.url %}</a>{% endif %},
     {{ employer.location }}</h3>
 
-    {{ employer.blurb | markdownify }}
+    {% capture param_name %}{{ employer.name | downcase | replace: ' ', '-'}}{% endcapture %}
+
+    <a data-toggle="collapse" href="#{{ param_name }}-blurb" aria-expanded="false" aria-controls="{{ param_name }}-blurb">
+      Read more
+    </a>
+    <div class="collapse" id="{{ param_name }}-blurb">
+      {{ employer.blurb | markdownify }}
+    </div>
 </div>
 {% endfor %}
