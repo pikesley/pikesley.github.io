@@ -122,6 +122,23 @@ h1 {
   font-size: 1.1em;
 }
 
+a {
+    .show-ctrl{
+        display: none;
+    }
+    .hide-ctrl{
+        display: block;
+    }
+    &.collapsed{
+        .show-ctrl{
+            display: block;
+        }
+        .hide-ctrl{
+            display: none;
+        }
+    }
+}
+
 .employer, .skills {
   h3, h4 {
     margin-top: 5px;

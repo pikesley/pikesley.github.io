@@ -1,23 +1,36 @@
 <h2 id='employment'>Places I’ve worked</h2>
 {% for employer in site.data.cv.employers %}
-<hr />
-<div class='employer'>
-  <h4 class='employment-dates'>{{ employer.dates.start }} - {{ employer.dates.end }}:</h4>
-  <h3>
-    {{ employer.role }} at
-    {% if employer.url %}
-      <a href='{{ employer.url }}'>
+  <hr />
+  <div class='employer'>
+    <h4 class='employment-dates'>{{ employer.dates.start }} - {{ employer.dates.end }}:</h4>
+    <h3>
+      {{ employer.role }} at
+      {% if employer.url %}
+        <a href='{{ employer.url }}'>
+      {% endif %}
+      {{ employer.name }}{% if employer.url %}</a>{% endif %},
+      {{ employer.location }}
+    </h3>
+
+    <p>
+      {{ employer.headline }}
+    </p>
+
+    {% if employer.blurb %}
+      {% capture param_name %}{{ employer.name | downcase | replace: ' ', '-'}}{% endcapture %}
+
+      <div class="collapse" id="{{ param_name }}-blurb">
+        {{ employer.blurb | markdownify }}
+      </div>
+
+      <a class="collapsed" data-toggle="collapse" href="#{{ param_name }}-blurb" aria-expanded="false" aria-controls="{{ param_name }}-blurb">
+          <span class="show-ctrl">
+            Show more
+          </span>
+          <span class="hide-ctrl">
+            Show less
+          </span>
+      </a>
     {% endif %}
-    {{ employer.name }}{% if employer.url %}</a>{% endif %},
-    {{ employer.location }}</h3>
-
-    {% capture param_name %}{{ employer.name | downcase | replace: ' ', '-'}}{% endcapture %}
-
-    <a data-toggle="collapse" href="#{{ param_name }}-blurb" aria-expanded="false" aria-controls="{{ param_name }}-blurb">
-      Read more
-    </a>
-    <div class="collapse" id="{{ param_name }}-blurb">
-      {{ employer.blurb | markdownify }}
-    </div>
-</div>
+  </div>
 {% endfor %}

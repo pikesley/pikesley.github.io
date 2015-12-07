@@ -5,7 +5,7 @@
   dates:
     start:  January 2013
     end:    Present
-  blurb:    |
+  headline: |
     Automating the shit out of everything I can get my hands on.
 
 - name:     AMEE UK Ltd
@@ -15,9 +15,9 @@
   dates:
     start:  June 2011
     end:    January 2013
-  blurb:    |
+  headline: |
     AMEE is a start-up whose mission is to measure the carbon footprint of everything on the planet.
-
+  blurb:    |
     Working closely with AMEE's relatively small team of Java and Ruby devs, I was responsible for:
 
     * Putting in a huge amount of Chef plumbing (running off of [AMEE's own Chef
@@ -35,11 +35,11 @@
   dates:
     start:  August 2009
     end:    June 2011
-  blurb:    |
+  headline: |
     Imagini is a dynamic startup based in Soho. The company generates profiles for users
     through the use of visual quizzes, working with clients including the LA Times,
     match.com and the Daily Mirror.
-
+  blurb:    |
     My role at Imagini was pretty much DevOps before I knew that DevOps was even a thing
     – as a busy startup with diverse client projects there were often multiple
     deploys per day, meaning I had to work very closely with the developers to
@@ -80,12 +80,12 @@
   dates:
     start:  August 2003
     end:    August 2009
-  blurb:    |
+  headline: |
     Rex Features is Britain’s leading independent photographic press agency and
     picture library. Rex supplies a daily service of news, celebrity, features,
     and stock photos to all national newspapers, magazines, TV, web and other
     media in the UK and in more than 30 countries worldwide.
-
+  blurb:    |
     My work at Rex covered the usual gamut of Sysadmin tasks, including: backup
     and recovery, webserver administration, DNS management, plenty of scripting
     (mostly in bash), patching servers, and writing and maintaining documentation.
@@ -135,11 +135,11 @@
   dates:
     start:  April 2000
     end:    July 2003
-  blurb:    |
+  headline:    |
     Empower Interactive was a telecoms software startup, founded in 2000 in the
     City of London. The company grew from an initial team of eight to a team of
     approximately 60 people based all over the globe.
-
+  blurb:    |
     Having joined Empower at its inception, my initial responsibilities were to
     design and implement the IT infrastructure necessary to support the operations
     of the fledgling business. This included: network planning; server acquisition
