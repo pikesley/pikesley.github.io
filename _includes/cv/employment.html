@@ -1,0 +1,16 @@
+<h2 id='employment'>Places I’ve worked</h2>
+{% for employer in site.data.cv.employers %}
+<hr />
+<div class='employer'>
+  <h4 class='employment-dates'>{{ employer.dates.start }} - {{ employer.dates.end }}:</h4>
+  <h3>
+    {{ employer.role }} at
+    {% if employer.url %}
+      <a href='{{ employer.url }}'>
+    {% endif %}
+    {{ employer.name }}{% if employer.url %}</a>{% endif %},
+    {{ employer.location }}</h3>
+
+    {{ employer.blurb | markdownify }}
+</div>
+{% endfor %}

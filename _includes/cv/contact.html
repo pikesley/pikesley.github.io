@@ -1,0 +1,7 @@
+<h2 id='contact'>Contact me</h2>
+<ul class='contact-me'>
+  {% for contact in site.data.cv.contact %}
+    <li><a href='{{ contact.link }}'>{{ contact.method }}</a></li>
+  {% endfor %}
+  <li>telephone: <code>'+%d' % [ '684dace0e7'.to_i(16) ]</code></li>
+</ul>

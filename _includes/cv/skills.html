@@ -1,0 +1,8 @@
+<h2 id='skills'>Stuff I’m good at</h2>
+<div class='row skills'>
+  {% for skill in site.data.cv.skills %}
+    <div class='col-md-4 skill'>
+      {{ skill }}
+    </div>
+  {% endfor %}
+</div>
