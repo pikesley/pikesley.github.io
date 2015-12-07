@@ -10,8 +10,6 @@ sections:
 
 {% include cv/blurb.html %}
 
-<hr />
-
 <div class='row' id='sections'>
   <div class='col-md-12 text-center'>
     {% for section in page.sections %}
@@ -24,7 +22,9 @@ sections:
 </div>
 
 {% for section in page.sections %}
-  <hr />
   {% include cv/{{ section }}.html %}
   {% include back-to-top.html %}
+  {% if forloop.rindex0 > 0 %}
+    <hr />
+  {% endif %}
 {% endfor %}
