@@ -12,11 +12,16 @@ sections:
 
 <hr />
 
-<ul class='list-inline text-center' id='sections'>
-  {% for section in page.sections %}
-    <li><a href='#{{ section }}'>{{ section | capitalize }}</a></li>
-  {% endfor %}
-</ul>
+<div class='row' id='sections'>
+  <div class='col-md-12 text-center'>
+    {% for section in page.sections %}
+      <a href='#{{ section }}'>{{ section | capitalize }}</a>
+      {% if forloop.rindex0 > 0 %}
+        |
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
 
 {% for section in page.sections %}
   <hr />
