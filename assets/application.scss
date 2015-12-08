@@ -154,6 +154,21 @@ a {
   padding-left: $padding-small-horizontal;
 }
 
+#sections, #interests, #contact {
+  li {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  li:before {
+    content: " | ";
+  }
+
+  li:first-child:before {
+    content: none;
+  }
+}
+
 .back-to-top {
   text-align: right;
   margin-top: $padding-large-vertical;

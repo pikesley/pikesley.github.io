@@ -3,7 +3,6 @@
   <ul class='list-inline text-center'>
     {% for contact in site.data.cv.interests %}
       <li><a href='{{ interest.url }}'>{{ contact.thing }}</a></li>
-      {% include conditional-separator.html sep = '|' %}
     {% endfor %}
   </ul>
 </div>
