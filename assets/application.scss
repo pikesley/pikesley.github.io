@@ -123,10 +123,10 @@ h1 {
 }
 
 .skill {
-  font-size: 1.1em;
+  font-size: 1.3em;
 }
 
-#sections {
+#sections, #contact-me, #interests {
   font-size: 1.5em;
 }
 
@@ -154,7 +154,7 @@ a {
   padding-left: $padding-small-horizontal;
 }
 
-#sections, #interests, #contact {
+#sections, #interests, #contact-me {
   li {
     padding: 0px;
     margin: 0px;
