@@ -8,7 +8,7 @@
   headline: |
     Automating the shit out of everything I can get my hands on.
 
-- name:     AMEE UK Ltd
+- name:     AMEE UK
   url:      http://amee.com
   location: London
   role:     DevOps Engineer
@@ -28,7 +28,7 @@
 
     alongside the usual SysAdmin work of backup-and-restore, capacity planning, etc.
 
-- name:     Imagini Ltd
+- name:     VisualDNA
   url:      http://visualdna.com
   location: London
   role:     Systems Administrator
@@ -36,17 +36,17 @@
     start:  August 2009
     end:    June 2011
   headline: |
-    Imagini is a dynamic startup based in Soho. The company generates profiles for users
+    VisualDNA is a dynamic startup based in Soho. The company generates profiles for users
     through the use of visual quizzes, working with clients including the LA Times,
     match.com and the Daily Mirror.
   profile:    |
-    My role at Imagini was pretty much DevOps before I knew that DevOps was even a thing
+    My role at VisualDNA was pretty much DevOps before I knew that DevOps was even a thing
     – as a busy startup with diverse client projects there were often multiple
     deploys per day, meaning I had to work very closely with the developers to
     make sure we were all on the same page.
 
     This close working relationship was particularly fruitful during the gradual
-    transfer of many of Imagini’s core services from the legacy platform (a
+    transfer of many of VisualDNA’s core services from the legacy platform (a
     couple of racks of Linux boxes in a London datacentre) to Amazon Web Services.
     The back-and-forth between myself and the development team was invaluable as
     we iterated through various combinations of EC2 Instance Types to find the
@@ -61,7 +61,7 @@
     This platform is still in production use, including an all-new Quiz Engine
     which as far as I know is still performing extremely well.
 
-    During my time at Imagini I also:
+    During my time at VisualDNA I also:
 
     * Completely rewrote the legacy deployment system (in Python), and subsequently
       repurposed a lot of this code to handle AWS deploy
@@ -73,7 +73,7 @@
     * Substantially rewrote the ‘event-tracking and processing’ system
     * Managed a migration from hosted Exchange email to Google Mail
 
-- name:     Rex Features Ltd
+- name:     Rex Features
   url:      http://rexfeatures.com
   location: London
   role:     Systems Administrator
@@ -129,7 +129,7 @@
     serving up three websites and a range of internal webservices, all sitting
     behind a pair of Alteon load-balancers.
 
-- name:     Empower Interactive Ltd
+- name:     Empower Interactive
   location: London
   role:     Systems Administrator
   dates:
