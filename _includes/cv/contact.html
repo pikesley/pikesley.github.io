@@ -1,10 +1,10 @@
-<div id='contact-me'>
+<div id='contact'>
   <h2>Contact me</h2>
   <ul class='list-inline text-center'>
     {% for contact in site.data.cv.contact %}
-      <li class='contact'><a href='{{ contact.link }}'>{{ contact.method }}</a></li>
+      <li><a href='{{ contact.link }}'>{{ contact.method }}</a></li>
     {% endfor %}
-    <li class='contact'>
+    <li>
       <a class='collapsed'
          data-toggle='collapse'
          href='#base64-phone-number'
