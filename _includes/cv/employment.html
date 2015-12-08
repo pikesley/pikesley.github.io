@@ -1,38 +1,41 @@
 <div id='employment'>
   <h2>Places I’ve worked</h2>
-  {% for employer in site.data.cv.employers %}
-    <div class='employer'>
-      <h4 class='employment-dates'>{{ employer.dates.start }} - {{ employer.dates.end }}:</h4>
-      <h3>
-        {{ employer.role }} at
-        {% if employer.url %}
-          <a href='{{ employer.url }}'>
+  <dl>
+    {% for employer in site.data.cv.employers %}
+      <dt class='employer'>
+        <h4 class='employment-dates'>{{ employer.dates.start }} - {{ employer.dates.end }}:</h4>
+        <h3>
+          {{ employer.role }} at
+          {% if employer.url %}
+            <a href='{{ employer.url }}'>
+          {% endif %}
+          {{ employer.name }}{% if employer.url %}</a>{% endif %},
+          {{ employer.location }}
+        </h3>
+      </dt>
+      <dd class='employer'>
+        <p>
+          {{ employer.headline }}
+        </p>
+
+        {% if employer.profile %}
+          {% capture param_name %}{{ employer.name | downcase | replace: ' ', '-'}}{% endcapture %}
+
+          <div class='collapse' id='{{ param_name }}-profile'>
+            {{ employer.profile | markdownify }}
+          </div>
+
+          <a class='collapsed' data-toggle='collapse' href='#{{ param_name }}-profile' aria-expanded='false' aria-controls='{{ param_name }}-profile'>
+              <span class='show-ctrl'>
+                <i class='fa fa-arrow-circle-down'></i> Read more
+              </span>
+              <span class='hide-ctrl'>
+                <i class='fa fa-arrow-circle-up'></i> Read less
+              </span>
+          </a>
         {% endif %}
-        {{ employer.name }}{% if employer.url %}</a>{% endif %},
-        {{ employer.location }}
-      </h3>
-
-      <p>
-        {{ employer.headline }}
-      </p>
-
-      {% if employer.profile %}
-        {% capture param_name %}{{ employer.name | downcase | replace: ' ', '-'}}{% endcapture %}
-
-        <div class='collapse' id='{{ param_name }}-profile'>
-          {{ employer.profile | markdownify }}
-        </div>
-
-        <a class='collapsed' data-toggle='collapse' href='#{{ param_name }}-profile' aria-expanded='false' aria-controls='{{ param_name }}-profile'>
-            <span class='show-ctrl'>
-              <i class='fa fa-arrow-circle-down'></i> Read more
-            </span>
-            <span class='hide-ctrl'>
-              <i class='fa fa-arrow-circle-up'></i> Read less
-            </span>
-        </a>
-      {% endif %}
-      {% include conditional-separator.html %}
-    </div>
-  {% endfor %}
+        {% include conditional-separator.html %}
+      </dd>
+    {% endfor %}
+  </dl>
 </div>
