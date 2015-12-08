@@ -1,8 +1,8 @@
 <div id='interests'>
   <h2>Other things I do</h2>
   <ul class='list-inline text-center'>
-    {% for contact in site.data.cv.interests %}
-      <li><a href='{{ interest.url }}'>{{ contact.thing }}</a></li>
+    {% for interest in site.data.cv.interests %}
+      <li class='interest'><a href='{{ interest.url }}'>{{ interest.thing }}</a></li>
     {% endfor %}
   </ul>
 </div>
