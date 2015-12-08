@@ -17,7 +17,7 @@
     end:    January 2013
   headline: |
     AMEE is a start-up whose mission is to measure the carbon footprint of everything on the planet.
-  profile:    |
+  profile:  |
     Working closely with AMEE's relatively small team of Java and Ruby devs, I was responsible for:
 
     * Putting in a huge amount of Chef plumbing (running off of [AMEE's own Chef
@@ -39,7 +39,7 @@
     VisualDNA is a dynamic startup based in Soho. The company generates profiles for users
     through the use of visual quizzes, working with clients including the LA Times,
     match.com and the Daily Mirror.
-  profile:    |
+  profile:  |
     My role at VisualDNA was pretty much DevOps before I knew that DevOps was even a thing
     – as a busy startup with diverse client projects there were often multiple
     deploys per day, meaning I had to work very closely with the developers to
@@ -85,7 +85,7 @@
     picture library. Rex supplies a daily service of news, celebrity, features,
     and stock photos to all national newspapers, magazines, TV, web and other
     media in the UK and in more than 30 countries worldwide.
-  profile:    |
+  profile:  |
     My work at Rex covered the usual gamut of Sysadmin tasks, including: backup
     and recovery, webserver administration, DNS management, plenty of scripting
     (mostly in bash), patching servers, and writing and maintaining documentation.
