@@ -15,19 +15,19 @@
       {{ employer.headline }}
     </p>
 
-    {% if employer.blurb %}
+    {% if employer.profile %}
       {% capture param_name %}{{ employer.name | downcase | replace: ' ', '-'}}{% endcapture %}
 
-      <div class='collapse' id='{{ param_name }}-blurb'>
-        {{ employer.blurb | markdownify }}
+      <div class='collapse' id='{{ param_name }}-profile'>
+        {{ employer.profile | markdownify }}
       </div>
 
-      <a class='collapsed btn btn-primary btn-xs' data-toggle='collapse' href='#{{ param_name }}-blurb' aria-expanded='false' aria-controls='{{ param_name }}-blurb'>
+      <a class='collapsed' data-toggle='collapse' href='#{{ param_name }}-profile' aria-expanded='false' aria-controls='{{ param_name }}-profile'>
           <span class='show-ctrl'>
-            <i class='fa fa-arrow-circle-down'></i> Show more
+            <i class='fa fa-arrow-circle-down'></i> Read more
           </span>
           <span class='hide-ctrl'>
-            <i class='fa fa-arrow-circle-up'></i> Show less
+            <i class='fa fa-arrow-circle-up'></i> Read less
           </span>
       </a>
     {% endif %}

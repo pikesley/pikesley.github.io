@@ -10,6 +10,7 @@ task :test do
                     ssl_verifypeer: false,
                     timeout: 30,
                     favicon: true,
+                    disable_external: true
                     ).run
 end
 
