@@ -2,6 +2,9 @@
 - Test-kitchen|http://kitchen.ci/
 - Ruby
 - Sinatra|http://sinatrarb.com/
+- TDD / BDD
+- Rspec
+- Cucumber
 - bash
 - HTTP
 - REST
