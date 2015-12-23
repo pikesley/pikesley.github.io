@@ -2,7 +2,6 @@
 title: Skellington
 github: pikesley/skellington
 ---
-
 Generate tedious [Cucumber](http://cukes.info/) and [Sinatra](http://www.sinatrarb.com/) boilerplate like a boss. Should work fine for both RVM- and rbenv-based setups
 
     $ gem install skellington
