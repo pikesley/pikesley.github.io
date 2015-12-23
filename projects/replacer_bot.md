@@ -2,7 +2,6 @@
 title: Replacer Bot
 github: pikesley/replacer_bot
 ---
-
 Twitter bot that:
 
 * Searches Twitter for a phrase
@@ -35,7 +34,10 @@ The default config is [here](https://github.com/pikesley/replacer_bot/blob/maste
 Notes:
 
 * The search-and-replace terms will be applied in the order listed, which you may or may not care about
-* The search part of the search-and-replace is case-insensitive
+* The search and replace has a number of passes based on some of my finger-in-the-air Reckons, which are probably easiest to understand via the [specs](https://github.com/pikesley/replacer_bot/blob/master/spec/lib/replacer_bot/case_spec.rb). After it tries each of these search-and-replace operations, it does a case-insensitive regex search-and-replace using the raw terms from the YAML (in order to catch SHittily-typeD things, because Twitter is a mess)
+* Your takeaway from this should be that if your replacement is a name or whatever, put it in the YAML Titlecased, otherwise lowercase it, and it should do the Right Thing
+
+### Twitter credentials
 
 You'll also need some Twitter credentials, store them in `~/.replacer_botrc` like this:
 

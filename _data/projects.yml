@@ -1,9 +1,11 @@
 - title: Purdie
   url: /projects/purdie
+  github: rawfunkmaharishi/purdie
   description: Dealing with horrid APIs so you don't have to
 
 - title: Replacer Bot
   url: /projects/replacer_bot
+  github: pikesley/replacer_bot
   description: Make your own annoying Twitter bot
 
 - title: Raw Funk Maharishi
@@ -12,22 +14,27 @@
 
 - title: Red 5
   url: /projects/red5
+  github: pikesley/red5
   description: Ruby bindings for the <a href='http://swapi.co'>Star Wars API</a>
 
 - title: Ultron
   url: /projects/ultron
+  github: pikesley/ultron
   description: Ruby bindings for the <a href='http://developer.marvel.com/docs'>Marvel Comics API</a>
 
 - title: Marvel Explorer
   url: /projects/marvel-explorer
+  github: marvelexplorer/marvel_explorer
   description: Using the <a href='/projects/ultron'>Ultron gem</a> to wander aimlessly from character to character through the Marvel Comics data
 
 - title: Skellington
   url: /projects/skellington
+  github: pikesley/skellington
   description: Generate tedious Cucumber and Sinatra boilerplate like a boss
 
 - title: Badger
   url: /projects/badger
+  github: badges/badgerbadgerbadger
   description: Generate Github project badges like a boss
 
 - title: Pancreas API
@@ -35,7 +42,8 @@
   description: Just because my pancreas is broken, doesn't mean it can't have a RESTful API
 
 - title: Diabetes Dashboard
-  url: /projects/diabetes-dashboard/
+  url: /projects/diabetes-dashboard
+  github: pikesley/diabetes-dashboard
   description: Dashing dashboard fed by the Pancreas API
 
 - title: Uncle Clive

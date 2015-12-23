@@ -2,7 +2,6 @@
 title: Marvel Explorer
 github: marvelexplorer/marvel_explorer
 ---
-
 Uses my [Ultron](http://pikesley.org/projects/ultron) gem to wander from character to character through the [Marvel Comics Data](http://developer.marvel.com/) and drive the [Twitter stream](https://twitter.com/marvel_explorer) and the [Website](http://marvelexplorer.github.io/). You need to set some things up in `~/.marvel_explorer/config.yml`:
 
     twitter:

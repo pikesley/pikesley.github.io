@@ -2,7 +2,6 @@
 title: Diabetes Dashboard
 github: pikesley/diabetes-dashboard
 ---
-
 A Dashing dashboard, driven by my [Pancreas API](http://pancreas-api.herokuapp.com/). Right now it shows:
 
 * Daily, weekly and 30-day blood-glucose graphs and averages
@@ -13,12 +12,12 @@ There'll be a lot more sophisticated stuff here once I've worked out Coffeescrip
 
 # Deployment
 
-This is a straight-up Rack app, it should deploy right onto Heroku. The Heroku environment will need to know about
+This is a straight-up Rack app, it should deploy right onto Heroku. The Heroku environment will need to know about 
 
-* `METRICS_API_USERNAME` and
-* `METRICS_API_PASSWORD`
+* `METRICS_API_USERNAME` and 
+* `METRICS_API_PASSWORD` 
 
-to access the Pancreas API (you'll have set these [here](http://pancreas-api.herokuapp.com/#dropbox-integration)), and
+to access the Pancreas API (you'll have set these [here](http://pancreas-api.herokuapp.com/#dropbox-integration)), and 
 
 * `DASHBOARD_USERNAME` and
 * `DASHBOARD_PASSWORD`

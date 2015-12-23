@@ -2,7 +2,6 @@
 title: Badger
 github: badges/badgerbadgerbadger
 ---
-
 Because I grow weary of copy-n-pasting the badge URLs into the README of every project, and the [img.shields.io](http://img.shields.io) API now supports all of the services I use
 
 ##Usage
@@ -19,7 +18,7 @@ or add it to your Gemfile
 Then
 
     badger badge
-    [![Build Status](https://travis-ci.org/doge/wow.svg)](https://travis-ci.org/doge/wow)
+    [![Build Status](http://img.shields.io/travis/doge/wow.svg)](https://travis-ci.org/doge/wow)
     [![Dependency Status](http://img.shields.io/gemnasium/doge/wow.svg)](https://gemnasium.com/doge/wow)
     [![Coverage Status](http://img.shields.io/coveralls/doge/wow.svg)](https://coveralls.io/r/doge/wow)
     [![Code Climate](http://img.shields.io/codeclimate/github/doge/wow.svg)](https://codeclimate.com/github/doge/wow)

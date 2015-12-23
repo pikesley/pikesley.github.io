@@ -2,7 +2,6 @@
 title: Purdie
 github: rawfunkmaharishi/purdie
 ---
-
 My band has music on SoundCloud, photos on Flickr, and videos on Vimeo, and we want to feature them on [http://rawfunkmaharishi.uk/](http://rawfunkmaharishi.uk/). Up until now, this has been managed by curating, by hand (or [very shonky scripts](https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io/blob/master/flickriser.rb)), [bits](https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io/blob/master/_data/soundcloud.yml) [of](https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io/blob/master/_data/flickr.yml) [YAML](https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io/blob/master/_data/vimeo.yml) to feed into Jekyll, but this gets old quickly, especially when you run into things like SoundCloud's decision to only expose the track ID deep inside the embeddable iframe code.
 
 But this is dumb. It's 2015 and everything has an API, so let's build a robot to do this stuff properly!
