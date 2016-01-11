@@ -11,8 +11,8 @@
 - title: Skellington
   url: /projects/skellington
   github: pikesley/skellington
-  description: Generate Sinatra app skellington
-  
+  description: Generate a skeleton for your Sinatra
+
 - title: Raw Funk Maharishi
   url: http://rawfunkmaharishi.uk/blog/
   description: Blog about building a Jekyll site for my band
