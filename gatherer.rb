@@ -1,7 +1,7 @@
 require 'yaml'
 require 'git'
 
-FileUtils.rm_r 'scratch'
+FileUtils.rm_rf 'scratch'
 FileUtils.mkdir_p 'scratch'
 projects = YAML.load_file('_data/projects.yml').select { |p| p['url'][0] == '/' }
 
