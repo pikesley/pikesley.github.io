@@ -8,6 +8,11 @@
   github: pikesley/replacer_bot
   description: Make your own annoying Twitter bot
 
+- title: Skellington
+  url: /projects/skellington
+  github: pikesley/skellington
+  description: Generate Sinatra app skellington
+  
 - title: Raw Funk Maharishi
   url: http://rawfunkmaharishi.uk/blog/
   description: Blog about building a Jekyll site for my band
@@ -26,11 +31,6 @@
   url: /projects/marvel-explorer
   github: marvelexplorer/marvel_explorer
   description: Using the <a href='/projects/ultron'>Ultron gem</a> to wander aimlessly from character to character through the Marvel Comics data
-
-- title: Skellington
-  url: /projects/skellington
-  github: pikesley/skellington
-  description: Generate tedious Cucumber and Sinatra boilerplate like a boss
 
 - title: Badger
   url: /projects/badger
