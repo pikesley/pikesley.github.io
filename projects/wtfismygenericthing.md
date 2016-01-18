@@ -66,7 +66,7 @@ You can have something like `@things and also @things` in a template, which will
 
 #### Recursive templates
 
-It's perfectly cromulent to put _@placeholders_ in these files, so you can have:
+It's perfectly cromulent to put _@placeholders_ in these lists, so you can have:
 
     things:
       - @adjective bananas
