@@ -113,9 +113,7 @@ There's also a `config/config.yml`:
 
 You should be able to run it with
 
-```
-bundle exec rackup
-```
+    bundle exec rackup
 
 and then point your browser at [http://localhost:9292/](http://localhost:9292/). And it should deploy straight onto Heroku no bother
 
