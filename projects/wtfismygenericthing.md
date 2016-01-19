@@ -13,7 +13,7 @@ You should probably fork it first, then
     bundle
     bundle exec rake
 
-You'll want a bit of customisation or it'll be a bit shit
+You'll want to do some customisation or it'll be a bit shit
 
 ### Data
 
@@ -50,7 +50,7 @@ you know the sort of thing
 
 ### Populate the templates
 
-The rest of the data files will be used to populate the templates. I've used the convention of one-file-per-list, but the code does not care TBH - you can mash them all into the same YAML file as long as they're namespaced like this
+The rest of the data files will be used to randomly populate the templates. I've used the convention of one-file-per-list, but the code does not care TBH - you can mash them all into the same YAML file as long as they're namespaced like this
 
     animals:
       - dogs
