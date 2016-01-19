@@ -2,7 +2,7 @@
 title: WTF Is My Generic Thing?
 github: pikesley/wtfismygenericthing
 ---
-Mostly an excuse for me to learn JavaScript TBH. See it in action [here](http://wtfismybbctbqtopic.herokuapp.com/)
+Mostly an excuse for me to learn JavaScript TBH. See it in action [here](https://wtfismyblockchainstrategy.herokuapp.com/)
 
 ## How to use it
 
@@ -84,6 +84,10 @@ I can think of at least these things that will make it not work:
 * Nesting templates to stupid depths, as mentioned above
 * Using a particular _@placeholder_ **more times than there are items in that list** - items are removed from the lists as they're subbed into the template. On that note:
 * Using a _@placeholder_ **for which you have no items at all** - it blew up for me because of a stupid typo
+
+#### Breaking the tests
+
+Your customisations will have broken the tests, specifically [this Cuke](https://github.com/pikesley/wtfismygenericthing/blob/18ab719ae8174324883ac35a94d8e607d85e22c1/features/json.feature#L9) (yes, the app generates JSON underneath, all the fun stuff happens client-side). You may not really care, but you won't be able to get Travis to automatically deploy to Heroku with a failing test. The (terrible, but easy) solution is to copy-actual-to-expected (or delete that line) and just move along  
 
 ## Config
 
