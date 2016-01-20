@@ -2,7 +2,11 @@
 title: WTF Is My Generic Thing?
 github: pikesley/wtfismygenericthing
 ---
-Mostly an excuse for me to learn JavaScript TBH. See it in action [here](https://wtfismyblockchainstrategy.herokuapp.com/)
+Mostly an excuse for me to learn JavaScript TBH. See it in action:
+
+* [WTF is my Blockchain Strategy](https://wtfismyblockchainstrategy.herokuapp.com/)
+* [WTF is my Open Data Strategy](https://wtfismyopendatastrategy.herokuapp.com/)
+* [WTF is my BBC The Big Questions Topic](https://wtfismybbctbqtopic.herokuapp.com/)
 
 ## How to use it
 

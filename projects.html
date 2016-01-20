@@ -14,8 +14,8 @@ layout: narrow
     </a>
   </dt>
   {% if project.description %}
-    <dd>
-      {{ project.description }}
+    <dd class='project-description'>
+      {{ project.description | markdownify }}
     </dd>
   {% endif %}
 {% endfor %}
