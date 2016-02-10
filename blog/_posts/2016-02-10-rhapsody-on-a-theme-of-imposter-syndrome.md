@@ -24,5 +24,5 @@ It occurs to me, as I draw to a close, that this may be little more than Variati
 
 ---
 
-1. <a name="1"></a> The same thing sometimes happens when I'm using vi, come to think of it
-2. <a href="2"></a> It's amazing what your brain comes up with when you're woken up at 05:15 by hypoglycaemia and can't get back to sleep
+1. <a name="1"></a> _The same thing sometimes happens when I'm using vi, come to think of it_
+2. <a href="2"></a> _It's amazing what your brain comes up with when you're woken up at 05:15 by hypoglycaemia and can't get back to sleep_
