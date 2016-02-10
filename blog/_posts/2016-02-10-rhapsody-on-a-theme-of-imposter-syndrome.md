@@ -10,9 +10,9 @@ A small digression suggests itself at this point: there's a qualitative differen
 
 I recently found out about a thing called [The Zone Of Proximal Development](https://en.wikipedia.org/wiki/Zone_of_proximal_development). Here's how it goes down, at least for me:
 
-1. In the beginning, I cannot do the thing, and it may appear kind of intimidating: _I've just heard a [Bernard Purdie](https://www.youtube.com/watch?v=E9E0WxLbqVA&list=PLuPLM2FI60-OIgFTc9YCrGgH5XWGT6znV) lick I've not heard before, I wonder how he's doing that_
-1. Then I start to learn how to do the thing: _Let's see if there's a YouTube video of Purdie playing this, or even better, a video of somebody breaking it down into digestible chunks_
-1. Then I nail the thing (or not, after all Purdie's technique is definitely better than mine): _I have enough of a handle on this that I'm able to throw in some variations. I wonder if [the band](http://rawfunkmaharishi.uk/) can use it_
+1. In the beginning, I cannot do The Thing, and it may appear kind of intimidating: _I've just heard a [Bernard Purdie](https://www.youtube.com/watch?v=E9E0WxLbqVA&list=PLuPLM2FI60-OIgFTc9YCrGgH5XWGT6znV) lick I've not heard before, I wonder how he's doing that_
+1. Then I start to learn how to do The Thing: _Let's see if there's a YouTube video of Purdie playing this, or even better, a video of somebody breaking it down into digestible chunks_
+1. Then I nail The Thing (or not, after all Purdie's technique is definitely better than mine): _I have enough of a handle on this that I'm able to throw in some variations. I wonder if [the band](http://rawfunkmaharishi.uk/) can use it_
 
 By the time I've reached Stage 3 and I'm deep inside that purple circle at the centre, my perspective has changed substantially: _Sam Who Could Not Do The Thing_ is an unimaginable concept. And if I can do The Thing with such aplomb, then surely everybody else can too - in fact, The Thing is Easy, and attempting to explain it would be pointless. I'm pretty sure this is why I have no patience when I'm trying to teach anybody anything.
 
