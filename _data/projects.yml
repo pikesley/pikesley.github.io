@@ -42,14 +42,14 @@
   github: badges/badgerbadgerbadger
   description: Generate Github project badges like a boss
 
-- title: Pancreas API
-  url: http://pancreas-api.herokuapp.com/
-  description: Just because my pancreas is broken, doesn't mean it can't have a RESTful API
+#- title: Pancreas API
+#  url: http://pancreas-api.herokuapp.com/
+#  description: Just because my pancreas is broken, doesn't mean it can't have a RESTful API
 
-- title: Diabetes Dashboard
-  url: /projects/diabetes-dashboard
-  github: pikesley/diabetes-dashboard
-  description: Dashing dashboard fed by the Pancreas API
+#- title: Diabetes Dashboard
+#  url: /projects/diabetes-dashboard
+#  github: pikesley/diabetes-dashboard
+#  description: Dashing dashboard fed by the Pancreas API
 
 - title: Uncle Clive
   url: http://uncleclive.herokuapp.com/

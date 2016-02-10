@@ -6,5 +6,8 @@
   path:        /projects/
   fontawesome: fa-code
 
+- title:       Blog
+  path:        /blog/
+
 - title:       CV
   path:        /cv/
