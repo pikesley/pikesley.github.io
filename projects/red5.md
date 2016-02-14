@@ -13,11 +13,11 @@ or just
 
     gem install red5
 
-##API
+## API
 
 I've followed the [Star Wars API](http://swapi.co/documentation#intro) as closely as I can. It's probably best illustrated with some examples from the [specs](https://github.com/pikesley/red5/tree/master/spec):
 
-###Get a thing
+### Get a thing
 
     it 'finds a particular film', :vcr do
       film = Films.find 1
@@ -25,7 +25,7 @@ I've followed the [Star Wars API](http://swapi.co/documentation#intro) as closel
       expect(film['episode_id']).to eq 4
     end
 
-###Get everything
+### Get everything
 
     it 'finds ALL THE PEOPLE', :vcr do
       everybody = People.all
@@ -33,16 +33,16 @@ I've followed the [Star Wars API](http://swapi.co/documentation#intro) as closel
       expect(everybody[0].class).to eq People
     end
 
-###Fetch the thing linked to by an attribute
+### Fetch the thing linked to by an attribute
 
     it 'fetches the species for a person', :vcr do
       person = People.find 15 # Greedo
       expect(person.fetch_species[0]['name']).to eq 'Rodian'
     end
 
-##Exceptions
+## Exceptions
 
-###Raise an exception on a 404
+### Raise an exception on a 404
 
     it 'raises an exception on a non-existent thing', :vcr do
       expect{ Starships.find 999 }.to raise_exception do |exception|
@@ -51,7 +51,7 @@ I've followed the [Star Wars API](http://swapi.co/documentation#intro) as closel
       end
     end
 
-###Raise an exception on a bogus lookup
+### Raise an exception on a bogus lookup
 
     it 'raises an exception on a bogus lookup', :vcr do
       person = People.find 19
@@ -61,6 +61,6 @@ I've followed the [Star Wars API](http://swapi.co/documentation#intro) as closel
       end
     end
 
-##Further work
+## Further work
 
 This seems to cover the basics, what else should it do?

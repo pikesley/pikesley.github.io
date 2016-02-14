@@ -6,19 +6,19 @@ My band has music on SoundCloud, photos on Flickr, and videos on Vimeo, and we w
 
 But this is dumb. It's 2015 and everything has an API, so let's build a robot to do this stuff properly!
 
-##The great metadata shift
+## The great metadata shift
 
 Up until now, the Hand-Crafted YAML (which sounds like a thing you may be able to buy at Boxpark) approach has allowed me to be a bit lax with the metadata for our media - some of it's been stored on the various services, some purely in my YAML. In order to make this robot universal, I've had to fill in all the metadata at the places where the files live, which feels like the Right Thing anyway.
 
-###Moving the hacks upstream
+### Moving the hacks upstream
 
 Moving the metadata is not 100% foolproof, however: for example, we have photos on [our Flickr account](https://www.flickr.com/photos/rawfunkmaharishi/) which were not taken by us, but by our friend [Kim](http://www.kimberlycabbott.com/). But the Flickr API has no way of knowing this, so I've added a tag to those pictures which looks like `photographer:kim` and then I'm looking for and extracting that in this gem. Similarly, for the SoundCloud music, I'd like to tag them with a recording location (and now an engineer's name) but this is not supported, so I'm nailing those into the _Description_ field as something YAML-ish.
 
 Am I going to regret these decisions? Almost certainly.
 
-##Using it
+## Using it
 
-###Installation
+### Installation
 
     gem install purdie
 
@@ -30,7 +30,7 @@ or
     rake
     rake install
 
-###Configuration
+### Configuration
 
 You need to create a `_sources` directory in your Jekyll project, containing files with one-URL-per-line, like this:
 
@@ -41,7 +41,7 @@ It also resolves sets/albums on all of the supported services, so this kind of t
 
     https://www.flickr.com/photos/pikesley/sets/72157648589429938/
 
-####Notes about `_sources`:
+#### Notes about `_sources`:
 
 * Purdie maps each input file onto an output file, replacing any extension with _.yaml_, something like:
   * `_sources/flickr.csv` -> `_data/flickr.yaml`
@@ -76,7 +76,7 @@ And then you can run
 
 ready for Jekyll to consume.
 
-###Customisation
+### Customisation
 
 You can supply your own `_config/purdie.yaml` file to specify a few things:
 
@@ -94,11 +94,11 @@ You can supply your own `_config/purdie.yaml` file to specify a few things:
 
 (see [this](https://github.com/rawfunkmaharishi/purdie/blob/master/_config/defaults.yaml) for some other things you can tweak)
 
-###Caveats
+### Caveats
 
 Tread carefully for now, because my metadata hacks aren't fully documented, and I may have inadvertently nailed-in some Raw Funk Maharishi-specific stuff (although I've tried hard not to).
 
-##What next?
+## What next?
 
 There's no reason I couldn't support other services. There's some introspection magic at the heart of all of this which means that as long as each service is represented by a class that:
 
@@ -114,6 +114,6 @@ then this should all Just Work. There's definitely a blog post in this, because 
 
 And of course, known issues are [here](https://github.com/rawfunkmaharishi/purdie/issues).
 
-##Why Purdie?
+## Why Purdie?
 
 Because Bernard Purdie is [even more amazing than Ruby introspection](https://www.youtube.com/watch?v=E9E0WxLbqVA&list=PLuPLM2FI60-OIgFTc9YCrGgH5XWGT6znV&index=6).

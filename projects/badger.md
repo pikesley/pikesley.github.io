@@ -4,7 +4,7 @@ github: badges/badgerbadgerbadger
 ---
 Because I grow weary of copy-n-pasting the badge URLs into the README of every project, and the [img.shields.io](http://img.shields.io) API now supports all of the services I use
 
-##Usage
+## Usage
 
 Install it
 
@@ -34,7 +34,7 @@ If you're on a Mac, pipe the output into `pbcopy` to add the stuff directly to y
 
     badger badge | pbcopy
 
-##Help me make it better
+## Help me make it better
 
     git clone https://github.com/pikesley/badger
     cd badger
