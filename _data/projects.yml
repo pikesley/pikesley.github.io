@@ -1,3 +1,13 @@
+- title: Correction Dose
+  url: /projects/correctiondose
+  github: pikesley/correctiondose
+  description: Rails app to track my health metrics
+
+- title: Skellington
+  url: /projects/skellington
+  github: pikesley/skellington
+  description: Generate a skeleton for your Sinatra app
+
 - title: WTF Is My Generic Thing?
   url: /projects/wtfismygenericthing
   github: pikesley/wtfismygenericthing
@@ -13,19 +23,9 @@
   github: pikesley/replacer_bot
   description: Make your own annoying Twitter bot
 
-- title: Skellington
-  url: /projects/skellington
-  github: pikesley/skellington
-  description: Generate a skeleton for your Sinatra app
-
 - title: Raw Funk Maharishi
   url: http://rawfunkmaharishi.uk/blog/
   description: Blog about building a Jekyll site for my band
-
-- title: Red 5
-  url: /projects/red5
-  github: pikesley/red5
-  description: Ruby bindings for the <a href='http://swapi.co'>Star Wars API</a>
 
 - title: Ultron
   url: /projects/ultron
@@ -36,6 +36,11 @@
   url: /projects/marvel-explorer
   github: marvelexplorer/marvel_explorer
   description: Using the <a href='/projects/ultron'>Ultron gem</a> to wander aimlessly from character to character through the Marvel Comics data
+
+- title: Red 5
+  url: /projects/red5
+  github: pikesley/red5
+  description: Ruby bindings for the <a href='http://swapi.co'>Star Wars API</a>
 
 - title: Badger
   url: /projects/badger
