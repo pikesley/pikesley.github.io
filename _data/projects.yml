@@ -27,6 +27,11 @@
   url: http://rawfunkmaharishi.uk/blog/
   description: Blog about building a Jekyll site for my band
 
+- title: SVG Bumbling
+  url: http://svg-bumbling.github.io/
+  github: https://github.com/svg-bumbling/svg-bumbling.github.io
+  description: Experiments with SVGs and JavaScript
+
 - title: Ultron
   url: /projects/ultron
   github: pikesley/ultron
