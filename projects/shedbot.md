@@ -6,7 +6,16 @@ RESTful API for the Internet of Sheds. You'll also want the [Arduino stuff](http
 
 ![Screenshot](http://i.imgur.com/sZFuOSD.png)
 
-# Configuration
+# Running it
+
+    git clone https://github.com/pikesley/shedbot/
+    cd shedbot
+    bundle
+    bundle exec puma
+
+Then go to [localhost:9292](http://localhost:9292)
+
+## Configuration
 
 There is a _config/config.yml_ file (which should be overriden at _~/.shedbot/config.yml_) which looks like
 
@@ -30,13 +39,15 @@ This is so, so Alpha, but:
 
 with a JSON payload like
 
-    {state: on}
+    {
+      state: on
+    }
 
-will (attempt to) set the light identified by _:light_ to _on_
+will (attempt to) set the light identified by _:light_ to _on_. This is the method called by the controls in the HTML front-page
 
 ## Reading state
 
-    PATCH /lights/:light
+    GET /lights/:light
 
 will return a JSON object describing the state of _:light_, thus:
 
