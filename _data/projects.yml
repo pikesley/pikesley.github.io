@@ -1,3 +1,8 @@
+- title: Shedbot
+  url: /projects/shedbot
+  github: pikesley/shedbot
+  description: RESTful API for the Internet of Sheds
+
 - title: Correction Dose
   url: /projects/correctiondose
   github: pikesley/correctiondose
