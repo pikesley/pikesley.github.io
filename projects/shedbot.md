@@ -18,11 +18,11 @@ There is a _config/config.yml_ file (which should be overriden at _~/.shedbot/co
       striplight:
         pin: 6
 
-This identifies which light is associated with which pin. Also, crucially, it specifies if this is running on a real Raspberry Pi, where [PiPiper](https://github.com/jwhitehorn/pi_piper) will work properly - if this is set to _false_ then [fake pins](https://github.com/pikesley/shedbot/blob/96b6add4c5bf6dab20293243d32b64fdfab8337f/lib/shedbot/relay.rb#L43-L55) are used for testing
+This associates a light with a (logical) pin. Also, crucially, it specifies if this is running on a real Raspberry Pi, where [PiPiper](https://github.com/jwhitehorn/pi_piper) will work properly - if this is set to _false_ then [fake pins](https://github.com/pikesley/shedbot/blob/96b6add4c5bf6dab20293243d32b64fdfab8337f/lib/shedbot/relay.rb#L43-L55) are used for testing
 
 # API
 
-This is so, so Alpha
+This is so, so Alpha, but:
 
 ## Switching lights
 
