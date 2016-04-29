@@ -59,7 +59,7 @@ will return a JSON object describing the state of _:light_, thus:
 
 # Next steps
 
-Because this is interacting with the Real World of Physical Things, we should assume that setting `state=on` _actually causes anything to happen_. This all needs to happen asynchronously (via a _Sheduler_, thanks [@floppy](https://github.com/floppy)) and then the actual status can be reported back on a different endpoint
+Because this is interacting with the Real World of Physical Things, we should not assume that setting `state=on` _actually causes anything to happen_. This all needs to happen asynchronously (via a _Sheduler_, thanks [@floppy](https://github.com/floppy)) and then the actual status can be reported back on a different endpoint
 
 And it's important that this is all implemented correctly or the whole thing is rendered ludicrous
 
