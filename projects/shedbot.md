@@ -29,7 +29,7 @@ This associates a light with a (logical) pin
 
 ### Auto Pi Detection
 
-If `RUBY_PLATFORM` matches `/arm-linux/` then the assumption is made that this is running on a real Raspberry Pi, where [PiPiper](https://github.com/jwhitehorn/pi_piper) will work properly - if some other OS is identified then [fake pins](https://github.com/pikesley/shedbot/blob/96b6add4c5bf6dab20293243d32b64fdfab8337f/lib/shedbot/relay.rb#L43-L55) are used for testing
+If `RUBY_PLATFORM` matches `/arm.*-linux/` then the assumption is made that this is running on a real Raspberry Pi, where [PiPiper](https://github.com/jwhitehorn/pi_piper) will work properly - if some other OS is identified then [fake pins](https://github.com/pikesley/shedbot/blob/96b6add4c5bf6dab20293243d32b64fdfab8337f/lib/shedbot/relay.rb#L43-L55) are used for testing
 
 # API
 
