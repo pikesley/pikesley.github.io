@@ -63,4 +63,9 @@ Because this is interacting with the Real World of Physical Things, we should no
 
 And it's important that this is all implemented correctly or the whole thing is rendered ludicrous
 
+# I gave a talk about this
+
+I gave a lightning talk on this nonsense at [EMF Camp 2016](https://www.emfcamp.org/): [slides](http://www.pikesley.org/shedbot/slides), [script](https://github.com/pikesley/shedbot/blob/gh-pages/words.md),
+[video](https://www.youtube.com/watch?v=Dyg5tzi-H4s&feature=youtu.be&t=34m42s)
+
 ![Computers](http://i.imgur.com/HxKmjss.jpg)		
