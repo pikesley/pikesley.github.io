@@ -1,3 +1,8 @@
+- title: 1982
+  url: /projects/1982
+  github: pikesley/nineteen-eighty-two
+  description: Sinclair Spectrum font as a Rubygem
+
 - title: Shedbot
   url: /projects/shedbot
   github: pikesley/shedbot
