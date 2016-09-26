@@ -31,6 +31,8 @@ or just
 
 ## Usage
 
+### Sinatra
+
     $ skellington generate naming-things-is-hard --licensor 'Beyoncé'
     Generating <lots of stuff>... done
 
@@ -59,7 +61,7 @@ or just
 
         skellington postinstall
 
-or
+### Jekyll
 
     $ gem install skellington
     $ skellington generate hello-from-the-magic-tavern --framework jekyll
