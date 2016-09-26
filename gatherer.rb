@@ -5,7 +5,7 @@ FileUtils.rm_rf 'scratch'
 FileUtils.mkdir_p 'scratch'
 projects = YAML.load_file('_data/projects.yml').select { |p| p['url'][0] == '/' }
 
-projects.each do |project|
+projects.reverse.each do |project|
   gh = "https://github.com/#{project['github']}"
   path = "scratch/#{project['github'].split('/')[-1]}"
   g = Git.clone gh, path
