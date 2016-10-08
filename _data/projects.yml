@@ -1,3 +1,8 @@
+- title: Wen
+  url: /projects/wen
+  github: pikesley/wen
+  description: Raspberry Pi-powered Neopixel clock
+
 - title: 1982
   url: /projects/1982
   github: pikesley/nineteen-eighty-two
