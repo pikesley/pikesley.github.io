@@ -2,7 +2,7 @@
 title: Wen
 github: pikesley/wen
 ---
-_A RESTful clock because why not?_
+_Building a clock out of Maple, Pi and Ruby_
 
 This story begins with a man named [Frank Howarth](https://www.youtube.com/user/urbanTrash). I've spent a _lot_ of time over the last few years, obsessively watching woodturning videos by Frank and others, and then earlier this year I went on a [woodturning course](http://www.axminsterskillcentre.co.uk/course/Beginners-Woodturning-2-days-1.htm) (with my friend [Chris](https://twitter.com/elsmorian)), where I [used a lathe for the first time](https://www.flickr.com/photos/pikesley/albums/72157665435637176). I came back sufficiently enthused that my girlfriend bought me [a mini-lathe](http://www.chronos.ltd.uk/acatalog/copy_of_Lathes___Accessories.html) for my birthday, and I've spent most weekends since then turning nightlight holders and other things in the garden.
 
@@ -44,4 +44,59 @@ The code is, of course [on Github](https://github.com/pikesley/wen). To get it u
     
 This sets up _everything_, including the [systemd](https://wiki.debian.org/systemd) startup scripts, and a shell alias called `rewen` which checks out the latest code from Github and restarts the service.
 
+### Internals
+
+Getting a computer to tell you the time is very easy: in [Ruby](https://www.ruby-lang.org/en/), we just do `DateTime.now` and there it is. Translating that into lighting the correct lights on a string of LEDs is slightly more challenging, but not much, and I had a crude script working in about an hour. But I quickly fell into the over-engineering rabbit hole, so here's what I have now:
+
+#### Two rings, with two hands
+
+The inner, hour ring has 12 pixels, which is the correct number of pixels for an hour ring to have, and conceptually, _Wen_ thinks about it as having a _hand_ (the single pixel which indicates the hour) and a _face_, the other 11 pixels. The outer minutes ring, however, has 24 pixels, which is a little trickier to deal with: a single pixel accounts for 2.5 minutes of actual time, and lighting just that one light to indicate the minutes didn't really work very well. My compromise is to attempt to be a bit vague and also light the pixels on either side, (which isn't entirely satisfactory wither), so for this ring, the _hand_ is 3 pixels combined, with a _face_ of 21.
+
+#### _Everything_ gets a RESTful API eventually
+
+Why the hell does a clock need a RESTful API? Well, here's how I justified it to myself: my first script ran a `while true` loop, updating the LEDs every 10 seconds, which worked OK, but then I started thinking about how I might be able to get the clock to show patterns and so on, and because of the way my mind works now, I immediately reached for [Sinatra](http://www.sinatrarb.com/) and started wrapping some HTTP around it.
+
+So it now has two main endpoints:
+
+##### `/colours`
+
+If you hit this with a _GET_ and an _Accept: text/html_ header (i.e. with a browser), it returns a colour picker
+
+![colour picker](http://i.imgur.com/kmNWpPJ.png)
+
+(which I lashed together from [Spectrum](https://bgrins.github.io/spectrum/) and some [poorly-written d3](https://github.com/pikesley/wen/blob/master/public/js/wen.js))
+
+It also  _Accepts_ a PATCH with some JSON like
+
+    { 
+      hours: {
+        hands: 
+          [0, 255, 0] 
+        } 
+      }    
+    }
+    
+to change the colour of the specified clock element (this is what the jQuery does behind the picker). There's also a sub-endpoint
+
+###### `/colours/:wheel/:layer`
+
+which, with a _GET_, will return the current colour of the specified element.
+
+##### `/display`
+
+If you hit _this_ with a browser, it will return a list of available display modes
+
+![display modes](http://imgur.com/5OIm56s.png)
+
+It also  _Accepts_ a PATCH with some JSON like
+
+    {
+      mode: 'shuffle'
+    }
+    
+(which is what happens behind the buttons). All of these _PATCH_ requests then get pushed onto the [Sidekiq](http://sidekiq.org/) where th...
+
+#### Wait, there's a queue in here too?
+
+How else would you do this? The [ClockWorker](https://github.com/pikesley/wen/blob/master/lib/wen/clock_worker.rb) pulls the jobs off the queue and throws them at the [Clock](https://github.com/pikesley/wen/blob/master/lib/wen/clock/clock.rb) class, which passes them to the [Neopixels](https://github.com/pikesley/wen/blob/master/lib/wen/clock/neopixels.rb) singleton, which talks to PixelPi, which actually makes the lights come on. I'm actually genuinely amazed at how much bullshit a £4, 65x23mm computer can handle
 
