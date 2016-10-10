@@ -41,7 +41,7 @@ The code is all [on Github](https://github.com/pikesley/wen). To get it up and r
     echo "alias rewen='cd ~/wen && git pull && bundle && sudo systemctl restart wen.target'" >> ~/.bash_profile
 
     sudo reboot
-    
+
 This sets up _everything_, including the [systemd](https://wiki.debian.org/systemd) startup scripts. It also deletes nano, and gives you a shell alias called `rewen` which checks out the latest code from Github and restarts the service.
 
 ### Internals
@@ -66,18 +66,18 @@ If you hit this with a _GET_ and an _Accept: text/html_ header (i.e. with a brow
 
 ![colour picker](http://i.imgur.com/kmNWpPJ.png)
 
-(which I lashed together from [Spectrum](https://bgrins.github.io/spectrum/) and some [poorly-written d3](https://github.com/pikesley/wen/blob/master/public/js/wen.js))
+(which I lashed together with [Spectrum](https://bgrins.github.io/spectrum/) and some [poorly-written d3](https://github.com/pikesley/wen/blob/master/public/js/wen.js))
 
 It also  _Accepts_ a PATCH with some JSON like
 
-    { 
+    {
       hours: {
-        hands: 
-          [0, 255, 0] 
-        } 
+        hands:
+          [0, 255, 0]
+        }
       }    
     }
-    
+
 to change the colour of the specified clock element (this is what the jQuery does behind the picker). There's also a sub-endpoint
 
 ###### `/colours/:wheel/:layer`
@@ -95,12 +95,22 @@ It also  _Accepts_ a PATCH with some JSON like
     {
       mode: 'shuffle'
     }
-    
-(which is what happens behind the buttons). All of these _PATCH_ requests then get pushed onto the [Sidekiq](http://sidekiq.org/) queue for asynchro...
+
+(which is what happens behind the buttons).
+
+If it receives
+
+    {
+      mode: 'time'
+    }
+
+then it asks the clock to show the current time, and this is how the clock actually works: [this systemd config](https://github.com/pikesley/wen/blob/master/scripts/timekeeper.service) calls [this cURL script](https://github.com/pikesley/wen/blob/master/scripts/hit-clock.sh) which hits this URL every 10 seconds.
+
+All of these _PATCH_ requests then get pushed onto the [Sidekiq](http://sidekiq.org/) queue for asynchro...
 
 #### Wait, there's a queue in here too?
 
-How else would you do this? The [ClockWorker](https://github.com/pikesley/wen/blob/master/lib/wen/clock_worker.rb) pulls the jobs off the queue and throws them at the [Clock](https://github.com/pikesley/wen/blob/master/lib/wen/clock/clock.rb) class, which passes them to the [Neopixels](https://github.com/pikesley/wen/blob/master/lib/wen/clock/neopixels.rb) singleton, which talks to PixelPi, which actually makes the lights come on. I'm actually genuinely amazed at how much bullshit a 4 quid, 65x23mm computer can handle.
+How else would you do this? The [ClockWorker](https://github.com/pikesley/wen/blob/master/lib/wen/clock_worker.rb) pulls the jobs off the queue and throws them at the [Clock](https://github.com/pikesley/wen/blob/master/lib/wen/clock/clock.rb) class, which passes them to the [Neopixels](https://github.com/pikesley/wen/blob/master/lib/wen/clock/neopixels.rb) singleton, which talks to PixelPi, which then makes the lights come on. I'm actually genuinely amazed at how much bullshit a 4 quid, 65x23mm computer can handle.
 
 ## What else?
 
