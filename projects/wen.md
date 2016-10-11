@@ -27,7 +27,6 @@ It turns out you can chain the Neopixels together and then address them as one l
 The code is all [on Github](https://github.com/pikesley/wen). To get it up and running from a clean install of [NOOBS](https://www.raspberrypi.org/downloads/noobs/) 1.9 on a Pi Zero, the steps are:
 
     sudo apt-get update
-    sudo apt-get upgrade
     sudo dpkg --purge nano
     sudo apt-get install vim ruby2.1-dev redis-server
     sudo gem install bundle
@@ -50,7 +49,7 @@ Getting a computer to tell you the time is very easy: in [Ruby](https://www.ruby
 
 #### Two rings, with two hands
 
-The inner, _hour_ ring has 12 pixels, which is the correct number of pixels for an hour ring to have, and conceptually, _Wen_ thinks about it as having a _hand_ (the single pixel which indicates the hour) and a _face_, the other 11 pixels. The outer _minutes_ ring, however, has 24 pixels, which is a little trickier to deal with: a single pixel accounts for 2.5 minutes of actual time, and lighting just that one light to indicate the minutes didn't really work very well. My strategies for dealing with this are [explained below](#clock-modes). 
+The inner, _hour_ ring has 12 pixels, which is the correct number of pixels for an hour ring to have, and conceptually, _Wen_ thinks about it as having a _hand_ (the single pixel which indicates the hour) and a _face_, the other 11 pixels. The outer _minutes_ ring, however, has 24 pixels, which is a little trickier to deal with: a single pixel accounts for 2.5 minutes of actual time, and lighting just that one light to indicate the minutes didn't really work very well. My strategies for dealing with this are [explained below](#clock-modes).
 
 It should be noted that 60-pin Neopixels [do exist](https://www.adafruit.com/product/1768) but they're too big to mount on anything I'd be able to turn on my mini-lathe.
 
@@ -107,7 +106,7 @@ A **GET** with _Accept: application/json_ will return the current mode:
     {
       mode: "range"
     }
-    
+
 It also accepts a **POST** with some JSON:
 
     {
