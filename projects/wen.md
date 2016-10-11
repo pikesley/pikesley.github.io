@@ -42,7 +42,7 @@ The code is all [on Github](https://github.com/pikesley/wen). To get it up and r
 
     sudo reboot
 
-This sets up _everything_, including the [systemd](https://wiki.debian.org/systemd) startup scripts. It also deletes nano, and gives you a shell alias called `rewen` which checks out the latest code from Github and restarts the service.
+This sets up _everything_, including the [systemd](https://wiki.debian.org/systemd) startup scripts. It also deletes nano, installs the full version of vim, and gives you a shell alias called `rewen` which checks out the latest code from Github and restarts the service.
 
 ### Internals
 
@@ -50,7 +50,7 @@ Getting a computer to tell you the time is very easy: in [Ruby](https://www.ruby
 
 #### Two rings, with two hands
 
-The inner, _hour_ ring has 12 pixels, which is the correct number of pixels for an hour ring to have, and conceptually, _Wen_ thinks about it as having a _hand_ (the single pixel which indicates the hour) and a _face_, the other 11 pixels. The outer _minutes_ ring, however, has 24 pixels, which is a little trickier to deal with: a single pixel accounts for 2.5 minutes of actual time, and lighting just that one light to indicate the minutes didn't really work very well. My compromise is to attempt to be a bit vague and also light the pixels on each side of the main one, (which isn't entirely satisfactory either), so for this ring, the _hand_ is 3 pixels combined, with a _face_ of 21.
+The inner, _hour_ ring has 12 pixels, which is the correct number of pixels for an hour ring to have, and conceptually, _Wen_ thinks about it as having a _hand_ (the single pixel which indicates the hour) and a _face_, the other 11 pixels. The outer _minutes_ ring, however, has 24 pixels, which is a little trickier to deal with: a single pixel accounts for 2.5 minutes of actual time, and lighting just that one light to indicate the minutes didn't really work very well. My strategies for dealing with this are [explained below](#clock-modes). 
 
 It should be noted that 60-pin Neopixels [do exist](https://www.adafruit.com/product/1768) but they're too big to mount on anything I'd be able to turn on my mini-lathe.
 
@@ -58,17 +58,17 @@ It should be noted that 60-pin Neopixels [do exist](https://www.adafruit.com/pro
 
 Why the hell does a clock need a RESTful API? Well, here's how I justified it to myself: my first script ran a `while true` loop, updating the LEDs every 10 seconds, which worked OK, but then I started thinking about how I might be able to get the clock to show patterns and so on, and because of the way my mind works now, I reached for [Sinatra](http://www.sinatrarb.com/) (via my [Skellington](http://sam.pikesley.org/projects/skellington/) gem) and started wrapping some HTTP around everything.
 
-So it now has two main endpoints:
+So it now has four main endpoints:
 
 ##### `/colours`
 
-If you hit this with a _GET_ and an _Accept: text/html_ header (i.e. with a browser), it returns a colour picker
+If you hit this with a **GET** and an _Accept: text/html_ header (i.e. with a browser), it returns a colour picker
 
-![colour picker](http://i.imgur.com/kmNWpPJ.png)
+![colour picker](http://i.imgur.com/Jkn1QXG.png)
 
-(which I lashed together with [Spectrum](https://bgrins.github.io/spectrum/) and some [poorly-written d3](https://github.com/pikesley/wen/blob/master/public/js/wen.js))
+(which I lashed together with [Spectrum](https://bgrins.github.io/spectrum/) and some [poorly-written](https://github.com/pikesley/wen/blob/master/views/colours.erb) [d3](https://github.com/pikesley/wen/blob/master/public/js/wen.js))
 
-It also  _Accepts_ a PATCH with some JSON like
+It also  _Accepts_ a **POST** with some JSON like
 
     {
       hours: {
@@ -82,31 +82,57 @@ to change the colour of the specified clock element (this is what the jQuery doe
 
 ###### `/colours/:wheel/:layer`
 
-which, with a _GET_, will return the current colour of the specified element.
+which you can **GET** to return the current colour of the specified element:
 
-##### `/display`
+    {
+      colour: [127, 0, 255]
+    }
 
-If you hit _this_ with a browser, it will return a list of available display modes
+(this is used for populating the picker)
 
-![display modes](http://imgur.com/5OIm56s.png)
+##### <a name='clock-modes'></a>`/modes`
 
-It also  _Accepts_ a PATCH with some JSON like
+This with a **GET** and _Accept: text/html_ returns the clock-mode picker:
+
+![clock modes](http://i.imgur.com/AQHkKkr.png)
+
+The available modes are:
+
+* `range`: the minute lights accumulate around the clock throughout the hour, then reset to zero
+* `vague`: the lights on either side of the principal pin are illuminated
+* `strict`: only the principal pin is illuminated
+
+A **GET** with _Accept: application/json_ will return the current mode:
+
+    {
+      mode: "range"
+    }
+    
+It also accepts a **POST** with some JSON:
+
+    {
+      mode: "vague"
+    }
+
+to set the mode (which is what the jQuery does, behind the buttons)        
+
+##### `/tricks`
+
+If you hit _this_ with a browser, it will return a list of available trick modes:
+
+![trick modes](http://i.imgur.com/msNvBDI.png)
+
+It also  _Accepts_ a **POST** with some JSON like
 
     {
       mode: 'shuffle'
     }
 
-(which is what happens behind the buttons).
+##### `/time`
 
-If it receives
+A (empty) **POST** to this causes the clock to show the current time, and this is how the clock actually works: [this systemd config](https://github.com/pikesley/wen/blob/master/scripts/timekeeper.service) calls [this cURL script](https://github.com/pikesley/wen/blob/master/scripts/hit-clock.sh) which hits this URL every 10 seconds.
 
-    {
-      mode: 'time'
-    }
-
-then it asks the clock to show the current time, and this is how the clock actually works: [this systemd config](https://github.com/pikesley/wen/blob/master/scripts/timekeeper.service) calls [this cURL script](https://github.com/pikesley/wen/blob/master/scripts/hit-clock.sh) which hits this URL every 10 seconds.
-
-All of these _PATCH_ requests then get pushed onto the [Sidekiq](http://sidekiq.org/) queue for asynchro...
+All of these **POST** requests then get pushed onto the [Sidekiq](http://sidekiq.org/) queue for asynchro...
 
 #### Wait, there's a queue in here too?
 
@@ -114,7 +140,7 @@ How else would you do this? The [ClockWorker](https://github.com/pikesley/wen/bl
 
 ## What else?
 
-This is definitely a prototype: I can certainly turn a better clock body, and hopefully I can come up with a more elegant solution to the 24-pixels-into-60-minutes problem.
+This is definitely a prototype: I can certainly turn a better clock body, and there's always room to improve code...
 
 ## There's a movie, too
 
