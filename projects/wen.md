@@ -24,11 +24,14 @@ It turns out you can chain the Neopixels together and then address them as one l
 
 ### Installation
 
-The code is all [on Github](https://github.com/pikesley/wen). To get it up and running from a clean install of [NOOBS](https://www.raspberrypi.org/downloads/noobs/) 1.9 on a Pi Zero, the steps are:
+The code is all [on Github](https://github.com/pikesley/wen). To get it up and running from a clean install of [NOOBS](https://www.raspberrypi.org/downloads/noobs/) 1.9 [Raspbian Jessie Lite](https://www.raspberrypi.org/downloads/raspbian/) on a Pi Zero, the steps are:
 
     sudo apt-get update
+    sudo apt-get upgrade
     sudo dpkg --purge nano
-    sudo apt-get install vim ruby2.1-dev redis-server
+    sudo apt-get install vim git ruby2.1 ruby2.1-dev redis-server
+    sudo update-alternatives --install /usr/bin/ruby ruby `which ruby2.1` 1
+    sudo update-alternatives --install /usr/bin/gem gem `which gem2.1` 1
     sudo gem install bundle
     git clone https://github.com/pikesley/wen.git
     cd wen/
@@ -38,6 +41,7 @@ The code is all [on Github](https://github.com/pikesley/wen). To get it up and r
     sudo cp scripts/timekeeper.service /etc/systemd/system/
     sudo systemctl enable timekeeper.service
     echo "alias rewen='cd ~/wen && git pull && bundle && sudo systemctl restart wen.target'" >> ~/.bash_profile
+    echo "alias console='cd ~/wen && sudo bundle exec irb -r ./lib/wen'" >> ~/.bash_profile
 
     sudo reboot
 
@@ -71,7 +75,7 @@ It also  _Accepts_ a **POST** with some JSON like
 
     {
       hours: {
-        hands:
+        hand:
           [0, 255, 0]
         }
       }    

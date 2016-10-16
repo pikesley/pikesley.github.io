@@ -3,13 +3,13 @@
 - Ruby
 - Sinatra|http://sinatrarb.com/
 - TDD / BDD
-- Rspec
+- RSpec
 - Cucumber
 - bash
 - HTTP
 - REST
 - Jekyll|http://jekyllrb.com/
-- Git / Github
+- Git / GitHub
 - Heroku
 - Vagrant|https://vagrantup.com/
 - Jenkins
@@ -26,4 +26,4 @@
 - JavaScript
 - jQuery
 - Jasmine|http://jasmine.github.io/2.0/introduction.html
-- SVGs
+- D3
