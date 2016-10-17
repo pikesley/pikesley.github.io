@@ -40,12 +40,19 @@ The code is all [on Github](https://github.com/pikesley/wen). To get it up and r
     sudo systemctl enable wen.target
     sudo cp scripts/timekeeper.service /etc/systemd/system/
     sudo systemctl enable timekeeper.service
+    sudo timedatectl set-timezone Europe/London
     echo "alias rewen='cd ~/wen && git pull && bundle && sudo systemctl restart wen.target'" >> ~/.bash_profile
     echo "alias console='cd ~/wen && sudo bundle exec irb -r ./lib/wen'" >> ~/.bash_profile
 
     sudo reboot
 
 This sets up _everything_, including the [systemd](https://wiki.debian.org/systemd) startup scripts. It also deletes nano, installs the full version of vim, and gives you a shell alias called `rewen` which checks out the latest code from Github and restarts the service.
+
+Optionally, you can get the clock to keep up-to-date with the latest version of the software with
+
+    sudo cp scripts/crontab /var/spool/cron/crontabs/pi
+    sudo chown pi:crontab /var/spool/cron/crontabs/pi
+    sudo chmod 600 /var/spool/cron/crontabs/pi
 
 ### Internals
 
