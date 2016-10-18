@@ -14,9 +14,9 @@
         </h3>
       </dt>
       <dd class='employer'>
-        <p>
+        <h4>
           {{ employer.headline }}
-        </p>
+        </h4>
 
         {% if employer.profile %}
           {% capture param_name %}{{ employer.name | downcase | replace: ' ', '-'}}{% endcapture %}
