@@ -33,6 +33,8 @@ To play with it locally, you'll need to run 4 different processes in a terminal 
 * `bundle exec compass clean && bundle exec compass watch`
 * `bundle exec rackup`
 
+and it should be running at [http://localhost:9292](http://localhost:9292)
+
 ### Internals
 
 Getting a computer to tell you the time is very easy: in [Ruby](https://www.ruby-lang.org/en/), we just do `DateTime.now` and there it is. Translating that into lighting the correct lights on a string of LEDs is slightly more challenging, but not much, and I had a crude script working in about an hour. But I quickly fell into the over-engineering rabbit hole, so here's what I have now:
