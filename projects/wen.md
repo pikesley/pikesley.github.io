@@ -24,37 +24,14 @@ It turns out you can chain the Neopixels together and then address them as one l
 
 ### Installation
 
-The code is all [on Github](https://github.com/pikesley/wen). To get it up and running from a clean install of [NOOBS](https://www.raspberrypi.org/downloads/noobs/) 1.9 [Raspbian Jessie Lite](https://www.raspberrypi.org/downloads/raspbian/) on a Pi Zero, the steps are:
+The code is all [on Github](https://github.com/pikesley/wen). To get it up and running from a clean install of [NOOBS](https://www.raspberrypi.org/downloads/noobs/) 1.9 [Raspbian Jessie Lite](https://www.raspberrypi.org/downloads/raspbian/) on a Pi Zero, you should look at [my Chef cookbook](https://github.com/pikesley/cookbooks/tree/gh-pages/wen-deploy)
 
-    sudo apt-get update
-    sudo apt-get upgrade
-    sudo dpkg --purge nano
-    sudo apt-get install vim git ruby2.1 ruby2.1-dev redis-server nginx
-    sudo update-alternatives --install /usr/bin/ruby ruby `which ruby2.1` 1
-    sudo update-alternatives --install /usr/bin/gem gem `which gem2.1` 1
-    sudo gem install bundle
-    git clone https://github.com/pikesley/wen.git
-    cd wen/
-    bundle
-    sudo bundle exec foreman export systemd -u pi -a wen /etc/systemd/system/
-    sudo systemctl enable wen.target
-    sudo cp scripts/timekeeper.service /etc/systemd/system/
-    sudo systemctl enable timekeeper.service
-    sudo rm /etc/nginx/sites-enabled/*
-    sudo cp scripts/vhost /etc/nginx/sites-enabled/wen
-    sudo timedatectl set-timezone Europe/London
-    echo "alias rewen='cd ~/wen && git pull && bundle && sudo systemctl restart wen.target'" >> ~/.bash_profile
-    echo "alias console='cd ~/wen && sudo bundle exec irb -r ./lib/wen'" >> ~/.bash_profile
+To play with it locally, you'll need to run 4 different processes in a terminal each:
 
-    sudo reboot
-
-This sets up _everything_, including the [systemd](https://wiki.debian.org/systemd) startup scripts. It also deletes nano, installs the full version of vim, and gives you a shell alias called `rewen` which checks out the latest code from Github and restarts the service.
-
-Optionally, you can get the clock to keep up-to-date with the latest version of the software with
-
-    sudo cp scripts/crontab /var/spool/cron/crontabs/pi
-    sudo chown pi:crontab /var/spool/cron/crontabs/pi
-    sudo chmod 600 /var/spool/cron/crontabs/pi
+* `redis-server`
+* `bundle exec sidekiq -r ./lib/wen.rb`
+* `bundle exec compass clean && bundle exec compass watch`
+* `bundle exec rackup`
 
 ### Internals
 
