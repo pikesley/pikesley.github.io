@@ -43,7 +43,7 @@ Getting a computer to tell you the time is very easy: in [Ruby](https://www.ruby
 
 The inner, _hour_ ring has 12 pixels, which is the correct number of pixels for an hour ring to have, and conceptually, _Wen_ thinks about it as having a _hand_ (the single pixel which indicates the hour) and a _face_, the other 11 pixels. The outer _minutes_ ring, however, has 24 pixels, which is a little trickier to deal with: a single pixel accounts for 2.5 minutes of actual time, and lighting just that one light to indicate the minutes didn't really work very well. My strategies for dealing with this are [explained below](#clock-modes).
 
-It should be noted that 60-pin Neopixels [do exist](https://www.adafruit.com/product/1768) but they're too big to mount on anything I'd be able to turn on my mini-lathe.
+It should be noted that 60-pin Neopixels [do exist](https://www.adafruit.com/product/1768) but they're too big to mount on anything I'd be able to turn on my mini-lathe. I might make one out of concrete, though...
 
 #### _Everything_ gets a RESTful API eventually
 
@@ -55,7 +55,7 @@ So it now has four main endpoints:
 
 If you hit this with a **GET** and an _Accept: text/html_ header (i.e. with a browser), it returns a colour picker
 
-![colour picker](http://i.imgur.com/Jkn1QXG.png)
+![colour picker](http://i.imgur.com/Y6AkBHS.png)
 
 (which I lashed together with [Spectrum](https://bgrins.github.io/spectrum/) and some [poorly-written](https://github.com/pikesley/wen/blob/master/views/colours.erb) [d3](https://github.com/pikesley/wen/blob/master/public/js/wen.js))
 
@@ -85,7 +85,7 @@ which you can **GET** to return the current colour of the specified element:
 
 This with a **GET** and _Accept: text/html_ returns the clock-mode picker:
 
-![clock modes](http://i.imgur.com/AQHkKkr.png)
+![clock modes](http://i.imgur.com/EJVF1pC.png)
 
 The available modes are:
 
@@ -111,7 +111,7 @@ to set the mode (which is what the jQuery does, behind the buttons)
 
 If you hit _this_ with a browser, it will return a list of available trick modes:
 
-![trick modes](http://i.imgur.com/msNvBDI.png)
+![trick modes](http://i.imgur.com/x7r6qxL.png)
 
 It also  _Accepts_ a **POST** with some JSON like
 
@@ -121,13 +121,13 @@ It also  _Accepts_ a **POST** with some JSON like
 
 ##### `/time`
 
-A (empty) **POST** to this causes the clock to show the current time, and this is how the clock actually works: [this systemd config](https://github.com/pikesley/wen/blob/master/scripts/timekeeper.service) calls [this cURL script](https://github.com/pikesley/wen/blob/master/scripts/hit-clock.sh) which hits this URL every 10 seconds.
+A (empty) **POST** to this causes the clock to show the current time, and this is how the clock actually works: [this systemd config](https://github.com/pikesley/cookbooks/blob/gh-pages/wen-deploy/templates/default/timekeeper.service.erbe) calls [this cURL script](https://github.com/pikesley/wen/blob/master/scripts/hit-clock.sh) which hits this URL every 10 seconds.
 
 All of these **POST** requests then get pushed onto the [Sidekiq](http://sidekiq.org/) queue for asynchro...
 
 #### Wait, there's a queue in here too?
 
-How else would you do this? The [ClockWorker](https://github.com/pikesley/wen/blob/master/lib/wen/clock_worker.rb) pulls the jobs off the queue and throws them at the [Clock](https://github.com/pikesley/wen/blob/master/lib/wen/clock/clock.rb) class, which passes them to the [Neopixels](https://github.com/pikesley/wen/blob/master/lib/wen/clock/neopixels.rb) singleton, which talks to PixelPi, which then makes the lights come on. I'm actually genuinely amazed at how much bullshit a 4 quid, 65x23mm computer can handle.
+How else would you do this? The [ClockWorker](https://github.com/pikesley/wen/blob/master/lib/wen/clock_worker.rb) pulls the jobs off the queue and throws them at the [Clock](https://github.com/pikesley/wen/blob/master/lib/wen/clock/clock.rb) class, which passes them to the [Neopixels](https://github.com/pikesley/wen/blob/master/lib/wen/clock/neopixels.rb) singleton, which talks to PixelPi, which does some PWM magic to make the lights come on. I'm actually genuinely amazed at how much bullshit a 4 quid, 15-square-cm computer can handle.
 
 ## What else?
 
@@ -135,4 +135,5 @@ This is definitely a prototype: I can certainly turn a better clock body, and th
 
 ## There's a movie, too
 
+It's a bit out of date now, but: 
 [![Wen, the Movie](http://i.imgur.com/GmuLpRC.png)](https://youtu.be/FGRnSwF10Dw)
