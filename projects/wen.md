@@ -24,7 +24,7 @@ It turns out you can chain the Neopixels together and then address them as one l
 
 ### Installation
 
-The code is all [on Github](https://github.com/pikesley/wen). To get it up and running from a clean install of [NOOBS](https://www.raspberrypi.org/downloads/noobs/) 1.9 [Raspbian Jessie Lite](https://www.raspberrypi.org/downloads/raspbian/) on a Pi Zero, you should look at [my Chef cookbook](https://github.com/pikesley/cookbooks/tree/gh-pages/wen-deploy)
+The code is all [on Github](https://github.com/pikesley/wen). To get it up and running from a clean install of [NOOBS](https://www.raspberrypi.org/downloads/noobs/) 1.9 [Raspbian Jessie Lite](https://www.raspberrypi.org/downloads/raspbian/) on a Pi Zero, you should look at [my Chef cookbook](http://sam.pikesley.org/cookbooks/)
 
 To play with it locally, you'll need to run 4 different processes in a terminal each:
 
