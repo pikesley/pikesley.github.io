@@ -85,7 +85,7 @@ which you can **GET** to return the current colour of the specified element:
 
 This with a **GET** and _Accept: text/html_ returns the clock-mode picker:
 
-![clock modes](http://i.imgur.com/EJVF1pC.png)
+![clock modes](http://i.imgur.com/nU5kCUr.png)
 
 The available modes are:
 
@@ -111,7 +111,7 @@ to set the mode (which is what the jQuery does, behind the buttons)
 
 If you hit _this_ with a browser, it will return a list of available trick modes:
 
-![trick modes](http://i.imgur.com/x7r6qxL.png)
+![trick modes](http://i.imgur.com/g85vpb1.png)
 
 It also  _Accepts_ a **POST** with some JSON like
 
