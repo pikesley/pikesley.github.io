@@ -26,12 +26,11 @@ It turns out you can chain the Neopixels together and then address them as one l
 
 The code is all [on Github](https://github.com/pikesley/wen). To get it up and running from a clean install of [NOOBS](https://www.raspberrypi.org/downloads/noobs/) 1.9 [Raspbian Jessie Lite](https://www.raspberrypi.org/downloads/raspbian/) on a Pi Zero, you should look at [my Chef cookbook](http://sam.pikesley.org/cookbooks/)
 
-To play with it locally, you'll need to run 4 different processes in a terminal each:
+To play with it locally, you'll need to run 3 different processes in a terminal each:
 
-* `redis-server`
-* `bundle exec sidekiq -r ./lib/wen.rb`
-* `bundle exec compass clean && bundle exec compass watch`
-* `bundle exec rackup`
+* `bundle exec rake app:queue`
+* `bundle exec rake app:sass`
+* `bundle exec rake app:run`
 
 and it should be running at [http://localhost:9292](http://localhost:9292)
 
@@ -55,7 +54,7 @@ So it now has four main endpoints:
 
 If you hit this with a **GET** and an _Accept: text/html_ header (i.e. with a browser), it returns a colour picker
 
-![colour picker](http://i.imgur.com/Y6AkBHS.png)
+![colour picker](http://i.imgur.com/3Tr7k56.png)
 
 (which I lashed together with [Spectrum](https://bgrins.github.io/spectrum/) and some [poorly-written](https://github.com/pikesley/wen/blob/master/views/colours.erb) [d3](https://github.com/pikesley/wen/blob/master/public/js/wen.js))
 
@@ -85,7 +84,7 @@ which you can **GET** to return the current colour of the specified element:
 
 This with a **GET** and _Accept: text/html_ returns the clock-mode picker:
 
-![clock modes](http://i.imgur.com/nU5kCUr.png)
+![clock modes](http://i.imgur.com/3YADK8V.png)
 
 The available modes are:
 
@@ -111,9 +110,9 @@ to set the mode (which is what the jQuery does, behind the buttons)
 
 If you hit _this_ with a browser, it will return a list of available trick modes:
 
-![trick modes](http://i.imgur.com/g85vpb1.png)
+![trick modes](http://i.imgur.com/mjB7eic.png)
 
-It also  _Accepts_ a **POST** with some JSON like
+It also _Accepts_ a **POST** with some JSON like
 
     {
       mode: 'shuffle'
