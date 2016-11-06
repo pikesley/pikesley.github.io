@@ -54,7 +54,7 @@ So it now has four main endpoints:
 
 If you hit this with a **GET** and an _Accept: text/html_ header (i.e. with a browser), it returns a colour picker
 
-![colour picker](http://i.imgur.com/3Tr7k56.png)
+![colour picker](http://i.imgur.com/FGMIVEk.png)
 
 (which I lashed together with [Spectrum](https://bgrins.github.io/spectrum/) and some [poorly-written](https://github.com/pikesley/wen/blob/master/views/colours.erb) [d3](https://github.com/pikesley/wen/blob/master/public/js/wen.js))
 
@@ -84,7 +84,7 @@ which you can **GET** to return the current colour of the specified element:
 
 This with a **GET** and _Accept: text/html_ returns the clock-mode picker:
 
-![clock modes](http://i.imgur.com/3YADK8V.png)
+![clock modes](http://i.imgur.com/BIoSJNs.png)
 
 The available modes are:
 
@@ -110,7 +110,7 @@ to set the mode (which is what the jQuery does, behind the buttons)
 
 If you hit _this_ with a browser, it will return a list of available trick modes:
 
-![trick modes](http://i.imgur.com/mjB7eic.png)
+![trick modes](http://i.imgur.com/6t7uA9Q.png)
 
 It also _Accepts_ a **POST** with some JSON like
 
