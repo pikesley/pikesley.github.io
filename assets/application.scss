@@ -126,10 +126,6 @@ h1 {
   padding-bottom: $padding-large-vertical;
 }
 
-.skill {
-  font-size: 1.3em;
-}
-
 #sections, #contact, #interests {
   font-size: 1.5em;
 }
@@ -170,6 +166,24 @@ a {
 
   li:first-child:before {
     content: none;
+  }
+}
+
+#skill-list > .skill {
+  font-size: 1.3em;
+  background-color: transparentize($brand-primary, 0.9);
+  margin: 3px;
+
+/*  :before {
+    content: '[';
+  }
+
+  :after {
+    content: ']';
+  }*/
+
+  a {
+    cursor: pointer;
   }
 }
 
