@@ -3,6 +3,21 @@
   github: pikesley/wen
   description: Raspberry Pi-powered Neopixel clock
 
+- title: Skellington
+  url: /projects/skellington
+  github: pikesley/skellington
+  description: Generate a skeleton for your Sinatra app or Jekyll site
+
+- title: Purdie
+  url: /projects/purdie
+  github: rawfunkmaharishi/purdie
+  description: Dealing with horrid APIs so you don't have to
+
+- title: Replacer Bot
+  url: /projects/replacer_bot
+  github: pikesley/replacer_bot
+  description: Make your own annoying Twitter bot
+
 - title: 1982
   url: /projects/1982
   github: pikesley/nineteen-eighty-two
@@ -18,34 +33,19 @@
   github: pikesley/correctiondose
   description: Rails app to track my health metrics
 
-- title: Skellington
-  url: /projects/skellington
-  github: pikesley/skellington
-  description: Generate a skeleton for your Sinatra app
+- title: Badger
+  url: /projects/badger
+  github: badges/badgerbadgerbadger
+  description: Generate Github project badges like a boss
 
 - title: WTF Is My Generic Thing?
   url: /projects/wtfismygenericthing
   github: pikesley/wtfismygenericthing
   description: Generate your own strategy generator
 
-- title: Purdie
-  url: /projects/purdie
-  github: rawfunkmaharishi/purdie
-  description: Dealing with horrid APIs so you don't have to
-
-- title: Replacer Bot
-  url: /projects/replacer_bot
-  github: pikesley/replacer_bot
-  description: Make your own annoying Twitter bot
-
 - title: Raw Funk Maharishi
   url: http://rawfunkmaharishi.uk/blog/
   description: Blog about building a Jekyll site for my band
-
-- title: SVG Bumbling
-  url: http://svg-bumbling.github.io/
-  github: https://github.com/svg-bumbling/svg-bumbling.github.io
-  description: Experiments with SVGs and JavaScript
 
 - title: Ultron
   url: /projects/ultron
@@ -62,20 +62,6 @@
   github: pikesley/red5
   description: Ruby bindings for the <a href='http://swapi.co'>Star Wars API</a>
 
-- title: Badger
-  url: /projects/badger
-  github: badges/badgerbadgerbadger
-  description: Generate Github project badges like a boss
-
-#- title: Pancreas API
-#  url: http://pancreas-api.herokuapp.com/
-#  description: Just because my pancreas is broken, doesn't mean it can't have a RESTful API
-
-#- title: Diabetes Dashboard
-#  url: /projects/diabetes-dashboard
-#  github: pikesley/diabetes-dashboard
-#  description: Dashing dashboard fed by the Pancreas API
-
 - title: Uncle Clive
   url: http://uncleclive.herokuapp.com/
   description: Sinclair Spectrum font as a Service
@@ -88,17 +74,13 @@
   url: https://mutilator.herokuapp.com/
   description: Astonishingly Pointless Bullshit as a Service
 
-# This is broke until I work out how to Oauth
-#- title: Snake Dashboard
-#  url: http://heyre.be/snake
-#  description: The Quantified Corn Snake Project
+- title: SVG Bumbling
+  url: http://svg-bumbling.github.io/
+  github: https://github.com/svg-bumbling/svg-bumbling.github.io
+  description: Experiments with SVGs and JavaScript
 
-# Further Oauth bullshit
-#- title: WTF is my Open Data Strategy?
-#  url: http://wtfismyopendatastrategy.pikesley.org/
-
-- title: Cruft & Company
-  url: http://cruft.co/
+#- title: Cruft & Company
+#  url: http://cruft.co/
 
 - title: Is Michael Gove wrong?
   url: http://ismichaelgovewrong.info/
@@ -109,5 +91,5 @@
 - title: Is Toby Young wrong?
   url: http://istobyyoungwrong.info/
 
-- title: Orange
-  url: http://orange.pikesley.org/
+#- title: Orange
+#  url: http://orange.pikesley.org/
