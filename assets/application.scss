@@ -210,11 +210,19 @@ a {
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus, {
-  background-color: $gray-lighter;
+  background-color: transparentize($brand-primary, 0.7);
 }
 
 .navbar-default .navbar-toggle .icon-bar {
   background-color: $brand-primary;
+}
+
+.nav-pills {
+  li {
+    a:hover {
+      background-color: transparentize($brand-primary, 0.7);
+    }
+  }
 }
 
 #odi-member {
