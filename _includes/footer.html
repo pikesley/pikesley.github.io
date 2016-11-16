@@ -1,13 +1,10 @@
-<div class='footer'>
-  <div class='row'>
-    <div class='col-md-12 text-center bottom'>
-      {% for link in site.data.links %}
-        <a href='{{ link.url }}' alt='{{ link.title }}' title='{{ link.title }}'>
-          <i class='fa {{ link.fontawesome }}'></i>
-          <span class='hidden-xs'>{{ link.title }}</span>
-        </a>
-        {% include conditional-separator.html sep = '|' %}
-      {% endfor %}
-    </div>
-  </div>
-</div>
+<ul id='footer'>
+  {% for link in site.data.links %}
+    <li>
+      <a href='{{ link.url }}' alt='{{ link.title }}' title='{{ link.title }}'>
+        <i class='fa {{ link.fontawesome }}'></i>
+        <span class='hidden-xs'>{{ link.title }}</span>
+      </a>
+    </li>
+  {% endfor %}
+</ul>

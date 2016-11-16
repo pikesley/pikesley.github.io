@@ -1,0 +1,20 @@
+---
+---
+
+@import 'variables';
+@import 'colours';
+@import 'fonts';
+
+@import 'bootstrap';
+
+@import 'footer';
+@import 'nav';
+
+#logo {
+  width: 100%;
+  height: auto;
+  max-width: $wideness;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

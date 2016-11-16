@@ -1,0 +1,21 @@
+.navbar {
+  background: transparent;
+  border: none;
+  font-size: 1.1em;
+  max-width: $wideness;
+  margin: auto;
+}
+
+.nav-item {
+  text-align: center;
+}
+
+@media (max-width: $wideness) {
+  .nav-justified > li {
+    display: table-cell;
+    width: 1%;
+  }
+  .nav-justified > li > a  {
+    margin-bottom: 0 !important;
+  }
+}
