@@ -1,14 +1,9 @@
 ---
 title: Blog
 subtitle: Fully neglected since 2012
-layout: narrow
 ---
 
 {% for year in site.data.years %}
-  <h2>
-    {{ year }}
-  </h2>
-
   <dl class='blog-archive dl-horizontal'>
     {% for post in site.posts %}
       {% capture post_year %}{{ post.date | date: '%Y' }}{% endcapture %}

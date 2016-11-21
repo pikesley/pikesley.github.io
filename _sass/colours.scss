@@ -1,0 +1,16 @@
+@import 'palettes/default';
+
+$brand-primary: $rgba-primary-0;
+$brand-complement: $rgba-complement-0;
+
+$brand-info: $rgba-complement-0;
+
+$link-color: $rgba-complement-3;
+
+$hr-border: $rgba-secondary-2-4;
+
+$pre-color: $rgba-secondary-1-0;
+$code-color: $rgba-secondary-2-4;
+
+$active-colour: $rgba-secondary-2-4;
+$hover-colour: transparentize($active-colour, 0.5);

@@ -1,14 +1,18 @@
 - title: Github
   url: https://github.com/pikesley
-  fontawesome: fa-github
+  fontawesome: github-alt
 
 - title: Twitter
   url: https://twitter.com/pikesley
-  fontawesome: fa-twitter
+  fontawesome: twitter
+
+- title: Keybase
+  url: https://keybase.io/pikesley
+  fontawesome: key
 
 - title: Flickr
   url: https://flickr.com/photos/pikesley
-  fontawesome: fa-flickr
+  fontawesome: flickr
 
 #- title: Soundcloud
 #  url: https://soundcloud.com/pikesley

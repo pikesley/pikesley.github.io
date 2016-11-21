@@ -1,3 +1,30 @@
-<div class='header' id='header'>
-  <a href='/'><img src='/assets/images/logos/logo-orange.png' class='logo' alt='pikesley.org'/></a>
-</div>
+<head>
+  <meta charset='utf-8' />
+  <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+
+  {% include google-analytics.html %}
+  {% include open-graph.html %}
+  {% include ie-cruft.html %}
+
+  {% for lib in site.data.libs.js %}
+  <!-- {{ lib.name }} -->
+  <script src='{{ lib.url }}'></script>
+  {% endfor %}
+
+  {% for lib in site.data.libs.css %}
+  <!-- {{ lib.name }} -->
+  <link rel='stylesheet' href='{{ lib.url }}'>
+  {% endfor %}
+
+  {% for font in site.data.libs.fonts %}
+  <!-- {{ font.name }} -->
+  <link rel='stylesheet' href='{{ font.url }}'>
+  {% endfor %}
+
+  <link rel='icon' type='image/png' href='{{ site.baseurl }}/assets/favicon.ico' />
+  <link rel='stylesheet' href='{{ site.baseurl }}/css/styles.css' />
+  <title>
+  {{ page.title }}
+  </title>
+</head>

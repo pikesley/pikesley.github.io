@@ -1,12 +1,12 @@
-<div id='skills'>
+<section id='skills'>
   <h2>
     Stuff I’m good at
-    <span class='subtitle'>(in no particular order)</span>
+    <span>(in no particular order)</span>
   </h2>
-  <ul id='skill-list' class='list-inline text-center'>
+  <ul>
     {% for skill in site.data.cv.skills %}
       {% assign bits = skill | split: '|' %}
-      <li class='skill'>
+      <li>
       {% if bits[1] %}
         <a href='{{ bits[1]}}'>
       {% endif %}
@@ -17,7 +17,7 @@
     </li>
     {% endfor %}
   </ul>
-</div>
+</section>
 
 <script>
 // via http://jsfiddle.net/C6LPY/2/

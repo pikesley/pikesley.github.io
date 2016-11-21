@@ -1,16 +1,17 @@
 ---
 title: My CV
-layout: narrow
 sections:
   - skills
   - employment
   - interests
   - contact
+div_id: cv
 ---
+
 
 {% include cv/intro.html %}
 
-<ul class='list-inline text-center' id='sections'>
+<ul id='sections'>
   {% for section in page.sections %}
     <li><a href='#{{ section }}'>{{ section | capitalize }}</a></li>
   {% endfor %}
@@ -19,7 +20,6 @@ sections:
 {% for section in page.sections %}
   {% include cv/{{ section }}.html %}
   {% include back-to-top.html %}
-  {% include conditional-separator.html %}
 {% endfor %}
 
 {% include cv/tail.html %}

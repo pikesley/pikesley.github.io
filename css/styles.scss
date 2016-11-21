@@ -1,0 +1,80 @@
+---
+---
+
+@import 'variables';
+@import 'colours';
+@import 'fonts';
+@import 'bootstrap';
+
+.custom-hr {
+  content: '';
+  display: block;
+  height: 1px;
+  background-color: $hr-border;
+  margin: $padding-small-vertical;
+}
+
+@import 'footer';
+@import 'nav';
+@import 'cv';
+
+h1 {
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 0.7em;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  max-width: $wideness;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  max-width: $wideness;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+pre {
+  font-weight: bold;
+}
+
+.github-link {
+  text-align: right;
+
+  a {
+    @extend .btn, .btn-info;
+  }
+}
+
+hr {
+  margin: $padding-small-vertical;
+}
+
+#blost {
+  section:before {
+    @extend .custom-hr;
+  }
+}
+
+#home {
+  ul {
+    list-style: none;
+  }
+  li:before {
+    font-family: 'FontAwesome';
+    content: '\f061';
+    margin:0 5px 0 -15px;
+    color: $brand-primary;
+    font-size: 0.6em;
+  }
+}

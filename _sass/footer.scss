@@ -1,0 +1,44 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: $footer-height;
+}
+
+#footer {
+  @extend .list-inline;
+
+  margin: 0;
+
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  text-align: center;
+  margin-top: $padding-large-vertical;
+  background: $brand-primary;
+  height: $footer-height;
+
+  padding: $padding-large-vertical $padding-large-horizontal;
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  li {
+    color: $brand-complement;
+    padding: 0;
+    margin: 0;
+  }
+
+  li:after {
+    content: '|';
+  }
+
+  li:last-child:after {
+    content: none;
+  }
+}

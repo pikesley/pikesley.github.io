@@ -1,0 +1,43 @@
+.navbar {
+  background: transparent;
+  border: none;
+  max-width: $wideness;
+  margin: auto;
+}
+
+.nav-justified {
+  li {
+    text-align: center;
+
+    a:hover {
+      background-color: transparent;
+      border-bottom: 2px $hover-colour solid;
+    }
+
+    transition: 0.3;
+  }
+}
+
+nav {
+  .active {
+    border-bottom: 2px $active-colour solid;
+  }
+
+  a.active:hover {
+    border-bottom: 2px $active-colour solid;
+    cursor: default;
+  }
+}
+
+@media (max-width: $wideness) {
+  .nav-justified {
+    li {
+      display: table-cell;
+      width: 1%;
+
+      a {
+        margin-bottom: 0 !important;
+      }
+    }
+  }
+}

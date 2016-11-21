@@ -1,0 +1,87 @@
+#cv {
+  #sections, #interests, #contact {
+    @extend .list-inline, .text-center;
+
+    font-size: 1.2em;
+
+    li {
+      padding: 0px;
+      margin: 0px;
+    }
+
+    li:before {
+      content: " | ";
+    }
+
+    li:first-child:before {
+      content: none;
+    }
+  }
+
+  .back-to-top {
+    text-align: right;
+    margin-top: $padding-large-vertical;
+  }
+
+  #skills, #interests, #contact {
+    ul {
+      @extend .list-inline, .text-center;
+    }
+  }
+
+  #skills {
+    li {
+      font-size: 1.3em;
+      background-color: transparentize($rgba-secondary-1-1, 0.9);
+      margin: 3px;
+
+      a {
+        cursor: pointer;
+      }
+    }
+
+    h2 {
+      // subtitle
+      span {
+        font-size: 0.6em;
+      }
+    }
+  }
+
+  section:after {
+    @extend .custom-hr;
+  }
+
+  #employment {
+    a {
+      .show-ctrl {
+        display: none;
+      }
+      .hide-ctrl {
+        display: block;
+      }
+      &.collapsed {
+        .show-ctrl{
+          display: block;
+        }
+        .hide-ctrl {
+          display: none;
+        }
+      }
+    }
+
+    dl {
+      dd:after {
+        @extend .custom-hr;
+      }
+
+      dd:last-child:after {
+        content: none;
+      }
+    }
+  }
+
+  #tail {
+    @extend .text-center;
+  }
+}

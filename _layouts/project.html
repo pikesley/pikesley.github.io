@@ -1,12 +1,13 @@
 ---
-layout: narrow
+layout: default
 ---
 
 {% if page.github %}
 <div class='github-link'>
-  <button class='btn btn-primary'>
-    <a href='http://github.com/{{ page.github }}'>{{ page.github | split: '/' | last }} on Github <i class='fa fa-github'></i></a>
-  </button>
+  <a href='http://github.com/{{ page.github }}'>
+    {{ page.github | split: '/' | last }} on Github
+    <i class='fa fa-github'></i>
+  </a>
 </div>
 {% endif %}
 {{ content }}

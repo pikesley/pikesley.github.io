@@ -1,9 +1,9 @@
-<div id='employment'>
+<section id='employment'>
   <h2>Places I’ve worked</h2>
   <dl>
     {% for employer in site.data.cv.employers %}
-      <dt class='employer'>
-        <h4 class='employment-dates'>{{ employer.dates.start }} - {{ employer.dates.end }}:</h4>
+      <dt>
+        <h4>{{ employer.dates.start }} - {{ employer.dates.end }}:</h4>
         <h3>
           {{ employer.role }} at
           {% if employer.url %}
@@ -13,7 +13,7 @@
           {{ employer.location }}
         </h3>
       </dt>
-      <dd class='employer'>
+      <dd>
         <h4>
           {{ employer.headline }}
         </h4>
@@ -21,21 +21,13 @@
         {% if employer.profile %}
           {% capture param_name %}{{ employer.name | downcase | replace: ' ', '-'}}{% endcapture %}
 
-          <div class='collapse employment-profile' id='{{ param_name }}-profile'>
+          <div class='collapse' id='{{ param_name }}-profile'>
             {{ employer.profile | markdownify }}
           </div>
 
-          <a class='collapsed' data-toggle='collapse' href='#{{ param_name }}-profile' aria-expanded='false' aria-controls='{{ param_name }}-profile'>
-              <span class='show-ctrl'>
-                <i class='fa fa-arrow-circle-down'></i> Read more
-              </span>
-              <span class='hide-ctrl'>
-                <i class='fa fa-arrow-circle-up'></i> Read less
-              </span>
-          </a>
+          {% include cv/more-less.html name = param_name %}
         {% endif %}
-        {% include conditional-separator.html %}
       </dd>
     {% endfor %}
   </dl>
-</div>
+</section>
