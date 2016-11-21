@@ -14,6 +14,7 @@ defaults:
     values:
       layout: post
       parent: blog
+      div_id: blost
 
   -
     scope:

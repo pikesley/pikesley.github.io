@@ -7,5 +7,9 @@ js:
 fonts:
   - name: fontawesome
     url:  //maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css
-  - name: ubuntu
-    url:  //fonts.googleapis.com/css?family=Ubuntu+Mono
+  - name: ntr
+    url:  //fonts.googleapis.com/css?family=NTR
+  - name: cutive-mono
+    url:  //fonts.googleapis.com/css?family=Cutive+Mono
+#  - name: spectrum
+#    url:  //file.myfontastic.com/qbT833H9AjE28yfY8Bp9qi/icons.css

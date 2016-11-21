@@ -1,21 +1,40 @@
+$hover-colour: transparentize($brand-primary, 0.8);
+$active-colour: transparentize($brand-primary, 0.4);
+
 .navbar {
   background: transparent;
   border: none;
-  font-size: 1.1em;
   max-width: $wideness;
   margin: auto;
 }
 
-.nav-item {
-  text-align: center;
+.nav-justified {
+  li {
+    text-align: center;
+
+    a:hover {
+      background-color: $hover-colour;
+    }
+
+    transition: 0.3;
+  }
+}
+
+nav {
+  .active {
+    border-bottom: 2px $active-colour solid;
+  }
 }
 
 @media (max-width: $wideness) {
-  .nav-justified > li {
-    display: table-cell;
-    width: 1%;
-  }
-  .nav-justified > li > a  {
-    margin-bottom: 0 !important;
+  .nav-justified {
+    li {
+      display: table-cell;
+      width: 1%;
+
+      a {
+        margin-bottom: 0 !important;
+      }
+    }
   }
 }
