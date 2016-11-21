@@ -1,20 +1,32 @@
 #cv {
-  #sections, #interests, #contact {
+  h2 {
+    text-align: center;
+  }
+
+  #sections, #interests > ul, #contact > ul {
     @extend .list-inline, .text-center;
 
-    font-size: 1.2em;
-
     li {
-      padding: 0px;
-      margin: 0px;
+      font-size: 1.2em;
+      margin: 3px;
     }
 
     li:before {
-      content: " | ";
+      content: ' ';
     }
 
     li:first-child:before {
       content: none;
+    }
+  }
+
+  #sections {
+    font-size: 2em;
+    padding-top: $padding-large-vertical;
+
+    a:hover {
+      text-decoration: none;
+      border-bottom: 2px $hover-colour solid;
     }
   }
 
@@ -73,6 +85,7 @@
     dl {
       dd:after {
         @extend .custom-hr;
+        color: transparentize($hr-border, 0.5);
       }
 
       dd:last-child:after {
