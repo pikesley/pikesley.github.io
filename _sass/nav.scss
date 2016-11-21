@@ -1,6 +1,3 @@
-$hover-colour: transparentize($brand-primary, 0.8);
-$active-colour: transparentize($brand-primary, 0.4);
-
 .navbar {
   background: transparent;
   border: none;
@@ -13,7 +10,8 @@ $active-colour: transparentize($brand-primary, 0.4);
     text-align: center;
 
     a:hover {
-      background-color: $hover-colour;
+      background-color: transparent;
+      border-bottom: 2px $hover-colour solid;
     }
 
     transition: 0.3;
@@ -23,6 +21,11 @@ $active-colour: transparentize($brand-primary, 0.4);
 nav {
   .active {
     border-bottom: 2px $active-colour solid;
+  }
+
+  a.active:hover {
+    border-bottom: 2px $active-colour solid;
+    cursor: default;
   }
 }
 

@@ -2,11 +2,14 @@
   <ul class='nav nav-justified'>
     {% for item in site.data.navigation %}
       <li role='presentation' class='nav-item
-      {% if item.path == page.url %} active{% endif %}
-      {% if item.path contains page.parent %} active{% endif %}
+
       '>
         <a href='{{ item.path }}'
-           title='{{ item.title }}'>
+           title='{{ item.title }}'
+           class='
+           {% if item.path == page.url %} active{% endif %}
+           {% if item.path contains page.parent %} active{% endif %}
+           '>
           {{ item.title }}
         </a>
       </li>

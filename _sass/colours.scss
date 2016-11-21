@@ -11,3 +11,6 @@ $hr-border: $rgba-secondary-2-4;
 
 $pre-color: $rgba-secondary-1-0;
 $code-color: $rgba-secondary-2-4;
+
+$active-colour: $rgba-secondary-2-4;
+$hover-colour: transparentize($active-colour, 0.5);
