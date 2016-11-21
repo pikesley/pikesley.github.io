@@ -9,12 +9,12 @@
   li {
     text-align: center;
 
+    font-size: 1.2em;
+
     a:hover {
       background-color: transparent;
       border-bottom: 2px $hover-colour solid;
     }
-
-    transition: 0.3;
   }
 }
 
