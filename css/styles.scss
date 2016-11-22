@@ -6,17 +6,13 @@
 @import 'fonts';
 @import 'bootstrap';
 
-.custom-hr {
-  content: '';
-  display: block;
-  height: 1px;
-  background-color: $hr-border;
-  margin: $padding-small-vertical;
-}
+@import 'components';
 
-@import 'footer';
 @import 'nav';
 @import 'cv';
+@import 'projects';
+@import 'blost';
+@import 'footer';
 
 h1 {
   text-align: center;
@@ -71,10 +67,7 @@ hr {
     list-style: none;
   }
   li:before {
-    font-family: 'FontAwesome';
-    content: '\f061';
-    margin:0 5px 0 -15px;
-    color: $brand-primary;
-    font-size: 0.6em;
+    @extend .list-pointer;
+    font-size: 0.8em;
   }
 }

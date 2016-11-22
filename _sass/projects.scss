@@ -1,0 +1,19 @@
+#projects {
+  ul {
+    list-style: none;
+  }
+
+  li:before {
+    @extend .list-pointer;
+    font-size: 1em;
+  }
+
+  h2 {
+    display: inline-block;
+    font-size: 1.2em;
+  }
+
+  p {
+    margin-left: $padding-small-horizontal;
+  }
+}

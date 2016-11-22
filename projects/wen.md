@@ -80,7 +80,7 @@ which you can **GET** to return the current colour of the specified element:
 
 (this is used for populating the picker)
 
-##### <a name='clock-modes'></a>`/modes`
+##### <a id='clock-modes'></a>`/modes`
 
 This with a **GET** and _Accept: text/html_ returns the clock-mode picker:
 

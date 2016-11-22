@@ -1,0 +1,17 @@
+#blost {
+  p {
+    text-align: justify;
+  }
+
+  #licence {
+    text-align: center;
+  }
+
+  #licence:before {
+    @extend .custom-hr;
+  }
+
+  li {
+    width: 95%;
+  }
+}

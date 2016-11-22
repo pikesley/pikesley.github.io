@@ -35,7 +35,7 @@ body {
   }
 
   li:after {
-    content: '|';
+    content: '::';
   }
 
   li:last-child:after {

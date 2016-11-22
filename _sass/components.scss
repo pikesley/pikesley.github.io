@@ -1,0 +1,15 @@
+.custom-hr {
+  content: '';
+  display: block;
+  height: 1px;
+  background-color: $hr-border;
+  margin: $padding-small-vertical;
+}
+
+.list-pointer {
+  font-family: 'FontAwesome';
+  content: '\f061';
+  margin:0 5px 0 -15px;
+  color: $brand-primary;
+  font-size: 1em;
+}
