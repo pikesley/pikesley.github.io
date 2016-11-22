@@ -15,6 +15,6 @@ Some other places you can find me on the internets:
 * My occasional [Instructables](http://www.instructables.com/member/pikesley?show=INSTRUCTABLES)
 * My [Keybase](https://keybase.io/pikesley) profile (and my [public key](https://keybase.io/pikesley/key.asc))
 * My [ello](https://www.youtube.com/watch?v=dQw4w9WgXcQ) listing
-* My [CV](cv)
+* My [CV](cv/)
 
 In fact, if you come across a user called _pikesley_ on any service, it's probably me
