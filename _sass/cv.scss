@@ -1,4 +1,12 @@
 #cv {
+  #intro {
+    font-size: 1.2em;
+  }
+
+  #intro:after {
+    @extend .custom-hr;
+  }
+
   h2 {
     text-align: center;
   }
@@ -41,7 +49,7 @@
     }
   }
 
-  #skills {
+  #skills {    
     li {
       font-size: 1.3em;
       background-color: transparentize($rgba-secondary-1-1, 0.9);
@@ -82,13 +90,23 @@
       }
     }
 
-    dl {
-      dd:after {
+    #employers {
+      list-style: none;
+
+      h4 {
+        display: inline;
+      }
+
+      li.employer:before {
+        @extend .list-pointer;
+      }
+
+      li.employer:after {
         @extend .custom-hr;
         color: transparentize($hr-border, 0.5);
       }
 
-      dd:last-child:after {
+      li.employer:last-child:after {
         content: none;
       }
     }

@@ -3,7 +3,7 @@
     Stuff I’m good at
     <span>(in no particular order)</span>
   </h2>
-  <ul>
+  <ul id='skill-list'>
     {% for skill in site.data.cv.skills %}
       {% assign bits = skill | split: '|' %}
       <li>

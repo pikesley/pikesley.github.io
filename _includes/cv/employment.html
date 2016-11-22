@@ -1,8 +1,8 @@
 <section id='employment'>
   <h2>Places I’ve worked</h2>
-  <dl>
+  <ul id='employers'>
     {% for employer in site.data.cv.employers %}
-      <dt>
+      <li class='employer'>
         <h4>{{ employer.dates.start }} - {{ employer.dates.end }}:</h4>
         <h3>
           {{ employer.role }} at
@@ -12,8 +12,7 @@
           {{ employer.name }}{% if employer.url %}</a>{% endif %},
           {{ employer.location }}
         </h3>
-      </dt>
-      <dd>
+
         <h4>
           {{ employer.headline }}
         </h4>
@@ -27,7 +26,7 @@
 
           {% include cv/more-less.html name = param_name %}
         {% endif %}
-      </dd>
+      </li>
     {% endfor %}
-  </dl>
+  </ul>
 </section>
