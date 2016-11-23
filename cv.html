@@ -11,7 +11,7 @@ div_id: cv
 
 {% include cv/intro.html %}
 
-<ul id='sections'>
+<ul class='nav nav-justified'>
   {% for section in page.sections %}
     <li><a href='#{{ section }}'>{{ section | capitalize }}</a></li>
   {% endfor %}
