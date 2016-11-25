@@ -1,0 +1,5 @@
+{{ include.svg }} = link.group().attr('id', '{{ include.svg }}')
+{% for rect in site.data.logo %}
+  {{ include.svg }}.add(link.rect(1, 1).move({{ rect.x }}, {{ rect.y }}))
+  {% if include.stroke %}.stroke({width: 0.1}){% endif %}
+{% endfor %}

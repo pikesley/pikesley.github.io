@@ -3,6 +3,8 @@ js:
     url:  //ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js
   - name: bootstrap
     url:  //maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js
+  - name: svgjs
+    url:  //cdnjs.cloudflare.com/ajax/libs/svg.js/2.3.6/svg.min.js
 
 fonts:
   - name: fontawesome
@@ -11,5 +13,5 @@ fonts:
     url:  //fonts.googleapis.com/css?family=NTR
   - name: cutive-mono
     url:  //fonts.googleapis.com/css?family=Cutive+Mono
-#  - name: spectrum
-#    url:  //file.myfontastic.com/qbT833H9AjE28yfY8Bp9qi/icons.css
+  - name: spectrum
+    url:  //file.myfontastic.com/qbT833H9AjE28yfY8Bp9qi/icons.css

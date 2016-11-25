@@ -1,3 +1,37 @@
-<div id='banner'>
-  <a href='/'><img src='/assets/images/logos/logo-orange.png' id='logo' alt='pikesley.org'/></a>
-</div>
+<div id='banner'></div>
+
+<script>
+logo = SVG('banner')
+logo.viewbox({
+  x: 0,
+  y: 0,
+  width: 96,
+  height: 8
+})
+
+link = logo.link('/')
+
+{% include logo.html svg = 'outline' %}
+outline.stroke({
+  width: 0.5,
+  opacity: 0.5
+})
+
+{% include logo.html svg = 'front' stroke = 'true' %}
+
+function move() {
+  rotation = 1
+  scale = {
+    x: 1,
+    y: 1
+  }
+
+  window.setInterval(function () {
+    rotation += Math.random() - 0.5
+    scale['x'] += (Math.random() - 0.5) / 10
+    scale['y'] += (Math.random() - 0.5) / 10
+
+    mover.animate().rotate(rotation).scale(scale['x'], scale['y'])
+  }, 10 )
+}
+</script>

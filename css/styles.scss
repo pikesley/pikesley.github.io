@@ -13,6 +13,11 @@
 @import 'projects';
 @import 'blost';
 @import 'footer';
+@import 'banner';
+
+body {
+  //background-color: transparentize($brand-complement, 0.9);
+}
 
 h1 {
   text-align: center;
