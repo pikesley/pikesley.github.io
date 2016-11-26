@@ -15,8 +15,8 @@
 }
 
 .shadow {
-  -webkit-filter: drop-shadow(2px 2px 1px lighten($brand-complement, 20%));
-  filter: drop-shadow(2px 2px 1px lighten($brand-complement, 20%));
+  -webkit-filter: drop-shadow($shadow-offset $shadow-offset $shadow-size lighten($brand-complement, 20%));
+  filter: drop-shadow($shadow-offset $shadow-offset $shadow-size lighten($brand-complement, 20%));
 }
 
 .back-to-top {
