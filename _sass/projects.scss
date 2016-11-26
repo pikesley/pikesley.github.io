@@ -13,3 +13,12 @@
     font-size: 1.2em;
   }
 }
+
+.github-link {
+  text-align: right;
+  margin: $padding-large-vertical;
+
+  a {
+    @extend .btn, .btn-info;
+  }
+}

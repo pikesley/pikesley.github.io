@@ -49,14 +49,6 @@ pre {
   font-weight: bold;
 }
 
-.github-link {
-  text-align: right;
-
-  a {
-    @extend .btn, .btn-info;
-  }
-}
-
 hr {
   margin: $padding-small-vertical;
 }

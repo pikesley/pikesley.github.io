@@ -13,3 +13,13 @@
   color: $brand-primary;
   font-size: 1em;
 }
+
+.shadow {
+  -webkit-filter: drop-shadow(2px 2px 1px lighten($brand-complement, 20%));
+  filter: drop-shadow(2px 2px 1px lighten($brand-complement, 20%));
+}
+
+.back-to-top {
+  text-align: right;
+  margin-top: $padding-large-vertical;
+}

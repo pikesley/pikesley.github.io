@@ -44,11 +44,6 @@
     }
   }
 
-  .back-to-top {
-    text-align: right;
-    margin-top: $padding-large-vertical;
-  }
-
   #skills, #interests, #contact {
     ul {
       @extend .list-inline, .text-center;
