@@ -11,6 +11,10 @@
     @extend .custom-hr;
   }
 
+  ol {
+    text-align: justify;
+  }
+
   li {
     width: 95%;
   }
