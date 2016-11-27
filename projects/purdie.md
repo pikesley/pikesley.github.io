@@ -61,7 +61,7 @@ You also need a *.env* file with the relevant credentials in it:
 
     VIMEO_BEARER_TOKEN: this_is_bearer_token
 
-(get those things from [Flickr](https://www.flickr.com/services/apps/create/apply), [SoundCloud](http://soundcloud.com/you/apps/new) and [Vimeo](https://developer.vimeo.com/apps/new)
+(get those things from [Flickr](https://www.flickr.com/services/apps/create/apply), [SoundCloud](http://soundcloud.com/you/apps/new) and [Vimeo](https://developer.vimeo.com/apps/new))
 
 And then you can run
 
