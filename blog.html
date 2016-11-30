@@ -4,7 +4,7 @@ subtitle: Fully neglected since 2012
 ---
 
 {% for year in site.data.years %}
-  <dl class='blog-archive dl-horizontal'>
+  <dl id='blog-archive' class='dl-horizontal'>
     {% for post in site.posts %}
       {% capture post_year %}{{ post.date | date: '%Y' }}{% endcapture %}
       {% if year == post_year %}

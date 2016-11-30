@@ -27,13 +27,18 @@ h1 {
   font-size: 0.7em;
 }
 
-img {
+img, #lists {
   width: 100%;
   height: auto;
   max-width: $wideness;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+#lists {
+  padding-left: $padding-large-horizontal;
+  padding-right: $padding-large-horizontal;
 }
 
 .container {
@@ -66,5 +71,11 @@ hr {
   li:before {
     @extend .list-pointer;
     font-size: 0.8em;
+  }
+}
+
+#blog-archive {
+  dt, dd {
+    font-size: 1.2em;
   }
 }

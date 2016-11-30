@@ -6,7 +6,7 @@ div_id: projects
 <p>
   Some of these are on <a href='http://heroku.com/'>Heroku</a> (on the free tier), so they may have gone to sleep. Please be patient while they wake up...
 </p>
-<ul>
+<ul id='project-list'>
 {% for project in site.data.projects %}
   <li>
     <h2>
@@ -20,3 +20,7 @@ div_id: projects
 </li>
 {% endfor %}
 </ul>
+
+<script>
+{% include list-splitter.html primary-list = 'project-list' %}
+</script>

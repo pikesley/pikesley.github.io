@@ -1,0 +1,20 @@
+$(function() {
+  if ($('body').width() > 768) {
+    $('#{{ include.primary-list }}').before('<div class="row" id="lists"></div>')
+    var parent = $('#{{ include.primary-list }}')
+    var items = parent.children()
+    parent.after('<ul id="{{ include.primary-list }}-overspill"></ul>')
+    $('ul').addClass('col-md-6')
+
+    $("#{{ include.primary-list }}").appendTo('#lists')
+    $("#{{ include.primary-list }}-overspill").appendTo('#lists')
+
+    for (i = 0; i < items.length; i++) {
+      if (i % 2 == 0) {
+        $('#{{ include.primary-list }}').append(items[i])
+      } else {
+        $('#{{ include.primary-list }}-overspill').append(items[i])
+      }
+    }
+  }
+})
