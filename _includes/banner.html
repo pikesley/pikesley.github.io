@@ -18,7 +18,13 @@ rect = link.defs()
            .stroke({width: 0.1})
            .addClass('front')
 
+shade = logo.defs()
+            .rect(1, 1)
+            .stroke({width: 0.05})
+            .addClass('shade')
+
 {% for rect in site.data.logo %}
+  //logo.use(shade).move({{ rect.x }}, {{ rect.y }})
   rects[{{ rect.x }} + '-' + {{ rect.y }}] = link.use(rect).move({{ rect.x }}, {{ rect.y }})
 {% endfor %}
 
@@ -26,13 +32,12 @@ window.onload = function start() {
   glitch();
 }
 
-victim = ['{{ site.data.logo.first.x }}-{{ site.data.logo.first.y }}']
-
+target = '1-1'
 function glitch() {
   window.setInterval(function() {
-    link.add(rects[victim])
-    victim = Object.keys(rects)[Math.floor(Math.random() * Object.keys(rects).length)]
-    rects[victim].remove()
-  }, Math.random() * 5000)
+    rects[target].animate(2000, '<>', 1000).opacity(1)
+    target = Object.keys(rects)[Math.floor(Math.random() * Object.keys(rects).length)]
+    rects[target].animate(2000, '<>', 1000).opacity(0)
+  }, Math.random() * 10000)
 }
 </script>
