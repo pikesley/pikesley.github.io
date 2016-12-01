@@ -36,7 +36,7 @@ window.onload = function start() {
 function glitch() {
   target = Object.keys(rects)[Math.floor(Math.random() * Object.keys(rects).length)]
   mover = target
-  rects[target].animate(2000, '<>', 1000).move(97, 9)
+  rects[target].animate(2000, '<>', 1000).scale(0, 0)
 
   window.setInterval(function() {
     while (mover === target) {
@@ -45,6 +45,6 @@ function glitch() {
     t = target.split('-')
     rects[mover].animate(1000, '<>', 100).move(t[0], t[1])
     target = mover
-  }, Math.random() * 5000)
+  }, Math.random() * 10000)
 }
 </script>
