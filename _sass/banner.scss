@@ -1,6 +1,6 @@
 #banner {
   @extend .shadow;
-  
+
   padding: $padding-large-vertical;
 
   #front {
@@ -13,11 +13,5 @@
 
   #outline {
     stroke: $brand-complement;
-  }
-
-  #copyright {
-    font-family: spectrum;
-    word-spacing: 1em;
-    font-size: 0.5em;
   }
 }
