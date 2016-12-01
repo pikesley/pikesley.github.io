@@ -1,6 +1,12 @@
 <div id='banner'></div>
 
 <script>
+glitches = [
+  {% for i in (0..1) %}
+  Math.floor(Math.random() * {{ site.data.logo.size }}),
+  {% endfor %}
+]
+
 logo = SVG('banner')
 logo.viewbox({
   x: 0,
@@ -18,20 +24,4 @@ outline.stroke({
 })
 
 {% include logo.html svg = 'front' stroke = 'true' %}
-
-function move() {
-  rotation = 1
-  scale = {
-    x: 1,
-    y: 1
-  }
-
-  window.setInterval(function () {
-    rotation += Math.random() - 0.5
-    scale['x'] += (Math.random() - 0.5) / 10
-    scale['y'] += (Math.random() - 0.5) / 10
-
-    mover.animate().rotate(rotation).scale(scale['x'], scale['y'])
-  }, 10 )
-}
 </script>
