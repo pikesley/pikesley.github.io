@@ -1,0 +1,41 @@
+---
+---
+
+<div id='svg'></div>
+
+<script>
+draw = SVG('svg')
+draw.viewbox({
+  x: 0,
+  y: 0,
+  width: 64,
+  height: 64
+})
+
+rects = {}
+
+rect = draw.defs()
+           .rect(1, 1)
+           .stroke({width: 0.1})
+           .addClass('front')
+
+for (i = 0; i < 64; i++) {
+  for (j = 0; j < 64; j++) {
+    rects[i + '-' + j] = draw.use(rect).move(i, j)
+  }
+}
+
+window.onload = function start() {
+  glitch();
+}
+
+victim = ['0-0']
+
+function glitch() {
+  window.setInterval(function() {
+    draw.add(rects[victim])
+    victim = Object.keys(rects)[Math.floor(Math.random() * Object.keys(rects).length)]
+    rects[victim].remove()
+  }, Math.random() * 10000)
+}
+</script>
