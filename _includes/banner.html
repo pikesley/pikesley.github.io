@@ -32,19 +32,12 @@ window.onload = function start() {
   glitch();
 }
 
-
+target = '1-1'
 function glitch() {
-  target = Object.keys(rects)[Math.floor(Math.random() * Object.keys(rects).length)]
-  mover = target
-  rects[target].animate(2000, '<>', 1000).scale(0, 0)
-
   window.setInterval(function() {
-    while (mover === target) {
-      mover = Object.keys(rects)[Math.floor(Math.random() * Object.keys(rects).length)]
-    }
-    t = target.split('-')
-    rects[mover].animate(1000, '<>', 100).move(t[0], t[1])
-    target = mover
+    rects[target].animate(2000, '<>', 1000).opacity(1)
+    target = Object.keys(rects)[Math.floor(Math.random() * Object.keys(rects).length)]
+    rects[target].animate(2000, '<>', 1000).opacity(0)
   }, Math.random() * 10000)
 }
 </script>
