@@ -5,12 +5,12 @@
 
   li:before {
     @extend .list-pointer;
-    font-size: 1em;
+    font-size: $font-medium;
   }
 
   h2 {
     display: inline;
-    font-size: 1.2em;
+    font-size: $font-large;
   }
 }
 
