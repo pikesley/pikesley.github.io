@@ -1,12 +1,6 @@
 <div id='banner'></div>
 
 <script>
-glitches = [
-  {% for i in (0..1) %}
-  Math.floor(Math.random() * {{ site.data.logo.size }}),
-  {% endfor %}
-]
-
 logo = SVG('banner')
 logo.viewbox({
   x: 0,
@@ -17,11 +11,28 @@ logo.viewbox({
 
 link = logo.link('/')
 
-{% include logo.html svg = 'outline' %}
-outline.stroke({
-  width: 0.5,
-  opacity: 0.5
-})
+rects = {}
 
-{% include logo.html svg = 'front' stroke = 'true' %}
+rect = link.defs()
+           .rect(1, 1)
+           .stroke({width: 0.1})
+           .addClass('front')
+
+{% for rect in site.data.logo %}
+  rects[{{ rect.x }} + '-' + {{ rect.y }}] = link.use(rect).move({{ rect.x }}, {{ rect.y }})
+{% endfor %}
+
+window.onload = function start() {
+  glitch();
+}
+
+victim = ['{{ site.data.logo.first.x }}-{{ site.data.logo.first.y }}']
+
+function glitch() {
+  window.setInterval(function() {
+    link.add(rects[victim])
+    victim = Object.keys(rects)[Math.floor(Math.random() * Object.keys(rects).length)]
+    rects[victim].remove()
+  }, Math.random() * 5000)
+}
 </script>

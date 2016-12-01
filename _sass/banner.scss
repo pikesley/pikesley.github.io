@@ -1,17 +1,13 @@
 #banner, #svg {
-//  @extend .shadow;
+  @extend .shadow;
 
   padding: $padding-large-vertical;
 
-  #front, .front {
+  .front {
     fill: $brand-primary;
     stroke: darken($brand-primary, 10%);
     :hover {
       fill: darken($brand-primary, 10%);
     }
-  }
-
-  #outline, .outline {
-    stroke: $brand-complement;
   }
 }
