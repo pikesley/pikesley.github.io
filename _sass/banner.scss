@@ -1,4 +1,4 @@
-#banner, #svg {
+#banner {
   @extend .shadow;
 
   padding: $padding-large-vertical;
@@ -14,5 +14,9 @@
   .shade {
     fill: none;
     stroke: transparentize($brand-complement, 0.5);
+  }
+
+  .mover {
+    fill: $brand-complement;
   }
 }
