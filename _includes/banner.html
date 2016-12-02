@@ -4,7 +4,13 @@
 banner = SVG('banner')
 logo = banner.link('/')
 rects = []
-
+victim = 0
+anim = {
+  ease: '<>',
+  delay: '1s',
+  duration: '2s'
+}
+opacity = 0.5
 
 rect = logo.defs()
            .rect(1, 1)
@@ -25,21 +31,31 @@ $.getJSON('assets/images/logos/pikesley.svg.json', function(data) {
   })
 
   $.each(data['data'], function(i, points) {
-    rects[i] = logo.use(rect).move(points['x'], points['y'])
+    //banner.use(shade).move(points['x'], points['y'])
+    rects[i] = {
+      x: points['x'],
+      y: points['y'],
+      rect: logo.use(rect).move(points['x'], points['y'])
+    }
   })
 })
 
 window.onload = function start() {
+  victim = Math.floor(Math.random() * rects.length)
+  rects[victim].rect.animate(anim).opacity(opacity)
   glitch();
 }
 
 function glitch() {
   window.setInterval(function() {
-    if(rects.length) {
-      rects.splice(Math.floor(Math.random() * rects.length), 1)[0]
-           .animate(2000, '<>', 1000)
-           .opacity(0)
-    }
-  }, Math.random() * 10000)
+    rects[victim].rect
+                .animate(anim)
+                .opacity(1)
+    mover = Math.floor(Math.random() * rects.length)
+    rects[mover].rect
+                .animate(anim)
+                .opacity(opacity)
+    victim = mover
+  }, 100)
 }
 </script>
