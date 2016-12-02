@@ -24,7 +24,7 @@ shade = logo.defs()
             .addClass('shade')
 
 {% for rect in site.data.logo %}
-  //logo.use(shade).move({{ rect.x }}, {{ rect.y }})
+  logo.use(shade).move({{ rect.x }}, {{ rect.y }})
   rects[{{ rect.x }} + '-' + {{ rect.y }}] = link.use(rect).move({{ rect.x }}, {{ rect.y }})
 {% endfor %}
 
