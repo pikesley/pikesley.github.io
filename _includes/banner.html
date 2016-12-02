@@ -35,7 +35,7 @@ window.onload = function start() {
 target = '1-1'
 function glitch() {
   window.setInterval(function() {
-    rects[target].animate(2000, '<>', 1000).opacity(1)
+    //rects[target].animate(2000, '<>', 1000).opacity(1)
     target = Object.keys(rects)[Math.floor(Math.random() * Object.keys(rects).length)]
     rects[target].animate(2000, '<>', 1000).opacity(0)
   }, Math.random() * 10000)
