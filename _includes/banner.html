@@ -1,19 +1,12 @@
 <div id='banner'></div>
 
 <script>
-logo = SVG('banner')
-logo.viewbox({
-  x: 0,
-  y: 0,
-  width: 96,
-  height: 8
-})
+banner = SVG('banner')
+logo = banner.link('/')
+rects = []
 
-link = logo.link('/')
 
-rects = {}
-
-rect = link.defs()
+rect = logo.defs()
            .rect(1, 1)
            .stroke({width: 0.1})
            .addClass('front')
@@ -23,21 +16,30 @@ shade = logo.defs()
             .stroke({width: 0.05})
             .addClass('shade')
 
-{% for rect in site.data.logo %}
-  logo.use(shade).move({{ rect.x }}, {{ rect.y }})
-  rects[{{ rect.x }} + '-' + {{ rect.y }}] = link.use(rect).move({{ rect.x }}, {{ rect.y }})
-{% endfor %}
+$.getJSON('assets/images/logos/pikesley.svg.json', function(data) {
+  banner.viewbox({
+    x: 0,
+    y: 0,
+    width: data['width'],
+    height: data['height']
+  })
+
+  $.each(data['data'], function(i, points) {
+    rects[i] = logo.use(rect).move(points['x'], points['y'])
+  })
+})
 
 window.onload = function start() {
   glitch();
 }
 
-target = '1-1'
 function glitch() {
   window.setInterval(function() {
-    //rects[target].animate(2000, '<>', 1000).opacity(1)
-    target = Object.keys(rects)[Math.floor(Math.random() * Object.keys(rects).length)]
-    rects[target].animate(2000, '<>', 1000).opacity(0)
+    if(rects.length) {
+      rects.splice(Math.floor(Math.random() * rects.length), 1)[0]
+           .animate(2000, '<>', 1000)
+           .opacity(0)
+    }
   }, Math.random() * 10000)
 }
 </script>
