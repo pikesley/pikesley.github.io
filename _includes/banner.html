@@ -7,8 +7,8 @@ rects = []
 victim = 0
 anim = {
   ease: '<>',
-  delay: '1s',
-  duration: '1s'
+  delay: '2s',
+  duration: '10s'
 }
 opacity = 0
 
@@ -31,7 +31,7 @@ $.getJSON('/assets/images/logos/pikesley.svg.json', function(data) {
   })
 
   $.each(data['data'], function(i, points) {
-    //banner.use(shade).move(points['x'], points['y'])
+    banner.use(shade).move(points['x'], points['y'])
     rects[i] = {
       x: points['x'],
       y: points['y'],
@@ -48,14 +48,14 @@ window.onload = function start() {
 
 function glitch() {
   window.setInterval(function() {
-    rects[victim].rect
-                .animate(anim)
-                .opacity(1)
+    //rects[victim].rect
+    //            .animate(anim)
+    //            .opacity(1)
     mover = Math.floor(Math.random() * rects.length)
     rects[mover].rect
                 .animate(anim)
                 .opacity(opacity)
     victim = mover
-  }, Math.random() * 10000)
+  }, Math.random() * 60000)
 }
 </script>
