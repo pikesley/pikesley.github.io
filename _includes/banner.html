@@ -6,11 +6,11 @@ logo = banner.link('/')
 rects = []
 victim = 0
 anim = {
-  ease: '<>',
-  delay: '2s',
-  duration: '10s'
+  delay: Math.random(100),
+  duration: Math.random(100)
 }
-opacity = 0
+
+opacity = 0.5
 
 rect = logo.defs()
            .rect(1, 1)
@@ -41,9 +41,10 @@ $.getJSON('/assets/images/logos/pikesley.svg.json', function(data) {
 })
 
 window.onload = function start() {
-  victim = Math.floor(Math.random() * rects.length)
-  rects[victim].rect.animate(anim).opacity(opacity)
-  glitch();
+  //victim = Math.floor(Math.random() * rects.length)
+  //rects[victim].rect.animate(anim).opacity(opacity)
+  //glitch();
+  flicker()
 }
 
 function glitch() {
@@ -56,6 +57,16 @@ function glitch() {
                 .animate(anim)
                 .opacity(opacity)
     victim = mover
+  }, Math.random() * 60000)
+}
+
+function flicker() {
+  window.setInterval(function() {
+    flickerer = rects[Math.floor(Math.random() * rects.length)]
+    for (i = 0; i < Math.random() * 8; i++) {
+      flickerer.rect.animate(anim).opacity(opacity)
+      flickerer.rect.animate(anim).opacity(1)
+    }
   }, Math.random() * 60000)
 }
 </script>
