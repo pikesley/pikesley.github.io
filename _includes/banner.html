@@ -32,19 +32,19 @@
 
   function handleMouseOver(d, i) {
     d3.select(this)
-      .attr('x', this.x.baseVal.value - 0.5)
-      .attr('y', this.y.baseVal.value - 0.5)
-      .attr('rx', 1)
-      .attr('width', 2)
-      .attr('height', 2)
+      //.attr('x', this.x.baseVal.value - 0.5)
+      .attr('y', this.y.baseVal.value - 0.2)
+      //.attr('rx', 1)
+      //.attr('width', 2)
+      //.attr('height', 2)
   }
 
   function handleMouseOut(d, i) {
     d3.select(this)
-      .attr('x', this.x.baseVal.value + 0.5)
-      .attr('y', this.y.baseVal.value + 0.5)
+      //.attr('x', this.x.baseVal.value + 0.5)
+      .attr('y', this.y.baseVal.value + 0.2)
       .attr('rx', 0)
-      .attr('width', 1)
-      .attr('height', 1);
+      //.attr('width', 1)
+      //.attr('height', 1);
   }
 </script>
