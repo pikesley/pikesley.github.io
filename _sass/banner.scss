@@ -1,4 +1,4 @@
-#banner {
+#banner, #viz {
   @extend .shadow;
 
   padding: $padding-large-vertical;
@@ -19,4 +19,19 @@
   .alt {
     fill: $brand-complement;
   }
+}
+
+.svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 10%; /* aspect ratio */
+    vertical-align: top;
+    overflow: hidden;
+}
+.svg-content-responsive {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 0;
 }
