@@ -1,23 +1,18 @@
-#banner, #viz {
+#banner {
   @extend .shadow;
 
   padding: $padding-large-vertical;
 
-  .front {
+  .pixel {
     fill: $brand-primary;
     stroke: darken($brand-primary, 10%);
-    :hover {
-      fill: darken($brand-primary, 10%);
-    }
+    stroke-width: 0.1;
   }
 
-  .shade {
-    fill: none;
-    stroke: transparentize($brand-complement, 0.7);
-  }
-
-  .alt {
+  .alt-pixel {
     fill: $brand-complement;
+    stroke: darken($brand-complement, 10%);
+    stroke-width: 0.1;
   }
 }
 

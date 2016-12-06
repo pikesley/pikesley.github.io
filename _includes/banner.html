@@ -1,33 +1,50 @@
 <div id='banner'></div>
 
 <script>
-  $.getJSON('/assets/images/logos/pikesley.svg.json', function(data) {
-      width = data.width
-      height = data.height
+  d3.json('/assets/images/logos/pikesley.svg.json', function(data) {
+    svg = d3.select('#banner')
+            .append('div')
+            .classed('svg-container', true)
+            .append('svg')
+            .attr('preserveAspectRatio', 'xMinYMin meet')
+            .attr('viewBox', '0 0 ' + data.width + ' ' + data.height)
+            .classed('svg-content-responsive', true)
+            .append('g')
 
-      svg = d3.select('#banner')
-              .append('div')
-              .classed('svg-container', true)
-              .append('svg')
-              .attr('preserveAspectRatio', 'xMinYMin meet')
-              .attr('viewBox', '0 0 ' + width + ' ' + height)
-              .classed('svg-content-responsive', true);
+    svg.selectAll('rect')
+      .data(data.data)
+      .enter()
+      .append('a')
+      .attr('xlink:href', '/')
+      .append('rect')
+      .attr('x', function(d) {
+        return d.x
+      })
+      .attr('y', function(d) {
+        return d.y
+      })
+      .attr('height', 1)
+      .attr('width', 1)
+      .attr('class', 'pixel')
+      .on('mouseover', handleMouseOver)
+      .on('mouseout', handleMouseOut);
+  })
 
-      svg.selectAll('rect')
-        .data(data.data)
-        .enter()
-        .append('a')
-        .attr('xlink:href', '/')
-        .append('rect')
-        .attr('x', function(d) {
-          return d['x']
-        })
-        .attr('y', function(d) {
-          return d['y']
-        })
-        .attr('width', 1)
-        .attr('height', 1)
-        .attr('class', 'front')
-        .attr('stroke-width', 0.1)
-    })
+  function handleMouseOver(d, i) {
+    d3.select(this)
+      .attr('x', this.x.baseVal.value - 0.5)
+      .attr('y', this.y.baseVal.value - 0.5)
+      .attr('rx', 1)
+      .attr('width', 2)
+      .attr('height', 2)
+  }
+
+  function handleMouseOut(d, i) {
+    d3.select(this)
+      .attr('x', this.x.baseVal.value + 0.5)
+      .attr('y', this.y.baseVal.value + 0.5)
+      .attr('rx', 0)
+      .attr('width', 1)
+      .attr('height', 1);
+  }
 </script>
