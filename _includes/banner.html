@@ -13,7 +13,7 @@
 
     weighting = d3.scaleLinear()
                   .domain([0, data.width])
-                  .range([0, 1])
+                  .range([0, Math.PI])
 
     svg.selectAll('rect')
        .data(data.data)
@@ -31,10 +31,10 @@
        .attr('width', 1)
        .classed('pixel', true)
        .classed('alt-pixel', function(d) {
-         if (Math.random() > weighting(d.x)) {
-           return false
-         } else {
+         if (Math.random() > (Math.cos(weighting(d.x)) + 1) / 2) {
            return true
+         } else {
+           return false
          }
        })
        //.on('mouseover', handleMouseOver)
