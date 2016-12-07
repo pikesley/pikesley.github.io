@@ -11,40 +11,45 @@
             .classed('svg-content-responsive', true)
             .append('g')
 
+    weighting = d3.scaleLinear()
+                  .domain([0, data.width])
+                  .range([0, 1])
+
     svg.selectAll('rect')
-      .data(data.data)
-      .enter()
-      .append('a')
-      .attr('xlink:href', '/')
-      .append('rect')
-      .attr('x', function(d) {
-        return d.x
-      })
-      .attr('y', function(d) {
-        return d.y
-      })
-      .attr('height', 1)
-      .attr('width', 1)
-      .attr('class', 'pixel')
-      .on('mouseover', handleMouseOver)
-      .on('mouseout', handleMouseOut);
+       .data(data.data)
+       .enter()
+       .append('a')
+       .attr('xlink:href', '/')
+       .append('rect')
+       .attr('x', function(d) {
+         return d.x
+       })
+       .attr('y', function(d) {
+         return d.y
+       })
+       .attr('height', 1)
+       .attr('width', 1)
+       .classed('pixel', true)
+       .classed('alt-pixel', function(d) {
+         if (Math.random() > weighting(d.x)) {
+           return false
+         } else {
+           return true
+         }
+       })
+       //.on('mouseover', handleMouseOver)
+       //.on('mouseout', handleMouseOut)
   })
 
   function handleMouseOver(d, i) {
     d3.select(this)
-      //.attr('x', this.x.baseVal.value - 0.5)
-      .attr('y', this.y.baseVal.value - 0.2)
-      //.attr('rx', 1)
-      //.attr('width', 2)
-      //.attr('height', 2)
+      .classed('pixel', false)
+      .classed('alt-pixel', true)
   }
 
   function handleMouseOut(d, i) {
     d3.select(this)
-      //.attr('x', this.x.baseVal.value + 0.5)
-      .attr('y', this.y.baseVal.value + 0.2)
-      .attr('rx', 0)
-      //.attr('width', 1)
-      //.attr('height', 1);
+      .classed('alt-pixel', false)
+      .classed('pixel', true)
   }
 </script>
