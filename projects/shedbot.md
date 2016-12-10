@@ -65,7 +65,6 @@ And it's important that this is all implemented correctly or the whole thing is 
 
 # I gave a talk about this
 
-I gave a lightning talk on this nonsense at [EMF Camp 2016](https://www.emfcamp.org/): (updated) [slides](http://sam.pikesley.org/projects/shedbot/presentation),
-[video](http://sam.pikesley.org/projects/shedbot/video)
+I have spoken about this nonsense in public: at [EMF Camp 2016](http://sam.pikesley.org/projects/shedbot/video), and at an [ODI Friday Lecture](https://www.youtube.com/watch?v=g6vUe-ACaZ8&feature=youtu.be&t=13m4s). The latest iteration of the slides is [here](http://sam.pikesley.org/projects/shedbot/presentation)
 
 ![Computers](http://i.imgur.com/HxKmjss.jpg)		
