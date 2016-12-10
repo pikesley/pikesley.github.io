@@ -33,6 +33,11 @@
   github: pikesley/correctiondose
   description: Rails app to track my health metrics
 
+- title: D3 Experiments
+  url: /d3-experiments
+  github: pikesley/d3-experiments
+  description: Bumbling around with D3
+
 - title: Badger
   url: /projects/badger
   github: badges/badgerbadgerbadger
