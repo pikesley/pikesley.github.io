@@ -11,10 +11,17 @@ Some other places you can find me on the internets:
 {% for find in site.data.find-me %}
   <li>{{ find | markdownify | remove: '<p>' | remove: '</p>' }}</li>
 {% endfor %}
+  <li>Some talks I have given:
+  <ul>
+    {% for talk in site.data.talks %}
+      <li>
+        <a href='{{ talk.url }}' title='{{ talk.title }}'>
+          {{ talk.event }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+  </li>
 </ul>
 
 In fact, if you come across a user called _pikesley_ on any service, it's probably me
-
-<script>
-{% include list-splitter.html primary-list = 'find-me' %}
-</script>
