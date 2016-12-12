@@ -11,7 +11,7 @@ Some other places you can find me on the internets:
 {% for find in site.data.find-me %}
   <li>{{ find | markdownify | remove: '<p>' | remove: '</p>' }}</li>
 {% endfor %}
-  <li>Some talks I have given:
+  <li>Speaking in public:
   <ul>
     {% for talk in site.data.talks %}
       <li>
