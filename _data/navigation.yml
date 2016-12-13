@@ -4,8 +4,8 @@
 - title:       Projects
   path:        /projects/
 
-#- title:       Talks
-#  path:        /talks/
+- title:       Talks
+  path:        /talks/
 
 - title:       Blog
   path:        /blog/
