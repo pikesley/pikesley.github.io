@@ -10,8 +10,8 @@ Some other places you can find me on the internets:
 <ul id='me' class='row'>
 {% for me in site.data.me %}
   <li class='col-md-4 col-xs-4'>
-    <a href='//{{ me.url }}'>
-      <i class='fa fa-{{ me.fa }}'></i>
+    <a href='//{% if me.url %}{{ me.url }}{% else %}{{ me.thing | downcase }}.com/pikesley{% endif %}'>
+      <i class='fa fa-{% if me.fa %}{{ me.fa }}{% else %}{{ me.thing | downcase}}{% endif %}'></i>
       <br />
       {{ me.thing }}
     </a>
