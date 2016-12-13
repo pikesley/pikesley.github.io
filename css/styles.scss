@@ -24,6 +24,43 @@ h1 {
   text-align: center;
 }
 
+#talks {
+  h2 {
+    text-align: center;
+  }
+
+  .subhead {
+    font-size: 0.6em;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    list-style: none;
+  }
+
+  li:after {
+    @extend .custom-hr;
+  }
+
+  li:last-child:after {
+    content: none;
+  }
+
+  .thumbnail {
+    background-color: $brand-primary;
+    border-color: $brand-complement;
+  }
+}
+
+.maths {
+  @extend .well;
+  font-size: 2em;
+  text-align: center;
+}
+
 .subtitle {
   font-size: $font-small;
 }

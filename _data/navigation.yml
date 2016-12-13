@@ -9,5 +9,8 @@
 - title:       Blog
   path:        /blog/
 
+- title:       Talks
+  path:        /talks/
+
 - title:       CV
   path:        /cv/

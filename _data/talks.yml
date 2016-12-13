@@ -1,15 +1,17 @@
-- event: EMF 2014 (i)
-  url:   //www.youtube.com/watch?v=JCix1XW329gv
-  title: The story of the Arsebees
-
-- event: EMF 2014 (ii)
-  url:   //www.youtube.com/watch?v=Qt_J0jNqtZg
-  title: Vandalising your Github commit history
+- event: ODI Fridays
+  id:    g6vUe-ACaZ8
+  start: 795
+  title: My shed has an API
 
 - event: EMF 2016
-  url:   //www.youtube.com/watch?v=Dyg5tzi-H4s&feature=youtu.be&t=34m40s
+  id:    Dyg5tzi-H4s
+  start: 2244
   title: My shed has an API
 
-- event: ODI Fridays
-  url:   //www.youtube.com/watch?v=g6vUe-ACaZ8&feature=youtu.be&t=13m4s
-  title: My shed has an API
+- event: EMF 2014
+  id:    Qt_J0jNqtZg
+  title: Vandalising your Github commit history
+
+- event: EMF 2014
+  id:    JCix1XW329gv
+  title: The story of the Arsebees
