@@ -14,6 +14,17 @@
     stroke: darken($brand-complement, 10%);
     stroke-width: 0.1;
   }
+
+  .non-pixel {
+    fill: transparent;
+    stroke-width: 0;
+    cursor: default;
+  }
+
+  .hover {
+    fill: lighten($brand-primary, 20%);
+    stroke: darken($brand-primary, 10%);
+  }
 }
 
 .svg-container {

@@ -37,19 +37,24 @@
            return false
          }
        })
-       //.on('mouseover', handleMouseOver)
-       //.on('mouseout', handleMouseOut)
+       .classed('non-pixel', function(d) {
+         return deletePixel()
+       })
+       .on('mouseover', handleMouseOver)
+       .on('mouseout', handleMouseOut)
+
+    function deletePixel() {
+      return Math.random() > ((data.data.length - 1) / data.data.length)
+    }
   })
 
   function handleMouseOver(d, i) {
-    d3.select(this)
-      .classed('pixel', false)
-      .classed('alt-pixel', true)
+    if (! d3.select(this).classed('non-pixel')) {
+      d3.select(this).attr('opacity', 0.5)
+    }
   }
 
   function handleMouseOut(d, i) {
-    d3.select(this)
-      .classed('alt-pixel', false)
-      .classed('pixel', true)
+    d3.select(this).attr('opacity', 1.0)
   }
 </script>

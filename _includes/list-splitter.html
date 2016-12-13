@@ -3,7 +3,7 @@ $(function() {
     $('#{{ include.primary-list }}').before('<div class="row" id="lists"></div>')
     var parent = $('#{{ include.primary-list }}')
     var items = parent.children()
-    parent.after('<ul id="{{ include.primary-list }}-overspill"></ul>')
+    parent.after('<ul id="{{ include.primary-list }}-overspill" class="main-list"></ul>')
     $('ul').addClass('col-md-6')
 
     $("#{{ include.primary-list }}").appendTo('#lists')
