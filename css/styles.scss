@@ -114,6 +114,8 @@ hr {
       padding: $padding-large-horizontal;
     }
 
+    text-shadow: 2px 2px 8px transparentize(darken($brand-complement, 20%), 0.5);
+
     .fa {
       font-size: $font-huge;
     }
