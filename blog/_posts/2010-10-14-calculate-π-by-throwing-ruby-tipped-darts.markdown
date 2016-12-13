@@ -1,4 +1,4 @@
-<p>Erm, I rewrote <a href="//pikesley.org/blog/2010/10/14/calculate-π-by-throwing-darts/">this</a> in ruby:</p>
+<p>Erm, I rewrote <a href="//pikesley.org/blog/2010/08/12/calculate-π-by-throwing-darts/">this</a> in ruby:</p>
 
 <pre>#!/usr/bin/env ruby
 # $Id: MonteCarlo.rb 146 2010-10-14 20:43:47Z sam $
