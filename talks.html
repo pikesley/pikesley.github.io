@@ -5,7 +5,9 @@ div_id: talks
 
 <ul>
 {% for talk in site.data.talks %}
-  <li>
+  {% capture id %}{{ talk.title }} {{ talk.event}}{% endcapture %}
+  {% capture id %}{{ id | downcase | replace: ' ', '-' }}{% endcapture %}
+  <li id='{{ id }}'>
     <h2>{{ talk.title }} <span class='subhead'>(at {{ talk.event }})</span></h2>
     <div class='thumbnail '>
       <div class='embed-responsive embed-responsive-16by9'>
