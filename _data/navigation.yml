@@ -1,16 +1,14 @@
 - title:       Home
   path:        /
-  fontawesome: fa-home
 
 - title:       Projects
   path:        /projects/
-  fontawesome: fa-code
+
+#- title:       Talks
+#  path:        /talks/
 
 - title:       Blog
   path:        /blog/
-
-- title:       Talks
-  path:        /talks/
 
 - title:       CV
   path:        /cv/
