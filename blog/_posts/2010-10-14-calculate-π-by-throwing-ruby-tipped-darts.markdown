@@ -1,32 +1,5 @@
----
-layout: post
-status: publish
-published: true
-title: Calculate π by throwing ruby-tipped darts
-author:
-  display_name: sam
-  login: sam
-  email: sam@orgraphone.org
-  url: http://orgraphone.org
-author_login: sam
-author_email: sam@orgraphone.org
-author_url: http://orgraphone.org
-excerpt: "Erm, I rewrote <a href=\"http://www.param3.com/node/13\">this</a> in ruby:\r\n\r\n<pre>\r\n#!/usr/bin/env
-  ruby\r\n# $Id: MonteCarlo.rb 146 2010-10-14 20:43:47Z sam $\r\n\r\n# Our main class\r\nclass
-  MonteCarlo\r\n\r\n# We will automagically generate reader methods for these attributes\r\n
-  \  attr_reader :pi, :count, :hits\r\n\r\n# Constructor: set everything to zero before
-  we start\r\n   def initialize\r\n      @hits = 0;\r\n      @count = 0;\r\n      @pi
-  = 0;\r\n   end\r\n\r\n# We call this method for every throw\r\n   def increment
-  hit\r\n\r\n# We always clock up another throw\r\n      @count = @count + 1\r\n\r\n"
-wordpress_id: 44
-date: '2010-10-14 21:48:08 +0100'
-date_gmt: '2010-10-14 21:48:08 +0100'
-tags:
-- ruby
-- code
-comments: []
----
-<p>Erm, I rewrote <a href="http://orgraphone.org/2010/08/calculate-%CF%80-by-throwing-darts/">this</a> in ruby:</p>
+<p>Erm, I rewrote <a href="//pikesley.org/blog/2010/10/14/calculate-π-by-throwing-darts/">this</a> in ruby:</p>
+
 <pre>#!/usr/bin/env ruby
 # $Id: MonteCarlo.rb 146 2010-10-14 20:43:47Z sam $
 
@@ -120,4 +93,5 @@ while 1 do
 # Output every 1000th iteration
    puts mc if mc.count % 1000 == 0
 end</pre>
-<p>The source was on my Subversion server, but lol.</p>
+
+<p>The source was on my Subversion server, now lost to the mists of time.</p>
