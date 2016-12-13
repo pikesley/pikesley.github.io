@@ -7,9 +7,15 @@ I build software for the [ODI](http://theodi.org/team/sam-pikesley) and play mus
 
 Some other places you can find me on the internets:
 
-<ul id='find-me'>
-{% for find in site.data.find-me %}
-  <li>{{ find | markdownify | remove: '<p>' | remove: '</p>' }}</li>
+<ul id='me' class='row'>
+{% for me in site.data.me %}
+  <li class='col-md-4 col-xs-4'>
+    <a href='//{{ me.url }}'>
+      <i class='fa fa-{{ me.fa }}'></i>
+      <br />
+      {{ me.thing }}
+    </a>
+  </li>
 {% endfor %}
 </ul>
 

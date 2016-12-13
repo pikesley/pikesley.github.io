@@ -1,0 +1,35 @@
+- thing: Github
+  url:   github.com/pikesley
+  fa:    github-alt
+
+- thing: Twitter
+  url:   twitter.com/pikesley
+  fa:    twitter
+
+- thing: Keybase
+  url:   keybase.io/pikesley
+  fa:    key
+
+- thing: Flickr
+  url:   flickr.com/photos/pikesley
+  fa:    flickr
+
+- thing: Instagram
+  url:   instagram.com/pikesley/
+  fa:    instagram
+
+- thing: YouTube
+  url:   youtube.com/channel/UCCYo3iwj5qVfM1H_lB1MplQ
+  fa:    youtube
+
+- thing: Vimeo
+  url:   vimeo.com/pikesley
+  fa:    vimeo
+
+- thing: Talks
+  url:   pikesley.org/talks
+  fa:    microphone
+
+- thing: My CV
+  url:   pikesley.org/cv
+  fa:    file-text-o

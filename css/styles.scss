@@ -37,6 +37,7 @@ h1 {
     margin: 0;
     padding: 0;
   }
+
   li {
     list-style: none;
   }
@@ -105,10 +106,21 @@ hr {
 #home {
   ul {
     list-style: none;
-  }
-  li:before {
-    @extend .list-pointer;
-    font-size: $font-small;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+    li {
+      padding: $padding-large-horizontal;
+    }
+
+    .fa {
+      font-size: $font-huge;
+    }
+
+    a {
+      text-decoration: none;
+    }
   }
 }
 
