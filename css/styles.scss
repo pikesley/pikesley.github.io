@@ -58,7 +58,7 @@ h1 {
 
 .maths {
   @extend .well;
-  font-size: 2em;
+  font-size: $font-large;
   text-align: center;
 }
 
