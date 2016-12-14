@@ -1,7 +1,7 @@
 - title: Wen, the eternally surprised
   url: /projects/wen
   github: pikesley/wen
-  description: Raspberry Pi-powered Neopixel clock
+  description: Raspberry Pi-powered Neopixel clock, with just a pinch of Chef
 
 - title: Skellington
   url: /projects/skellington
@@ -12,7 +12,7 @@
   url: /d3-experiments
   github: pikesley/d3-experiments
   description: Bumbling around with D3
-  
+
 - title: Purdie
   url: /projects/purdie
   github: rawfunkmaharishi/purdie
