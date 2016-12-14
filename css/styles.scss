@@ -55,6 +55,10 @@ h1 {
     background-color: $brand-primary;
     border-color: $brand-complement;
   }
+
+  .internal:hover {
+    text-decoration: none;
+  }
 }
 
 .maths {

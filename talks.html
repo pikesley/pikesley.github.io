@@ -8,7 +8,9 @@ div_id: talks
   {% capture id %}{{ talk.title }} {{ talk.event}}{% endcapture %}
   {% capture id %}{{ id | downcase | replace: ' ', '-' }}{% endcapture %}
   <li id='{{ id }}'>
-    <h2>{{ talk.title }} <span class='subhead'>(at {{ talk.event }})</span></h2>
+    <a class='internal' href='#{{ id }}'>
+      <h2>{{ talk.title }} <span class='subhead'>(at {{ talk.event }})</span></h2>
+    </a>
     <div class='thumbnail '>
       <div class='embed-responsive embed-responsive-16by9'>
         <iframe class='embed-responsive-item'
