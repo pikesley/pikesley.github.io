@@ -1,5 +1,4 @@
 ---
-title: I am Sam Pikesley
 div_id: home
 ---
 

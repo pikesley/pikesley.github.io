@@ -7,7 +7,7 @@
     <div class='container' id='{% if page.div_id %}{{ page.div_id }}{% else %}main{% endif %}'>
       {% include banner.html %}
 
-      <h1>{{ page.title }}</h1>
+      {% if page.title %}<h1>{{ page.title }}</h1>{% endif %}
       {{ content }}
     </div>
     {% include footer.html %}
