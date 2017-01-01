@@ -3,7 +3,7 @@
   <ul id='employers'>
     {% for employer in site.data.cv.employers %}
       <li class='employer'>
-        <h4>{{ employer.dates.start }} - {{ employer.dates.end }}:</h4>
+        <h4>{{ employer.dates.start }} - {{ employer.dates.end }}</h4>
         <h3>
           {{ employer.role }} at
           {% if employer.url %}
