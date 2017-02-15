@@ -1,3 +1,13 @@
+- name:     Moo
+  url:      http://moo.com
+  location: London
+  role:     Operations Engineer
+  dates:
+    start:  January 2017
+    end:    present
+  headline: |
+    Moo is a print-on-demand company printing business cards, postcards, stickers and other material.
+    
 - name:     The Open Data Institute
   url:      http://theodi.org
   location: London
