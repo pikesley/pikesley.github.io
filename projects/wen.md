@@ -26,13 +26,13 @@ It turns out you can chain the Neopixels together and then address them as one l
 
 The code is all [on Github](https://github.com/pikesley/wen). To get it up and running from a clean install of [NOOBS](https://www.raspberrypi.org/downloads/noobs/) 1.9 [Raspbian Jessie Lite](https://www.raspberrypi.org/downloads/raspbian/) on a Pi Zero, you should look at [my Chef cookbook](http://sam.pikesley.org/cookbooks/)
 
-To play with it locally, you'll need to run 3 different processes in a terminal each:
+To play with it locally, you'll need `redis-server` running, then 3 different processes in a terminal each:
 
-* `bundle exec rake app:queue`
-* `bundle exec rake app:sass`
-* `bundle exec rake app:run`
+* `bundle exec rake run:queue`
+* `bundle exec rake run:sass`
+* `bundle exec rake run:run`
 
-and it should be running at [http://localhost:9292](http://localhost:9292)
+and it should be live at [http://localhost:9292](http://localhost:9292)
 
 ### Internals
 
