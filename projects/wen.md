@@ -30,7 +30,7 @@ To play with it locally, you'll need `redis-server` running, then 3 different pr
 
 * `bundle exec rake run:queue`
 * `bundle exec rake run:sass`
-* `bundle exec rake run:run`
+* `bundle exec rake run:app`
 
 and it should be live at [http://localhost:9292](http://localhost:9292)
 
