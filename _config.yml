@@ -25,3 +25,5 @@ defaults:
       parent: projects
 
 permalink: pretty
+exclude:
+  - scratch
