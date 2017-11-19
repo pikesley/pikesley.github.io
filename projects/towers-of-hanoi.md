@@ -8,7 +8,7 @@ _Counting in binary to solve the Towers of Hanoi_
 
 Yes, there are. This is very much a Solved Problem. However, I was inspired to implement this solution after watching [3 Blue 1 Brown](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw)'s [fascinating video](https://www.youtube.com/watch?v=2SUvWfNJSsM), in which Grant relates the Towers Of Hanoi to the Rhythm Of Counting In Binary:
 
-![Screenshot](https://i.imgur.com/mXsl57y.png)
+[![Screenshot](https://i.imgur.com/mXsl57y.png)](https://www.youtube.com/watch?v=2SUvWfNJSsM)
 
 In order to over-engineer this, I've wrapped a [very thin Flask app](https://github.com/pikesley/towers-of-hanoi/blob/master/webserver.py) around the pHAT, so that the interesting stuff can be built in Ruby
 
