@@ -14,7 +14,8 @@ Yes, there are. This is very much a Solved Problem. However, I was inspired to i
 
     bundle
     bundle exec rake
-    bundle exec ./bin/hanoi console
+    bundle exec rake install
+    hanoi console
 
 ## Constrained version
 
