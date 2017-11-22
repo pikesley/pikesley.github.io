@@ -8,9 +8,9 @@
   github: pikesley/skellington
   description: Generate a skeleton for your Sinatra app or Jekyll site
 
-- title: Towers of Hanoi
-  url: /projects/towers-of-hanoi
-  github: pikesley/towers-of-hanoi
+- title: Hanoi Jane
+  url: /projects/hanoi-jane
+  github: pikesley/hanoi-jane
   description: Using the rhythms of counting in binary to solve the Towers Of Hanoi
 
 - title: D3 Experiments
