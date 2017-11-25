@@ -17,6 +17,8 @@ Yes, there are. This is very much a Solved Problem. However, I was inspired to i
     bundle exec rake install
     hanoi console
 
+(or just `gem install hanoi-jane`, of course)
+
 ## Constrained version
 
 There is a [constrained variant of the problem](https://www.youtube.com/watch?v=bdMfjfT0lKk), with the restriction that a disc may only move to an adjacent stack. I've also implemented the solution for this (which maps to the Rhythm Of Counting In Ternary) - you can run this with
@@ -28,16 +30,26 @@ There is a [constrained variant of the problem](https://www.youtube.com/watch?v=
 To use it in your own code, try something like:
 
 ```ruby
-➔ irb
-irb(main):001:0> require 'hanoi/jane'
-=> true
-irb(main):002:0> towers = Hanoi::Jane::ConstrainedTowers.new 3
-=> {:stacks=>[[2, 1, 0], [], []], :moves=>0, :flipped=>nil, :ternary=>"000"}
-irb(main):003:0> towers.each { |state| puts state.inspect }
-{:stacks=>[[2, 1, 0], [], []], :moves=>0, :flipped=>nil, :ternary=>"000"}
-{:stacks=>[[2, 1], [0], []], :moves=>1, :flipped=>0, :ternary=>"001"}
-{:stacks=>[[2, 1], [], [0]], :moves=>2, :flipped=>0, :ternary=>"002"}
-<snip>
+require 'hanoi/jane'
+
+towers = Hanoi::Jane::ConstrainedTowers.new 2
+towers.each do |state|
+  puts state.inspect
+end
+```
+
+which will give you:
+
+```ruby
+{:stacks=>[[1, 0], [], []], :moves=>0, :flipped=>nil, :ternary=>"00"}
+{:stacks=>[[1], [0], []], :moves=>1, :flipped=>0, :ternary=>"01"}
+{:stacks=>[[1], [], [0]], :moves=>2, :flipped=>0, :ternary=>"02"}
+{:stacks=>[[], [1], [0]], :moves=>3, :flipped=>1, :ternary=>"10"}
+{:stacks=>[[], [1, 0], []], :moves=>4, :flipped=>0, :ternary=>"11"}
+{:stacks=>[[0], [1], []], :moves=>5, :flipped=>0, :ternary=>"12"}
+{:stacks=>[[0], [], [1]], :moves=>6, :flipped=>1, :ternary=>"20"}
+{:stacks=>[[], [0], [1]], :moves=>7, :flipped=>0, :ternary=>"21"}
+{:stacks=>[[], [], [1, 0]], :moves=>8, :flipped=>0, :ternary=>"22"}
 ```
 where `flipped` is the disc that was moved last
 
