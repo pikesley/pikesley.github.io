@@ -1,6 +1,7 @@
 ---
 title: Hanoi Jane
 github: pikesley/hanoi-jane
+tags: ["ruby"]
 ---
 _Counting in binary to solve the Towers of Hanoi_
 

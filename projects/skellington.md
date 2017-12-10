@@ -1,6 +1,7 @@
 ---
 title: Skellington
 github: pikesley/skellington
+tags: ["ruby", "sinatra", "jekyll"]
 ---
 Extremely opinionated generator for your [Sinatra](http://www.sinatrarb.com/)  app or [Jekyll](https://jekyllrb.com/) site. Sets up:
 

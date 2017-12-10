@@ -10,5 +10,18 @@ layout: default
   </a>
 </div>
 {% endif %}
+
 {{ content }}
+{% if page.tags %}
+<div class='project-tags'>
+  Tags:
+  {% for tag in page.tags %}
+    <span class='project-tag'>
+      <a href='/projects?tag={{ tag }}'>
+        {{ tag }}
+      </a>
+    </span>
+  {% endfor %}
+</div>
+{% endif %}
 {% include back-to-top.html %}

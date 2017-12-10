@@ -1,6 +1,7 @@
 ---
 title: Red 5
 github: pikesley/red5
+tags: ["ruby"]
 ---
 Ruby bindings for the [Star Wars API](http://swapi.co)
 

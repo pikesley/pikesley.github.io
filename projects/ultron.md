@@ -1,6 +1,7 @@
 ---
 title: Ultron
 github: pikesley/ultron
+tags: ["ruby"]
 ---
 Ruby bindings for the [Marvel Comics API](http://developer.marvel.com/)
 

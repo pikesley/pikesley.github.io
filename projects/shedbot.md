@@ -1,6 +1,7 @@
 ---
 title: Shedbot
 github: pikesley/shedbot
+tags: ["ruby", "javascript", "raspberry-pi", "sinatra"]
 ---
 RESTful API for the Internet of Sheds. You'll also want the [Arduino stuff](https://github.com/pikesley/relay-puller)
 
