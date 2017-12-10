@@ -1,0 +1,24 @@
+location: London
+role:     Systems Administrator
+headline:    |
+  Empower Interactive was a telecoms software startup, founded in 2000 in the
+  City of London.
+profile:    |
+  Having joined Empower at its inception, my initial responsibilities were to
+  design and implement the IT infrastructure necessary to support the operations
+  of the fledgling business. This included: network planning; server acquisition
+  and installation (various internal servers, external mail server, firewall, etc);
+  deploying a backup and recovery scheme; managing the website; and a great deal
+  of user education. I also got involved in many other aspects of the business –
+  this was a tiny start-up, so I found myself doing testing, writing user manuals
+  for Empower’s products, and even doing a little Java.
+
+  I was solely responsible for supporting this infrastructure for the first year,
+  until the business expanded to the extent that further IT staff were required.
+  I was asked to set up an IT department, and recruited another Sysadmin who
+  specialised in Windows; the team continued to expand over the following years.
+  I gained experience with Solaris 8, HP-UX and qualified as an Oracle administrator
+  in order to install some of Empower’s products onto carrier-grade hardware;
+  I also assisted with deploying the hardware into telcos.
+
+  Empower unfortunately ceased trading in November 2006.

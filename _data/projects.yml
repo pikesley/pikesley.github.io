@@ -6,6 +6,7 @@
     - ruby
     - d3
     - raspberry-pi
+    - javascript
 
 - title: Skellington
   url: /projects/skellington
@@ -36,6 +37,14 @@
   description: Dealing with horrid APIs so you don't have to
   tags:
     - ruby
+
+- title: Funk Data
+  url: http://data.rawfunkmaharishi.uk/
+  description: RESTful Open Data API for my band
+  tags:
+    - ruby
+    - sinatra
+    - open-data
 
 - title: Replacer Bot
   url: /projects/replacer_bot
