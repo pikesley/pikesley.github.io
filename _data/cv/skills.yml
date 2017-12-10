@@ -1,28 +1,28 @@
 - Chef|http://chef.io
 - Test-kitchen|http://kitchen.ci/
-- Ruby
+- Ruby|https://www.ruby-lang.org/en/
+- Python|https://www.python.org/
 - Sinatra|http://sinatrarb.com/
 - TDD / BDD
 - RSpec|http://rspec.info/
 - Cucumber|https://cucumber.io/
-- bash
-- HTTP
-- REST
+- bash|https://www.gnu.org/software/bash/
+- HTTP|https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
+- REST|http://www.restapitutorial.com/lessons/whatisrest.html
 - Jekyll|http://jekyllrb.com/
-- Git / GitHub
-- Heroku
+- Git / GitHub / GitLab|https://git-scm.com/
+- Heroku|https://heroku.com
 - Vagrant|https://vagrantup.com/
-- Jenkins
+- Jenkins|https://jenkins-ci.org/
 - Travis|https://travis-ci.org/
-- nginx
-- Apache
+- nginx|https://nginx.org/en/
+- Apache|https://httpd.apache.org/
 - Linux
-- FreeBSD
-- EC2
-- RDS
+- FreeBSD|https://www.freebsd.org/
+- AWS|https://aws.amazon.com/
 - Rackspace Cloud
-- MySQL
-- MongoDB
+- MySQL|https://www.mysql.com/
+- MongoDB|https://www.mongodb.com/
 - JavaScript / jQuery
 - Jasmine|http://jasmine.github.io/2.0/introduction.html
 - D3|http://sam.pikesley.org/d3-experiments

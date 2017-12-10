@@ -7,7 +7,11 @@
     end:    present
   headline: |
     Moo is a print-on-demand company printing business cards, postcards, stickers and other material.
-    
+  profile: |
+    I joined Moo at the beginning of a massive project to migrate from hosted tin to AWS. This involved jumping in at the deep-end with Terraform and Ansible, and was pretty much all I worked on until July 2017, when we pulled the trigger on a remarkably smooth cut-over.
+
+    The rest of the summer was spent on cleaning-up some things we'd kicked down the road during the migration project, and since September I've been on a project to build a Kubernetes-based self-service platform.  
+
 - name:     The Open Data Institute
   url:      http://theodi.org
   location: London
