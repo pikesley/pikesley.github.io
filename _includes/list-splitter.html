@@ -35,6 +35,8 @@ $(function() {
 
     $("#{{ include.primary-list }}").appendTo('#lists')
     $("#{{ include.primary-list }}-overspill").appendTo('#lists')
+
+    parent = $("#lists")
   }
 
   for (i = 0; i < filtered_projects.length; i++) {
@@ -47,6 +49,10 @@ $(function() {
     } else {
       $('#{{ include.primary-list }}').append(makeProject(filtered_projects[i]))
     }
+  }
+
+  if (tag) {
+    parent.after('<p id="filter-warning">Showing only <em>' + tag + '</em> projects. <a href="/projects">Remove filter</a></p>')
   }
 
   function makeProject(data) {

@@ -12,8 +12,9 @@ layout: default
 {% endif %}
 
 {{ content }}
+
+<p class='project-tags'>
 {% if page.tags %}
-<div class='project-tags'>
   Tags:
   {% for tag in page.tags %}
     <span class='project-tag'>
@@ -22,6 +23,7 @@ layout: default
       </a>
     </span>
   {% endfor %}
-</div>
 {% endif %}
+</p>
+
 {% include back-to-top.html %}
