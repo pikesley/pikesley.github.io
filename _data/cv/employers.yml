@@ -10,7 +10,7 @@
   profile: |
     I joined Moo at the beginning of a massive project to migrate from hosted tin to AWS. This involved jumping in at the deep-end with Terraform and Ansible, and was pretty much all I worked on until July 2017, when we pulled the trigger on a remarkably smooth cut-over.
 
-    The rest of the summer was spent on cleaning-up some things we'd kicked down the road during the migration project, and since September I've been on a project to build a Kubernetes-based self-service platform.  
+    The rest of the summer was spent on cleaning-up some things we'd kicked down the road during the migration project, and since September I've been on a project to build a Kubernetes-based self-service platform.
 
 - name:     The Open Data Institute
   url:      http://theodi.org
@@ -33,7 +33,7 @@
       * Providing technical mentoring for one of our PhD students from the [WDAqua](http://wdaqua.eu/) programme
       * Occasional speaking engagements, primarily on the subject of Working In The Open
 
-    *Everything* we've ever built at the ODI has been [built in the open](http://theodi.org/blog/better-living-through-openness) and all of our code is [up on Github](https://github.com/theodi).
+    *Everything* we've ever built at the ODI has been built in the open and all of our code is [up on Github](https://github.com/theodi).
 
 - name:     AMEE UK
   url:      http://amee.com
