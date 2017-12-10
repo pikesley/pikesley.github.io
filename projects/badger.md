@@ -1,6 +1,7 @@
 ---
 title: Badger
 github: badges/badgerbadgerbadger
+tags: ["ruby"]
 ---
 Because I grow weary of copy-n-pasting the badge URLs into the README of every project, and the [img.shields.io](http://img.shields.io) API now supports all of the services I use
 

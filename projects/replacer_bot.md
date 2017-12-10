@@ -1,6 +1,7 @@
 ---
 title: Replacer Bot
 github: pikesley/replacer_bot
+tags: ["ruby"]
 ---
 Twitter bot that:
 

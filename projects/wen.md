@@ -1,6 +1,7 @@
 ---
 title: Wen, the eternally surprised
 github: pikesley/wen
+tags: ["ruby", "d3"]
 ---
 _Building a clock out of Maple, Pi and Ruby_
 

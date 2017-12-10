@@ -37,6 +37,7 @@ namespace :projects do
       out.write "---\n"
       out.write "title: #{project['title']}\n"
       out.write "github: #{project['github']}\n"
+      out.write "tags: #{project['tags']}\n"
       out.write "---\n"
 
       readme.each { |l| out.write l }

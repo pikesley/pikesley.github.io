@@ -136,12 +136,3 @@ hr {
     font-size: $font-large;
   }
 }
-
-.project-tag {
-  margin-left: $padding-small-horizontal;
-  font-size: $font-small;
-
-  a {
-    color: desaturate($link-color, 20%);
-  }
-}

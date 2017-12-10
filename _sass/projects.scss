@@ -22,3 +22,20 @@
     @extend .btn, .btn-info;
   }
 }
+
+.project-tag {
+  margin-left: $padding-small-horizontal;
+  font-size: $font-small;
+
+  a {
+    color: desaturate($link-color, 20%);
+  }
+}
+
+.project-tags {
+  text-align: right;
+
+  .project-tag {
+    font-size: $font-medium;
+  }
+}
