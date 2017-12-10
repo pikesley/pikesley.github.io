@@ -1,20 +1,80 @@
 $(function() {
-  if ($('body').width() > 768) {
+  projects = [
+    {% for project in site.data.projects %}
+      {{ project | replace: '=>', ': ' }}
+      {% unless forloop.last %}
+      ,
+      {% endunless %}
+    {% endfor %}
+  ]
+
+  parent = $('#{{ include.primary-list }}')
+  tag = new URLSearchParams(window.location.search).get('tag')
+
+  filtered_projects = []
+
+  for (i = 0; i < projects.length; i++) {
+    project = projects[i]
+    if (tag) {
+      if (project.tags) {
+        if (project.tags.indexOf(tag) >= 0) {
+          filtered_projects.push(project)
+        }
+      }
+    } else {
+      filtered_projects.push(project)
+    }
+  }
+
+  wide = ($('body').width() > 768)
+  if (wide) {
     $('#{{ include.primary-list }}').before('<div class="row" id="lists"></div>')
-    var parent = $('#{{ include.primary-list }}')
-    var items = parent.children()
+
     parent.after('<ul id="{{ include.primary-list }}-overspill" class="main-list"></ul>')
     $('ul').addClass('col-md-6')
 
     $("#{{ include.primary-list }}").appendTo('#lists')
     $("#{{ include.primary-list }}-overspill").appendTo('#lists')
+  }
 
-    for (i = 0; i < items.length; i++) {
+  for (i = 0; i < filtered_projects.length; i++) {
+    if (wide) {
       if (i % 2 == 0) {
-        $('#{{ include.primary-list }}').append(items[i])
+        $('#{{ include.primary-list }}').append(makeProject(filtered_projects[i]))
       } else {
-        $('#{{ include.primary-list }}-overspill').append(items[i])
+        $('#{{ include.primary-list }}-overspill').append(makeProject(filtered_projects[i]))
+      }
+    } else {
+      $('#{{ include.primary-list }}').append(makeProject(filtered_projects[i]))
+    }
+  }
+
+  function makeProject(data) {
+    s = "<li><h2><a href='"
+    s += data.url
+    s += "'>"
+    s+= data.title
+    s += "</a>"
+    if (data.tags) {
+      for (j = 0; j < data.tags.length; j++) {
+        s += "<span class='project-tag'>"
+        s += "<a href='"
+        s += "?tag="
+        s += data.tags[j]
+        s += "'>"
+        s += data.tags[j]
+        s += "</a>"
+        s += "</span>"
       }
     }
+    s += "</h2>"
+    if (data.description) {
+      s += "<p>"
+      s += data.description
+      s += "</p>"
+    }
+    s += "</li>"
+
+    return s
   }
 })

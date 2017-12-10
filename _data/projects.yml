@@ -2,95 +2,134 @@
   url: /projects/wen
   github: pikesley/wen
   description: Raspberry Pi-powered Neopixel clock, with just a pinch of Chef
+  tags:
+    - ruby
+    - d3
 
 - title: Skellington
   url: /projects/skellington
   github: pikesley/skellington
   description: Generate a skeleton for your Sinatra app or Jekyll site
+  tags:
+    - ruby
+    - sinatra
+    - jekyll
 
 - title: Hanoi Jane
   url: /projects/hanoi-jane
   github: pikesley/hanoi-jane
   description: Using the rhythms of counting in binary to solve the Towers Of Hanoi
+  tags:
+    - ruby
 
 - title: D3 Experiments
   url: /d3-experiments
   github: pikesley/d3-experiments
   description: Bumbling around with D3
+  tags:
+    - d3
 
 - title: Purdie
   url: /projects/purdie
   github: rawfunkmaharishi/purdie
   description: Dealing with horrid APIs so you don't have to
+  tags:
+    - ruby
 
 - title: Replacer Bot
   url: /projects/replacer_bot
   github: pikesley/replacer_bot
   description: Make your own annoying Twitter bot
+  tags:
+    - ruby
 
 - title: 1982
   url: /projects/1982
   github: pikesley/nineteen-eighty-two
   description: Sinclair Spectrum font as a Rubygem
+  tags:
+    - ruby
 
 - title: Shedbot
   url: /projects/shedbot
   github: pikesley/shedbot
   description: RESTful API for the Internet of Sheds
+  tags:
+    - ruby
+    - javascript
+    - raspberry-pi
+    - sinatra
 
 - title: Correction Dose
   url: /projects/correctiondose
   github: pikesley/correctiondose
   description: Rails app to track my health metrics
+  tags:
+    - ruby
+    - rails
 
 - title: Badger
   url: /projects/badger
   github: badges/badgerbadgerbadger
   description: Generate Github project badges like a boss
+  tags:
+    - ruby
 
 - title: WTF Is My Generic Thing?
   url: /projects/wtfismygenericthing
   github: pikesley/wtfismygenericthing
   description: Generate your own strategy generator
+  tags:
+    - ruby
+    - sinatra
 
 - title: Raw Funk Maharishi
   url: http://rawfunkmaharishi.uk/blog/
   description: Blog about building a Jekyll site for my band
+  tags:
+    - jekyll
 
 - title: Ultron
   url: /projects/ultron
   github: pikesley/ultron
   description: Ruby bindings for the <a href='http://developer.marvel.com/docs'>Marvel Comics API</a>
+  tags:
+    - ruby
 
 - title: Marvel Explorer
   url: /projects/marvel-explorer
   github: marvelexplorer/marvel_explorer
   description: Using the <a href='/projects/ultron'>Ultron gem</a> to wander aimlessly from character to character through the Marvel Comics data
+  tags:
+    - ruby
 
 - title: Red 5
   url: /projects/red5
   github: pikesley/red5
   description: Ruby bindings for the <a href='http://swapi.co'>Star Wars API</a>
+  tags:
+    - ruby
 
 - title: Uncle Clive
   url: http://uncleclive.herokuapp.com/
   description: Sinclair Spectrum font as a Service
+  tags:
+    - ruby
+    - sinatra
 
 - title: Pokrovsky
   url: http://pokrovsky.herokuapp.com/
   description: Github History Vandalism as a Service
+  tags:
+    - ruby
+    - sinatra
 
 - title: Mutilator
   url: https://mutilator.herokuapp.com/
   description: Astonishingly Pointless Bullshit as a Service
-
-#- title: SVG Bumbling
-#  url: http://svg-bumbling.github.io/
-#  github: https://github.com/svg-bumbling/svg-bumbling.github.io
-#  description: Experiments with SVGs and JavaScript
-
-#- title: Cruft & Company
-#  url: http://cruft.co/
+  tags:
+    - ruby
+    - sinatra
 
 - title: What Does Brexit Mean?
   url: https://what-does-brexit-mean.herokuapp.com/
@@ -106,6 +145,3 @@
 
 - title: Is Toby Young wrong?
   url: http://istobyyoungwrong.info/
-
-#- title: Orange
-#  url: http://orange.pikesley.org/
