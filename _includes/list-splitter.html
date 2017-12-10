@@ -9,23 +9,25 @@ $(function() {
   ]
 
   parent = $('#{{ include.primary-list }}')
-  items = parent.children()
   tag = new URLSearchParams(window.location.search).get('tag')
+
+  filtered_projects = []
 
   for (i = 0; i < projects.length; i++) {
     project = projects[i]
     if (tag) {
       if (project.tags) {
         if (project.tags.indexOf(tag) >= 0) {
-          parent.append(makeProject(project))
+          filtered_projects.push(project)
         }
       }
     } else {
-      parent.append(makeProject(project))
+      filtered_projects.push(project)
     }
   }
 
-  if ($('body').width() > 768) {
+  wide = ($('body').width() > 768)
+  if (wide) {
     $('#{{ include.primary-list }}').before('<div class="row" id="lists"></div>')
 
     parent.after('<ul id="{{ include.primary-list }}-overspill" class="main-list"></ul>')
@@ -33,13 +35,17 @@ $(function() {
 
     $("#{{ include.primary-list }}").appendTo('#lists')
     $("#{{ include.primary-list }}-overspill").appendTo('#lists')
+  }
 
-    for (i = 0; i < items.length; i++) {
+  for (i = 0; i < filtered_projects.length; i++) {
+    if (wide) {
       if (i % 2 == 0) {
-        $('#{{ include.primary-list }}').append(items[i])
+        $('#{{ include.primary-list }}').append(makeProject(filtered_projects[i]))
       } else {
-        $('#{{ include.primary-list }}-overspill').append(items[i])
+        $('#{{ include.primary-list }}-overspill').append(makeProject(filtered_projects[i]))
       }
+    } else {
+      $('#{{ include.primary-list }}').append(makeProject(filtered_projects[i]))
     }
   }
 
@@ -51,7 +57,7 @@ $(function() {
     s += "</a>"
     if (data.tags) {
       for (j = 0; j < data.tags.length; j++) {
-        s += "<span class='project-tags'>"
+        s += "<span class='project-tag'>"
         s += "<a href='"
         s += "?tag="
         s += data.tags[j]
