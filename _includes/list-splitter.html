@@ -1,8 +1,33 @@
 $(function() {
+  projects = [
+    {% for project in site.data.projects %}
+      {{ project | replace: '=>', ': ' }}
+      {% unless forloop.last %}
+      ,
+      {% endunless %}
+    {% endfor %}
+  ]
+
+  parent = $('#{{ include.primary-list }}')
+  items = parent.children()
+  tag = new URLSearchParams(window.location.search).get('tag')
+
+  for (i = 0; i < projects.length; i++) {
+    project = projects[i]
+    if (tag) {
+      if (project.tags) {
+        if (project.tags.indexOf(tag) >= 0) {
+          parent.append(makeProject(project))
+        }
+      }
+    } else {
+      parent.append(makeProject(project))
+    }
+  }
+
   if ($('body').width() > 768) {
     $('#{{ include.primary-list }}').before('<div class="row" id="lists"></div>')
-    var parent = $('#{{ include.primary-list }}')
-    var items = parent.children()
+
     parent.after('<ul id="{{ include.primary-list }}-overspill" class="main-list"></ul>')
     $('ul').addClass('col-md-6')
 
@@ -16,5 +41,34 @@ $(function() {
         $('#{{ include.primary-list }}-overspill').append(items[i])
       }
     }
+  }
+
+  function makeProject(data) {
+    s = "<li><h2><a href='"
+    s += data.url
+    s += "'>"
+    s+= data.title
+    s += "</a>"
+    if (data.tags) {
+      for (j = 0; j < data.tags.length; j++) {
+        s += "<span class='project-tags'>"
+        s += "<a href='"
+        s += "?tag="
+        s += data.tags[j]
+        s += "'>"
+        s += data.tags[j]
+        s += "</a>"
+        s += "</span>"
+      }
+    }
+    s += "</h2>"
+    if (data.description) {
+      s += "<p>"
+      s += data.description
+      s += "</p>"
+    }
+    s += "</li>"
+
+    return s
   }
 })
