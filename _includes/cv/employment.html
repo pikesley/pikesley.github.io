@@ -26,7 +26,7 @@
         </h4>
 
         {% if employer[1].profile %}
-          {% capture param_name %}{{ employer[1].name | downcase | replace: ' ', '-'}}{% endcapture %}
+          {% capture param_name %}{{ name | downcase | replace: ' ', '-'}}{% endcapture %}
 
           <div class='collapse' id='{{ param_name }}-profile'>
             {{ employer[1].profile | markdownify }}
