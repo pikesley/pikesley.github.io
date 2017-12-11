@@ -1,0 +1,15 @@
+url:      http://amee.com
+location: London
+role:     DevOps Engineer
+headline: |
+  AMEE is a start-up whose mission is to measure the carbon footprint of everything on the planet.
+profile:  |
+  Working closely with AMEE's relatively small team of Java and Ruby devs, I was responsible for:
+
+  * Putting in a huge amount of Chef plumbing (running off of [AMEE's own Chef
+    server](http://www.amee.com/blog/2012/02/22/building-a-chef-server-from-scratch/)) -
+    AMEE's config management previously consisted of a handful of bash scripts
+  * Deploying and configuring Splunk
+  * Migrating several of AMEE's legacy apps from leased iron in a DC to AWS
+
+  alongside the usual SysAdmin work of backup-and-restore, capacity planning, etc.

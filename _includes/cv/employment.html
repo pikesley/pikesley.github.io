@@ -1,27 +1,35 @@
 <section id='employment'>
   <h2>Places I’ve worked</h2>
   <ul id='employers'>
-    {% for employer in site.data.cv.employers %}
+    {% for employer in site.data.cv.employers reversed %}
+    {% assign parts = employer[0] | split: '-' %}
+    {% assign name = employer[0] | slice: 16, 500 | split: '-' | join: ' ' %}
       <li class='employer'>
-        <h4>{{ employer.dates.start }} - {{ employer.dates.end }}</h4>
+        {% capture start_date %}{{ parts[0] }}-{{ parts[1] }}-01{% endcapture %}
+        {% if parts[2] == '0000' %}
+          {% assign end_date = 'Present' %}
+        {% else %}
+          {% capture end_date %}{{ parts[2] }}-{{ parts[3] }}-01{% endcapture %}
+        {% endif %}
+        <h4>{{ start_date | date: "%B %Y" }} - {{ end_date | date: "%B %Y" }}</h4>
         <h3>
-          {{ employer.role }} at
-          {% if employer.url %}
-            <a href='{{ employer.url }}'>
+          {{ employer[1].role }} at
+          {% if employer[1].url %}
+            <a href='{{ employer[1].url }}'>
           {% endif %}
-          {{ employer.name }}{% if employer.url %}</a>{% endif %},
-          {{ employer.location }}
+          {{ name }}{% if employer[1].url %}</a>{% endif %},
+          {{ employer[1].location }}
         </h3>
 
         <h4>
-          {{ employer.headline }}
+          {{ employer[1].headline }}
         </h4>
 
-        {% if employer.profile %}
-          {% capture param_name %}{{ employer.name | downcase | replace: ' ', '-'}}{% endcapture %}
+        {% if employer[1].profile %}
+          {% capture param_name %}{{ name | downcase | replace: ' ', '-'}}{% endcapture %}
 
           <div class='collapse' id='{{ param_name }}-profile'>
-            {{ employer.profile | markdownify }}
+            {{ employer[1].profile | markdownify }}
           </div>
 
           {% include cv/more-less.html name = param_name %}
