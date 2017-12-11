@@ -1,0 +1,51 @@
+url:      http://rexfeatures.com
+location: London
+role:     Systems Administrator
+headline: |
+  Rex Features is Britain’s leading independent photographic press agency and
+  picture library. Rex supplies a daily service of news, celebrity, features,
+  and stock photos to all national newspapers, magazines, TV, web and other
+  media in the UK and in more than 30 countries worldwide.
+profile:  |
+  My work at Rex covered the usual gamut of Sysadmin tasks, including: backup
+  and recovery, webserver administration, DNS management, plenty of scripting
+  (mostly in bash), patching servers, and writing and maintaining documentation.
+  There was also some SQL Server admin, and a certain amount of desktop support –
+  Rex is a company of ~80 employees, supported by an IT department of four.
+  All new server hardware passed through my hands for installation and configuration.
+
+  When I joined Rex, the IT department consisted of two very busy people. The
+  IT infrastructure had been growing rapidly, deployment had happened on a
+  seemingly ad-hoc basis, and documentation was fairly sparse. My initial tasks included:
+
+  * Installing a CVS server (yes, this was 2003) and gathering code and scripts into it
+  * Rolling out the Amanda backup system and setting up a proper backup and recovery scheme
+  * Getting the RT ticketing system up and running (we later moved to Jira)
+  * Beginning the process of documenting everything in Twiki (we subsequently migrated to Mediawiki)
+
+  Subsequently, I was directly involved in:
+
+  * Setting up the Nagios network monitoring system
+  * Migrating the internal mail from Novell to Exchange, and later outsourcing
+    this function to Cobweb’s hosted Exchange platform
+  * Configuring VPNs between Rex’s headquarters and various locations – initially
+    using isakmpd on OpenBSD, and latterly on a Watchguard Firebox
+  * Overseeing the transfer of Rex’s image data – 5 terabytes of jpegs at the
+    time of writing – from a cluster based on a number of FreeBSD servers to a
+    set of Network Appliance 3050 filers
+  * Configuring and deploying Alteon load-balancers for the Rex website, which
+    gets ~1.5 million hits and shifts ~13 gigs of data a day
+  * Migrating Rex’s code from CVS to Subversion
+  * Specifying and documenting a “standard Rex server install” – except for a
+    handful of Windows servers, the whole of Rex’s server room and colo are
+    running FreeBSD, so the standard install is a set of common ports and a
+    number of scripts
+
+  Rex went on to acquire another picture agency in Los Angeles, which brought
+  about a project to integrate their image archive into Rex’s, modifying the
+  server software to enable them to use the Rex client application, and
+  deploying a new set of servers to support of all of this. The final setup
+  consisted of a redundant pair of Microsoft SQL servers, a set of NetApp
+  filers and shelves, and a group of FreeBSD servers (running apache and mod_perl)
+  serving up three websites and a range of internal webservices, all sitting
+  behind a pair of Alteon load-balancers.
