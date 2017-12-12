@@ -1,19 +1,23 @@
 require 'yaml'
 require 'git'
 require 'html-proofer'
+require 'rspec/core/rake_task'
 
-desc 'Run HTML-proofer tests'
-task :test do
-  sh 'bundle exec jekyll build'
-  ignore = [ 'blog/' ]
-  HTML::Proofer.new('./_site',
-                    validate_html: true,
-                    ssl_verifypeer: false,
-                    timeout: 30,
-                    favicon: true,
-                    disable_external: true
-                    ).run
-end
+# desc 'Run HTML-proofer tests'
+# task :test do
+#   # require 'jekyll'
+#   # Jekyll::Commands::Build.process dir: '.'
+#   # ignore = [ 'blog/' ]
+#   # HTML::Proofer.new('./_site',
+#   #                   validate_html: true,
+#   #                   ssl_verifypeer: false,
+#   #                   timeout: 30,
+#   #                   favicon: true,
+#   #                   disable_external: true
+#   #                   ).run
+#
+#
+# end
 
 namespace :projects do
   desc 'collect and format project READMEs'
@@ -49,4 +53,6 @@ namespace :projects do
   end
 end
 
-task :default => [:test]
+RSpec::Core::RakeTask.new
+
+task :default => [:spec]
