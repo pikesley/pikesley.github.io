@@ -27,3 +27,4 @@ defaults:
 permalink: pretty
 exclude:
   - scratch
+  - vendor
