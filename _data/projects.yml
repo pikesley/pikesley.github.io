@@ -13,7 +13,7 @@
   description: Using the rhythms of counting in binary to solve the Towers Of Hanoi
   tags:
     - ruby
-    
+
 - title: Skellington
   url: /projects/skellington
   github: pikesley/skellington
@@ -22,6 +22,14 @@
     - ruby
     - sinatra
     - jekyll
+
+- title: Shedcam
+  url: /projects/shedcam
+  github: pikesley/shedcam
+  description: Timelapse photography on a Raspberry Pi
+  tags:
+    - ruby
+    - raspberry-pi 
 
 - title: D3 Experiments
   url: /d3-experiments

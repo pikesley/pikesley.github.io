@@ -24,7 +24,7 @@ Yes, there are. This is very much a Solved Problem. However, I was inspired to i
 
 There is a [constrained variant of the problem](https://www.youtube.com/watch?v=bdMfjfT0lKk), with the restriction that a disc may only move to an adjacent stack. I've also implemented the solution for this (which maps to the Rhythm Of Counting In Ternary) - you can run this with
 
-    hanoi --constrained
+    hanoi console --discs 6 --constrained
 
 ## API
 
