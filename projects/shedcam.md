@@ -7,7 +7,11 @@ Bought a [ZeroView](https://thepihut.com/products/zeroview) in order to make som
 
 ## Installing it
 
-First, you're going to want a recent Ruby on your Pi (I'm currently on 2.4.2). I swear by [rbenv](https://github.com/rbenv/rbenv) these days, but I understand other methods are available. You'll also want a big SD card in the Pi, because the images are around 4 megs each. Then
+First, you're going to want a recent Ruby on your Pi (I'm currently on 2.4.2). I swear by [rbenv](https://github.com/rbenv/rbenv) these days, but I understand other methods are available. You'll also want a big SD card in the Pi, because the images are around 4 megs each
+
+Oh, you'll also need to [configure the camera](https://www.raspberrypi.org/documentation/configuration/camera.md) (and actually have a camera attached, of course)
+
+Then
 
 ```
 git clone https://github.com/pikesley/shedcam
