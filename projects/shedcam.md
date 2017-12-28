@@ -72,3 +72,4 @@ ffmpeg -pattern_type glob -i "*.jpg" -c:v libx264 -vf fps=25 -pix_fmt yuv420p mo
 ## Next steps
 
 * `raspistill` (the camera-control program at the heart of this) seems to have _a lot_ of options. Guess I should look into them
+* You could obviously reverse-proxy the webserver with `nginx` if you were so inclined
