@@ -18,7 +18,9 @@ bundle exec rake
 
 ## Configuring it
 
-The only thing that's really worth tweaking is the [time-lapse interval](https://github.com/pikesley/shedcam/blob/master/config/config.yml#L1). The finest resolution available is 1 minute, because I'm using [whenever](https://github.com/javan/whenever) for scheduling, which is just a fancy wrapper around `cron`.
+You should fill in your [latitude and longitude](https://github.com/pikesley/shedcam/blob/master/config/config.yml#L3-L4) (you can get them from an [Open Street Maps URL](https://www.openstreetmap.org/#map=18/51.50115/-0.14313)) for the Sunrise-Sunset API
+
+The only other thing that's really worth tweaking is the [time-lapse interval](https://github.com/pikesley/shedcam/blob/master/config/config.yml#L1). The finest resolution available is 1 minute, because I'm using [whenever](https://github.com/javan/whenever) for scheduling, which is just a fancy wrapper around `cron`
 
 Once you've set that, run
 
@@ -26,7 +28,7 @@ Once you've set that, run
 bundle exec rake schedule:update
 ```
 
-to update the `crontab`. It should now start taking photos...
+to update the `crontab`. It should now start taking photos (as long as you're within [Astronomical Daylight](https://en.wikipedia.org/wiki/Twilight#Astronomical_twilight) at your location)...
 
 ## Running it
 
@@ -70,4 +72,3 @@ ffmpeg -pattern_type glob -i "*.jpg" -c:v libx264 -vf fps=25 -pix_fmt yuv420p mo
 ## Next steps
 
 * `raspistill` (the camera-control program at the heart of this) seems to have _a lot_ of options. Guess I should look into them
-* Taking pictures overnight seems a bit pointless. Might look at something like [the Sunrise-Sunset API](https://sunrise-sunset.org/api) to disable it when it gets dark
