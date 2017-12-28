@@ -65,5 +65,9 @@ Get the images somewhere you have `ffmpeg` installed (I can very much recommende
 
 ```
 ffmpeg -pattern_type glob -i "*.jpg" -c:v libx264 -vf fps=25 -pix_fmt yuv420p movie.mp4
-
 ```
+
+## Next steps
+
+* `raspistill` (the camera-control program at the heart of this) seems to have _a lot_ of options. Guess I should look into them
+* Taking pictures overnight seems a bit pointless. Might look at something like [the Sunrise-Sunset API](https://sunrise-sunset.org/api) to disable it when it gets dark
