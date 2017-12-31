@@ -63,7 +63,11 @@ It drops the photos into a directory called (by default) `timelapse-images`, wit
 timelapse-images/2017/12/28/2017-12-28T13:53:16+00:00.jpg
 ```
 
-so you ought to be able to `rsync` those out of there easily enough (I've not really thought that far ahead to be honest). Also, a quick back-of-a-fag-packet calculation suggest that running at full-res like this is going to generate 5 gigs of images per day. I might need to have a think about this...
+so you ought to be able to `rsync` those out of there easily enough (I've not really thought that far ahead to be honest). ~~Also, a quick back-of-a-fag-packet calculation suggest that running at full-res like this is going to generate 5 gigs of images per day. I might need to have a think about this...~~
+
+Having run it for a few days in deepest December, it's been shooting for just about 12 hours, and laying down about 2 gigs of photos, per day. With my 64 gig SD card, I reckon I can hold about 3 weeks' worth of data at a time. A _very_ back-of-a-fag-packet calculation tells me I'm going to capture about a Terabyte of data over a whole year though
+
+I'm now cooking up a very vague plan involving another Pi inside the house, a multi-terabyte external drive, and a lot of `rsync`. (Did I mention that my shed, where Shedcam is going to live, has [solar power and wifi](http://sam.pikesley.org/talks/#my-shed-has-an-api-odi-fridays)?)
 
 ## Making a movie
 
