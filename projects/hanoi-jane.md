@@ -42,15 +42,15 @@ end
 which will give you:
 
 ```ruby
-{:stacks=>[[1, 0], [], []], :moves=>0, :moved=>nil, :ternary=>'00'}
-{:stacks=>[[1], [0], []], :moves=>1, :moved=>0, :ternary=>'01'}
-{:stacks=>[[1], [], [0]], :moves=>2, :moved=>0, :ternary=>'02'}
-{:stacks=>[[], [1], [0]], :moves=>3, :moved=>1, :ternary=>'10'}
-{:stacks=>[[], [1, 0], []], :moves=>4, :moved=>0, :ternary=>'11'}
-{:stacks=>[[0], [1], []], :moves=>5, :moved=>0, :ternary=>'12'}
-{:stacks=>[[0], [], [1]], :moves=>6, :moved=>1, :ternary=>'20'}
-{:stacks=>[[], [0], [1]], :moves=>7, :moved=>0, :ternary=>'21'}
-{:stacks=>[[], [], [1, 0]], :moves=>8, :moved=>0, :ternary=>'22'}
+{:stacks=>[[1, 0], [], []], :moves=>0, :moved=>{:disc=>nil, :from=>nil, :to=>nil}, :ternary=>"00"}
+{:stacks=>[[1], [0], []], :moves=>1, :moved=>{:disc=>0, :from=>0, :to=>1}, :ternary=>"01"}
+{:stacks=>[[1], [], [0]], :moves=>2, :moved=>{:disc=>0, :from=>1, :to=>2}, :ternary=>"02"}
+{:stacks=>[[], [1], [0]], :moves=>3, :moved=>{:disc=>1, :from=>0, :to=>1}, :ternary=>"10"}
+{:stacks=>[[], [1, 0], []], :moves=>4, :moved=>{:disc=>0, :from=>2, :to=>1}, :ternary=>"11"}
+{:stacks=>[[0], [1], []], :moves=>5, :moved=>{:disc=>0, :from=>1, :to=>0}, :ternary=>"12"}
+{:stacks=>[[0], [], [1]], :moves=>6, :moved=>{:disc=>1, :from=>1, :to=>2}, :ternary=>"20"}
+{:stacks=>[[], [0], [1]], :moves=>7, :moved=>{:disc=>0, :from=>0, :to=>1}, :ternary=>"21"}
+{:stacks=>[[], [], [1, 0]], :moves=>8, :moved=>{:disc=>0, :from=>1, :to=>2}, :ternary=>"22"}
 ```
 where `moved` is the disc that was moved last
 
@@ -58,8 +58,8 @@ where `moved` is the disc that was moved last
 
 In order to over-engineer this, I've wrapped a [very thin Flask app](https://github.com/pikesley/pHAT-REST) around the [MicroDot pHAT](https://shop.pimoroni.com/products/microdot-phat). Try
 
-    hanoi phat --phat <address_of_your_pi> --constrained
+    hanoi phat --phat <address_of_your_pi> --interval 0.1
 
-to watch this all [play out on the pHAT](https://www.youtube.com/watch?v=PAQY5XtdNO8):
+to watch this all [play out on the pHAT](https://www.youtube.com/watch?v=LT3HNsVxhM8):
 
-[![Video](https://i.imgur.com/QILZYgx.png)](https://www.youtube.com/watch?v=PAQY5XtdNO8)
+[![Screenshot](https://i.imgur.com/yrK3isK.png)](https://www.youtube.com/watch?v=LT3HNsVxhM8)
