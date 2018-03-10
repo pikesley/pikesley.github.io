@@ -47,7 +47,7 @@ You'll also need some Twitter credentials, store them in `~/.replacer_botrc` lik
     TOKEN: oauth_token
     SECRET: oauth_secret
 
-(and see [this](http://dghubble.com/blog/posts/twitter-app-write-access-and-bots/) for help on setting up Twitter bots)
+(and see [this](https://github.com/twitter/twurl) for help on setting up Twitter bots)
 
 ## Running it
 
