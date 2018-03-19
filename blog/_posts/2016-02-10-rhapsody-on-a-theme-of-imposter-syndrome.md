@@ -1,4 +1,4 @@
-I have written a [blogpost for work](http://theodi.org/blog/kicking-aruba-into-a-bin) after I uncovered some new (to me) features in [Rspec](http://rspec.info/); these discoveries made a previously-intimidating realm seem suddenly utterly benign, and I hoped a write-up of my bumblings might be useful to others.
+I have written a [blogpost for work](http://labs.theodi.org/blog/2016/01/07/kicking-aruba-into-a-bin/) after I uncovered some new (to me) features in [Rspec](http://rspec.info/); these discoveries made a previously-intimidating realm seem suddenly utterly benign, and I hoped a write-up of my bumblings might be useful to others.
 
 And this is where the problems begin: because I now have a much better grasp of this (pretty narrow) topic, it all seems blindingly obvious to me and I'm starting to convince myself that there's no way anybody else will be remotely interested in this stuff.
 
