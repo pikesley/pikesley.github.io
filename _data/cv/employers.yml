@@ -1,10 +1,20 @@
+- name:     Open Corporates
+  url:      https://opencorporates.com/
+  location: London
+  role:     Backend Engineer
+  dates:
+    start:  March 2018
+    end:    present
+  headline: |
+    OpenCorporates is the largest open database of companies and company data in the world, with in excess of 100 million companies in a similarly large number of jurisdictions.
+
 - name:     Moo
   url:      http://moo.com
   location: London
   role:     Operations Engineer
   dates:
     start:  January 2017
-    end:    present
+    end:    March 2018
   headline: |
     Moo is a print-on-demand company printing business cards, postcards, stickers and other material.
   profile: |
