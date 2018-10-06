@@ -21,6 +21,13 @@
   tags:
     - ruby
 
+- title: Hanoi Painter
+  url: /projects/hanoi-painter
+  github: pikesley/hanoi-painter
+  description: Playing the Towers of Hanoi on the Github commit-history graph
+  tags:
+    - ruby
+
 - title: Skellington
   url: /projects/skellington
   github: pikesley/skellington
