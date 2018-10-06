@@ -63,3 +63,7 @@ In order to over-engineer this, I've wrapped a [very thin Flask app](https://git
 to watch this all [play out on the pHAT](https://www.youtube.com/watch?v=LT3HNsVxhM8):
 
 [![Screenshot](https://i.imgur.com/yrK3isK.png)](https://www.youtube.com/watch?v=LT3HNsVxhM8)
+
+## Gitpaint
+
+Who hasn't, at some time in their life, wanted to play Towers of Hanoi on the Github commit-history graph? I've now built a formatter to generate output suitable for this - see (hanoi-painter)[https://github.com/pikesley/hanoi-painter] for more on how it all works

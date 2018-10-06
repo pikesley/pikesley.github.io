@@ -14,6 +14,13 @@
   tags:
     - ruby
 
+- title: Gitpaint
+  url: /projects/gitpaint
+  github: pikesley/gitpaint
+  description: Paint arbitrary data onto the Github commit-history graph
+  tags:
+    - ruby
+
 - title: Skellington
   url: /projects/skellington
   github: pikesley/skellington
@@ -29,7 +36,7 @@
   description: Timelapse photography on a Raspberry Pi
   tags:
     - ruby
-    - raspberry-pi 
+    - raspberry-pi
 
 - title: D3 Experiments
   url: /d3-experiments
