@@ -1,26 +1,29 @@
-- thing: Github
-  fa:    github-alt
+- thing:    Github
+  fa:       github-alt
+  indieweb: true
 
-- thing: Twitter
+- thing:    Twitter
+  indieweb: true
 
-- thing: Keybase
-  url:   keybase.io/pikesley
-  fa:    key
+- thing:    Keybase
+  url:      keybase.io/pikesley
+  fa:       key
+  indieweb: true
 
-- thing: Flickr
-  url:   flickr.com/photos/pikesley
+- thing:    Flickr
+  url:      flickr.com/photos/pikesley
 
-- thing: Instagram
+- thing:    Instagram
 
-- thing: PSN
-  url:   psnprofiles.com/pikesley
-  fa:    gamepad
+- thing:    PSN
+  url:      psnprofiles.com/pikesley
+  fa:       gamepad
 
-- thing: YouTube
-  url:   youtube.com/c/SamPikesley
+- thing:    YouTube
+  url:      youtube.com/c/SamPikesley
 
-- thing: Vimeo
+- thing:    Vimeo
 
-- thing: Talks
-  url:   pikesley.org/talks
-  fa:    microphone
+- thing:    Talks
+  url:      pikesley.org/talks
+  fa:       microphone
