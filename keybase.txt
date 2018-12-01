@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/pikesley
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://sam.pikesley.org
+  * I am pikesley (https://keybase.io/pikesley) on keybase.
+  * I have a public key with fingerprint DF05 912A 97AF 027E B1FA  BF47 E721 358B 2C3F 3A49
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01010e98b33900b1d326d67cc567a0ef80579b1e1ba288988c1621d16564624cef890a",
+      "fingerprint": "df05912a97af027eb1fabf47e721358b2c3f3a49",
+      "host": "keybase.io",
+      "key_id": "e721358b2c3f3a49",
+      "kid": "01010e98b33900b1d326d67cc567a0ef80579b1e1ba288988c1621d16564624cef890a",
+      "uid": "e39f6130d66db7c1ed7355a044120600",
+      "username": "pikesley"
+    },
+    "service": {
+      "hostname": "sam.pikesley.org",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1543668362,
+  "expire_in": 157680000,
+  "prev": "9855902679f20b66b6e275b8ebc3f6686d4e79934ffabf7e993da1ad60ee13e0",
+  "seqno": 97,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.80
+Comment: https://keybase.io/crypto
+
+yMIoAnicrZJtSBRBGMfPs8SuMikhkPyyRRFcMrMvM7tHUCJEhUgIRYV27cvs3XZ6
+e+2ulpmFRRCVFGhJYqSFWFiWLwRJgWUQZIZyRkaKCuYHC4rKTLBstvRbH5v5MG+/
+/3+e55l5tjzR40voHFy5xhd8fD+h50ldsSffe+pcGaOYWikTKGMi5M9ACjViO8GI
+oTEBBkDaiSQqHCcBoECNY5GGsKoKCMuA6CIQsKRAAhWZFUVJFFWIWKhBJCAesbxK
+CQnIjJ/RjWiIWDHLiDrUVtOBIEFWlrCsAxYTBeqyovOYYBZygqiwKqdzMi9RYdi0
+XQUNTpFtkmmYdI8ugn/C+wf/n+Mu/nsPJ+kIckBDSFOwComGOUGQAc9DFiAAXNAm
+VlQuIpSOGRFiF9JqlvsZultiqMQtrJvJPGHLRZkLVKZphag+ZpmOqZqF9DTsODE7
+4Kqd0piLHyFKcN4oqBhRjdaSKkqIZRtmlAlASqqO4TpDgecQEjnE+hlyNGZYJGi4
+hICRCGhz7yEl1FISBUECLMKSzgIFIQURFguKSBRaSuqANJ5gSeJ43X0ZTOhUk6Gs
+IUAI5IibsU0OR00mIGEapxxyszJCUdkptghT/rQrf5EnwedJWux1P5nHtyR14ev1
+rE321A2w69JaCjZ4I3nvZ18mzo2E07fvetVyrdnov+vZ2X9x68yq6im8I4VfdPrI
+i6vne/0nHk/cq66VSn33WhsyshoqDnRmv50bman82J+RE277NNYYr249NKm2Pblt
+JM+KHXbB0n3jLxtrUu868dEPP+H67tWjw+fe7O9ub55+fTk5ry8x55E3Ak8+3NjU
+NfBdaNmWW9U2kLH2xpee9iGjqnBy2bWJzqF4U8fNgymk99F0RWhw8/NLtblnxzoe
+bLkS1Ut+fE1P2qvF2sqOpVaOWuPXs0eOJ/StiJiVp3MC9d1Z33A99+tM3e748J60
+qc9NeUUXYoObbmV2oXdTy+5UGDXDvwGzSEqA
+=Ad+w
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/pikesley
+
+==================================================================
