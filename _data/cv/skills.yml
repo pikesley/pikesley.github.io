@@ -16,7 +16,6 @@
 - Jenkins|https://jenkins-ci.org/
 - Travis|https://travis-ci.org/
 - nginx|https://nginx.org/en/
-- Apache|https://httpd.apache.org/
 - Linux
 - FreeBSD|https://www.freebsd.org/
 - AWS|https://aws.amazon.com/
@@ -30,7 +29,10 @@
 - Continuous deployment
 - Arduino|https://www.arduino.cc/
 - Terraform|https://www.terraform.io/
-- Kubernetes|https://kubernetes.io/
 - Open Data|https://theodi.org/what-is-open-data
 - make|https://www.gnu.org/software/make/
 - Regular Expressions
+- RabbitMQ|//www.rabbitmq.com
+- Neo4j|//neo4j.com
+- TigerGraph|//www.tigergraph.com
+- Docker|//www.docker.com
