@@ -1,38 +1,17 @@
-- Chef|http://chef.io
-- Test-kitchen|http://kitchen.ci/
-- Ruby|http://sam.pikesley.org/projects/?tag=ruby
-- Python|https://www.python.org/
-- Sinatra|http://sinatrarb.com/
-- TDD / BDD
-- RSpec|http://rspec.info/
-- Cucumber|https://cucumber.io/
-- bash|https://www.gnu.org/software/bash/
-- HTTP|https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
-- REST|http://www.restapitutorial.com/lessons/whatisrest.html
-- Jekyll|http://jekyllrb.com/
-- Git / GitHub / GitLab|https://git-scm.com/
-- Heroku|https://heroku.com
-- Vagrant|https://vagrantup.com/
-- Jenkins|https://jenkins-ci.org/
-- Travis|https://travis-ci.org/
-- nginx|https://nginx.org/en/
-- Linux
-- FreeBSD|https://www.freebsd.org/
-- AWS|https://aws.amazon.com/
-- Rackspace Cloud
-- MySQL|https://www.mysql.com/
-- MongoDB|https://www.mongodb.com/
-- JavaScript / jQuery
-- Jasmine|http://jasmine.github.io/2.0/introduction.html
-- D3|http://sam.pikesley.org/d3-experiments
-- Sass|http://sass-lang.com/
-- Continuous deployment
-- Arduino|https://www.arduino.cc/
-- Terraform|https://www.terraform.io/
-- Open Data|https://theodi.org/what-is-open-data
-- make|https://www.gnu.org/software/make/
-- Regular Expressions
+- Kubernetes|//kubernetes.io/
+- ConcourseCI|//concourse-ci.org/
+- GCP|//cloud.google.com/
+- Ruby|//sam.pikesley.org/projects/?tag=ruby
+- Python|//www.python.org/
+- Sinatra|//sinatrarb.com/
+- RSpec|//rspec.info/
+- Jekyll|//jekyllrb.com/
+- Git|//git-scm.com/
+- Linux|//www.linux.org/
+- FreeBSD|//www.freebsd.org/
+- AWS|//aws.amazon.com/
+- Arduino|//www.arduino.cc/
+- Terraform|//www.terraform.io/
+- Open Data|//opendatahandbook.org/guide/en/what-is-open-data/
 - RabbitMQ|//www.rabbitmq.com
-- Neo4j|//neo4j.com
-- TigerGraph|//www.tigergraph.com
 - Docker|//www.docker.com

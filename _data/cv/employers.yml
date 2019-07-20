@@ -1,10 +1,20 @@
+- name:     Demand Logic
+  url:      https://www.demandlogic.co.uk/
+  location: London
+  role:     Senior Infrastructure Engineer
+  dates:
+    start:  February 2019
+    end:    present
+  headline: |
+    Demand Logic is a software tool which provides actionable intelligence to property managers and building contractors. It is intended to deliver quantifiable benefits in a short space of time and to make the management of buildings easier.
+    
 - name:     OpenCorporates
   url:      https://opencorporates.com/
   location: London
   role:     Backend Engineer
   dates:
     start:  March 2018
-    end:    present
+    end:    February 2019
   headline: |
     OpenCorporates is the largest open database of companies and company data in the world, with in excess of 100 million companies in a similarly large number of jurisdictions.
 
