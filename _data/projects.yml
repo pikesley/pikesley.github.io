@@ -1,3 +1,22 @@
+- title: Potado
+  url: /projects/potado
+  github: pikesley/potado
+  description: Schedule-setting robot for your Tado heating system
+  tags:
+    - python
+    - tado
+    - docker
+    - home-automation
+
+- title: Christmas Pixels
+  url: /projects/christmas-pixels
+  github: pikesley/christmas-pixels
+  description: Raspberry Pi-powered Christmas NeoPixels
+  tags:
+    - python
+    - neopixels
+    - raspberry-pi
+
 - title: Wen, the eternally surprised
   url: /projects/wen
   github: pikesley/wen
@@ -5,6 +24,7 @@
   tags:
     - ruby
     - d3
+    - neopixels
     - raspberry-pi
 
 - title: Hanoi Jane
