@@ -9,17 +9,4 @@ div_id: cv
 ---
 
 
-{% include cv/intro.html %}
-
-<ul class='nav nav-justified'>
-  {% for section in page.sections %}
-    <li><a href='#{{ section }}'>{{ section | capitalize }}</a></li>
-  {% endfor %}
-</ul>
-
-{% for section in page.sections %}
-  {% include cv/{{ section }}.html %}
-  {% include back-to-top.html %}
-{% endfor %}
-
-{% include cv/tail.html %}
+<h1>Yes, I'm the Arsebees guy</h1>
