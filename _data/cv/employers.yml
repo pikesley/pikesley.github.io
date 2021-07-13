@@ -7,7 +7,11 @@
     end:    present
   headline: |
     Demand Logic is a software tool which provides actionable intelligence to property managers and building contractors. It is intended to deliver quantifiable benefits in a short space of time and to make the management of buildings easier.
-    
+  profile: |
+    I joined Demand Logic at the beginning of a project to shift their infrastructure away from [Rackspace Cloud](//www.rackspace.com/en-gb/cloud) and into [Google Cloud](//cloud.google.com). As part of this, I introduced [Terraform](//www.terraform.io), which now describes every GCP resource at DL in a repeatable way.
+
+    I was also responsible for introducing [Concourse CI](//concourse-ci.org) (to replace Jenkins) and have built extensive (Python) tooling around this to, among other things, bring the platform towards Continuous Delivery.
+
 - name:     OpenCorporates
   url:      https://opencorporates.com/
   location: London
@@ -17,6 +21,10 @@
     end:    February 2019
   headline: |
     OpenCorporates is the largest open database of companies and company data in the world, with in excess of 100 million companies in a similarly large number of jurisdictions.
+  profile: |
+    I primarily worked as a Ruby dev at OpenCorporates, maintaining their Rails apps, although I also turned my hand to occasional bits of SysAdmin-ish work when required. I was also heavily involved in a project to map corporate networks, initially using [Neo4j](//neo4j.com) and later [TigerGraph](//www.tigergraph.com).
+
+    I was eventually lured away by the prospect of getting back into more straight-up Ops work.
 
 - name:     Moo
   url:      http://moo.com

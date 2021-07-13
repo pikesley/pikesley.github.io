@@ -21,6 +21,7 @@
           {% capture param_name %}{{ employer.name | downcase | replace: ' ', '-'}}{% endcapture %}
 
           <div class='collapse' id='{{ param_name }}-profile'>
+            <hr>
             {{ employer.profile | markdownify }}
           </div>
 

@@ -1,11 +1,8 @@
 - Kubernetes|//kubernetes.io/
 - ConcourseCI|//concourse-ci.org/
 - GCP|//cloud.google.com/
-- Ruby|//sam.pikesley.org/projects/?tag=ruby
+- Ruby|//www.ruby-lang.org
 - Python|//www.python.org/
-- Sinatra|//sinatrarb.com/
-- RSpec|//rspec.info/
-- Jekyll|//jekyllrb.com/
 - Git|//git-scm.com/
 - Linux|//www.linux.org/
 - FreeBSD|//www.freebsd.org/
@@ -15,3 +12,6 @@
 - Open Data|//opendatahandbook.org/guide/en/what-is-open-data/
 - RabbitMQ|//www.rabbitmq.com
 - Docker|//www.docker.com
+- Salt|//saltproject.io
+- Redis|//redis.io
+- Postgres|//www.postgresql.org
