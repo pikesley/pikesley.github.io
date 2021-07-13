@@ -1,3 +1,21 @@
+- title: Jlock
+  url: /projects/jlock
+  github: pikesley/jlock
+  description: Text clock on a Raspberry Pi
+  tags:
+    - javascript
+    - css
+    - raspberry-pi
+
+- title: Light Emitting Desk
+  url: /projects/light-emitting-desk
+  github: pikesley/light-emitting-desk
+  description: Light up your desk with NeoPixels
+  tags:
+    - python
+    - raspberry-pi
+    - neopixels
+
 - title: Potado
   url: /projects/potado
   github: pikesley/potado
@@ -17,7 +35,7 @@
     - neopixels
     - raspberry-pi
 
-- title: Wen, the eternally surprised
+- title: Wen
   url: /projects/wen
   github: pikesley/wen
   description: Raspberry Pi-powered Neopixel clock, with just a pinch of Chef
@@ -147,13 +165,6 @@
   tags:
     - ruby
 
-- title: Marvel Explorer
-  url: /projects/marvel-explorer
-  github: marvelexplorer/marvel_explorer
-  description: Using the <a href='/projects/ultron'>Ultron gem</a> to wander aimlessly from character to character through the Marvel Comics data
-  tags:
-    - ruby
-
 - title: Red 5
   url: /projects/red5
   github: pikesley/red5
@@ -182,14 +193,8 @@
     - ruby
     - sinatra
 
-- title: What Does Brexit Mean?
-  url: https://what-does-brexit-mean.herokuapp.com/
-
 - title: What is Devops?
   url: http://whatisdevops.com/
-
-- title: Is Michael Gove wrong?
-  url: http://ismichaelgovewrong.info/
 
 - title: Is James Delingpole wrong?
   url: http://isjamesdelingpolewrong.info/

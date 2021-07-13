@@ -1,5 +1,5 @@
 ---
-title: Wen, the eternally surprised
+title: Wen
 github: pikesley/wen
 tags: ["ruby", "d3", "neopixels", "raspberry-pi"]
 ---
