@@ -59,13 +59,6 @@
   tags:
     - ruby
 
-- title: Hanoi Painter
-  url: /projects/hanoi-painter
-  github: pikesley/hanoi-painter
-  description: Playing the Towers of Hanoi on the Github commit-history graph
-  tags:
-    - ruby
-
 - title: Skellington
   url: /projects/skellington
   github: pikesley/skellington
@@ -157,6 +150,13 @@
   description: Blog about building a Jekyll site for my band
   tags:
     - jekyll
+
+- title: Hanoi Painter
+  url: /projects/hanoi-painter
+  github: pikesley/hanoi-painter
+  description: Playing the Towers of Hanoi on the Github commit-history graph
+  tags:
+    - ruby
 
 - title: Ultron
   url: /projects/ultron

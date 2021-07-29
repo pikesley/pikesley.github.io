@@ -4,7 +4,7 @@ div_id: home
 
 I [build software](/projects) and [play music](//rawfunkmaharishi.uk), and I have a [non-working pancreas](//www.diabetes.org.uk/Guide-to-diabetes/What-is-diabetes/What-is-Type-1-diabetes/).
 
-Some other places you can find me on the internets:
+Some other places you can find me:
 
 <ul id='me' class='row'>
 {% for me in site.data.me %}
