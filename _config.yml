@@ -28,3 +28,5 @@ permalink: pretty
 exclude:
   - scratch
   - vendor
+
+include: [.well-known]
